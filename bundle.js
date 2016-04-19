@@ -20119,9 +20119,23 @@
 	          { className: "content-container" },
 	          _react2["default"].createElement("div", { className: "smokescreen" }),
 	          _react2["default"].createElement(
-	            "h1",
-	            null,
-	            "Sean De Clercq"
+	            "div",
+	            { className: "copy-container" },
+	            _react2["default"].createElement(
+	              "h1",
+	              { className: "main-header" },
+	              "Sean De Clercq"
+	            ),
+	            _react2["default"].createElement(
+	              "button",
+	              { className: "btn" },
+	              "Business"
+	            ),
+	            _react2["default"].createElement(
+	              "button",
+	              { className: "btn" },
+	              "Blog"
+	            )
 	          )
 	        )
 	      );
