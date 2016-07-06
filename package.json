@@ -1,21 +1,22 @@
 {
-  "name": "seandeclercqpersonalwebsite",
+  "name": "marczennpersonalwebsite",
+  "title": "MarcZenn",
   "version": "1.0.0",
-  "description": "A personal portfolio website for Sean De Clercq",
+  "description": "A personal portfolio website for Marc Zenn",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarcZenn/SeanDeClercqPersonalWebsite.git"
+    "url": "git+https://github.com/MarcZenn/MarcZennPersonalWebsite"
   },
   "author": "Marc Zenn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MarcZenn/SeanDeClercqPersonalWebsite/issues"
+    "url": "https://github.com/MarcZenn/MarcZennPersonalWebsite/issues"
   },
-  "homepage": "https://github.com/MarcZenn/SeanDeClercqPersonalWebsite#readme",
+  "homepage": "https://github.com/MarcZenn/MarcZennPersonalWebsite#readme",
   "dependencies": {
     "babel-loader": "^5.3.3",
     "react": "^15.0.1",
