@@ -13,8 +13,12 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/, //RegEx that webpack uses to determine if .js/.jsx files should be transpiled.
-        loaders: ['react-hot', 'babel'], // Loaders to be used. Must be installed.
+        loaders: ['react-hot','babel'], // Loaders to be used. Must be installed.
         exclude: /node_modules/ // exclude node modules.
+      },
+      {
+        test: /\.scss$/,
+        loaders:['style', 'css?sourceMap', 'sass?sourceMap'] // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
       }
     ]
   }

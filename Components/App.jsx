@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
 
+// Components
 import Homepage from './Home/Home.jsx';
+
+//Stylesheets
+// import style from './public/styles/main.scss';
+require('../public/styles/app.scss');
+
 
 class App extends Component {
   render(){
