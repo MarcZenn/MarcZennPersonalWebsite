@@ -76,7 +76,7 @@ a {
 }
 
 a:hover {
-	color: red;
+	color: #ff6600;
 }
 
 p {
@@ -84,7 +84,9 @@ p {
 	margin: 0;
 }
 
-span { animation: blink 1s infinite }
+span {
+	animation: blink 1s infinite;
+}
 
 ul {
 	list-style: none;
@@ -103,8 +105,16 @@ p a:after {
 }
 
 header.site {
-	margin: 0 0 40px 0;
+	margin: 0 0 80px 0;
 	text-transform: uppercase;
+}
+
+nav{
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	border-bottom: 1px solid rgba(0,221,0,1);
+	border-bottom-style: dashed;
 }
 
 nav,site {
@@ -117,6 +127,8 @@ nav.site ul {
 
 nav.site ul li {
 	display: inline-block;
+	text-align: center;
+	width: 25%;
 }
 
 .overlay {
@@ -156,11 +168,15 @@ nav.site ul li {
 }
 
 .col {
-	float: left;
 	padding: 0 20px;
 }
 
-.col.two { width: auto; }
+.col.two {
+	position: relative;
+	z-index: 10;
+	width: auto;
+	text-align: center;
+}
 
 .wrapper {
   animation: scroll 5s 1;
@@ -172,16 +188,15 @@ nav.site ul li {
 .content {
 	animation: scroll 3s 1;
   overflow: hidden;
-	padding: 40px;
+	padding: 40px 0;
 	position: relative;
-	width: 95%;
 }
 
 #logo-v {
 	display: block;
 	height: auto;
 	margin: 0 auto;
-	width: 200px;
+	width: 780px;
 }
 
 img.pip-hero {
@@ -246,6 +261,7 @@ a.button {
 	text-decoration: none;
 	text-transform: uppercase;
 	z-index: 10;
+	margin: 5px;
 }
 
 input[type=submit]:hover,
@@ -283,3 +299,33 @@ a.button:hover {
 }
 
 .upper { text-transform: uppercase; }
+
+
+
+.contact-content {
+	position: relative;
+	z-index: 10;
+	padding: 20px;
+}
+
+.description-content{
+	margin: 20px 0;
+	text-align: left;
+	position: relative;
+	z-index: 10;
+	padding: 20px 200px 20px 20px;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,221,0,1);
+	border-top: 1px solid rgba(0,221,0,1);
+	border-top-style: dashed;
+	border-bottom-style: dashed;
+}
+
+.description-content p{
+	margin: 20px 0;
+}
+
+.home-slogan{
+	font-size: 25px;
+	margin: 0 0 10px 0;
+}

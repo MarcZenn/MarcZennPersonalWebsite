@@ -20112,29 +20112,173 @@
 	  _createClass(Homepage, [{
 	    key: "render",
 	    value: function render() {
-	      return(
-	        // Background image set to content-container.
+	      return _react2["default"].createElement(
+	        "section",
+	        { className: "homepage" },
+	        _react2["default"].createElement("div", { className: "overlay" }),
+	        _react2["default"].createElement("div", { className: "scanline" }),
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "content-container" },
-	          _react2["default"].createElement("div", { className: "smokescreen" }),
+	          { className: "wrapper" },
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "copy-container" },
+	            { className: "content clearfix" },
 	            _react2["default"].createElement(
-	              "h1",
-	              { className: "main-header" },
-	              "Sean De Clercq"
+	              "header",
+	              { className: "site clearfix" },
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "col one" },
+	                _react2["default"].createElement("img", { src: "http://www.mackrichardson.com/images/logo-v.jpg", alt: "591 Industries", width: "740", height: "729", id: "logo-v" })
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "col two" },
+	                _react2["default"].createElement(
+	                  "h4",
+	                  null,
+	                  "Marc Zenn ",
+	                  _react2["default"].createElement("br", null),
+	                  " ",
+	                  _react2["default"].createElement(
+	                    "b",
+	                    null,
+	                    "H"
+	                  ),
+	                  "euristically ",
+	                  _react2["default"].createElement(
+	                    "b",
+	                    null,
+	                    "E"
+	                  ),
+	                  "ncrypted ",
+	                  _react2["default"].createElement(
+	                    "b",
+	                    null,
+	                    "R"
+	                  ),
+	                  "eal-Time   ",
+	                  _react2["default"].createElement(
+	                    "b",
+	                    null,
+	                    "O"
+	                  ),
+	                  "perating ",
+	                  _react2["default"].createElement(
+	                    "b",
+	                    null,
+	                    "S"
+	                  ),
+	                  "ystem (HEROS)"
+	                ),
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "----------------------------------------"
+	                ),
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "HEROS v 1.0.0"
+	                ),
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "(c)2015 591 Industries"
+	                ),
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "- Server 591 -"
+	                )
+	              )
 	            ),
 	            _react2["default"].createElement(
-	              "button",
-	              { className: "btn" },
-	              "Business"
+	              "nav",
+	              { className: "site clear" },
+	              _react2["default"].createElement(
+	                "ul",
+	                null,
+	                _react2["default"].createElement(
+	                  "li",
+	                  null,
+	                  _react2["default"].createElement(
+	                    "a",
+	                    { href: "#", title: "" },
+	                    "Return Home"
+	                  )
+	                ),
+	                _react2["default"].createElement(
+	                  "li",
+	                  null,
+	                  _react2["default"].createElement(
+	                    "a",
+	                    { href: "#", title: "" },
+	                    "Our Clients"
+	                  )
+	                ),
+	                _react2["default"].createElement(
+	                  "li",
+	                  null,
+	                  _react2["default"].createElement(
+	                    "a",
+	                    { href: "#", title: "" },
+	                    "Contact Us"
+	                  )
+	                )
+	              )
 	            ),
 	            _react2["default"].createElement(
-	              "button",
-	              { className: "btn" },
-	              "Blog"
+	              "p",
+	              null,
+	              "System Administrator Integrated Message System (SAIMS)"
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              null,
+	              "System Administrator (SYSADM) - Mack Richardson"
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              null,
+	              "Welcome to the System Administrator Integrated Message System (SAIMS). Fill out the fields below and press the SUBMIT button. The system administrator (SYSADM) will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator's Office."
+	            ),
+	            _react2["default"].createElement("br", null),
+	            _react2["default"].createElement(
+	              "form",
+	              null,
+	              _react2["default"].createElement(
+	                "label",
+	                null,
+	                "Name >>"
+	              ),
+	              _react2["default"].createElement("input", { type: "text" }),
+	              _react2["default"].createElement("br", null),
+	              _react2["default"].createElement(
+	                "label",
+	                null,
+	                "Email >>"
+	              ),
+	              _react2["default"].createElement("input", { type: "text" }),
+	              _react2["default"].createElement("br", null),
+	              _react2["default"].createElement(
+	                "label",
+	                null,
+	                "Subject >>"
+	              ),
+	              _react2["default"].createElement("input", { type: "text" }),
+	              _react2["default"].createElement("br", null),
+	              _react2["default"].createElement(
+	                "label",
+	                null,
+	                "Message >>"
+	              ),
+	              _react2["default"].createElement("textarea", { id: "text", rows: "1" }),
+	              _react2["default"].createElement("br", null),
+	              _react2["default"].createElement("br", null),
+	              _react2["default"].createElement("br", null),
+	              _react2["default"].createElement("input", { type: "submit", value: "Submit" }),
+	              _react2["default"].createElement("input", { type: "submit", value: "Cancel" })
 	            )
 	          )
 	        )
