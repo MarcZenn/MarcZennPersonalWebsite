@@ -3,8 +3,7 @@ import React, {Component} from 'react';
 // Components
 import Homepage from './Home/Home.jsx';
 
-//Stylesheets
-// import style from './public/styles/main.scss';
+// Stylesheets
 require('../public/styles/app.scss');
 
 
@@ -20,6 +19,8 @@ export default App
 
 
 /* ----------------------------------------------------------------------------
+                  WEPBACK SERVE ASSETS LIVE FOR DEVELOPMENT
+
   - Run this command in terminal to hotload assets via react-hot-loader instead of
   just webpack-dev-server.
 

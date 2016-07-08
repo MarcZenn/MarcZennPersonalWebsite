@@ -7,7 +7,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   // tell webpack to take .jsx file and pass them to Bable for transpiling. The way you do this is
-  // with loaders.Having devtool option as `source-map` generates the source map files which helps to debug on development.
+  // with loaders. Having devtools option as `source-map` generates the source map files which helps to debug on development.
   devtool: 'source-map',
   module: {
     loaders: [
