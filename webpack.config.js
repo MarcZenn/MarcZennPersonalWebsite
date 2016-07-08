@@ -13,7 +13,7 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/, //RegEx that webpack uses to determine if .js/.jsx files should be transpiled.
-        loader: 'babel-loader', // Loader to be used. Must be installed.
+        loaders: ['react-hot', 'babel'], // Loaders to be used. Must be installed.
         exclude: /node_modules/ // exclude node modules.
       }
     ]
