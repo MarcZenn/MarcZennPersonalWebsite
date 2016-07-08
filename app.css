@@ -64,7 +64,7 @@ body {
 	padding: 0;
 }
 
-h1, h2, h3 h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	margin: 0;
 	text-transform: uppercase;
@@ -88,7 +88,7 @@ span {
 	animation: blink 1s infinite;
 }
 
-ul {
+.home-nav {
 	list-style: none;
 }
 
@@ -207,7 +207,14 @@ img.pip-hero {
 	width: 120px;
 }
 
-form {}
+.home-contact-form {
+	text-align: center;
+	border: 1px solid #00dd00;
+	padding: 10px;
+	border-style: dashed;
+	width: 75%;
+	margin: 0 auto;
+}
 
 label {
 	clear: left;
@@ -298,22 +305,35 @@ a.button:hover {
   zoom: 1;
 }
 
-.upper { text-transform: uppercase; }
-
-
+.upper {
+	text-transform: uppercase;
+}
 
 .contact-content {
 	position: relative;
 	z-index: 10;
-	padding: 20px;
+	padding: 40px 20px;
+	border-top: 1px solid rgba(0,221,0,1);
+	border-top-style: dashed;
+	text-align: left;
+}
+
+.contact-content h3{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contact-content p{
+	margin: 50px auto;
+	width: 75%;
 }
 
 .description-content{
-	margin: 20px 0;
-	text-align: left;
+	margin: 20px 0 0 0;
+	text-align: center;
 	position: relative;
 	z-index: 10;
-	padding: 20px 200px 20px 20px;
+	padding: 50px 20px 10px 20px;
 	width: 100%;
 	border-bottom: 1px solid rgba(0,221,0,1);
 	border-top: 1px solid rgba(0,221,0,1);
@@ -322,10 +342,30 @@ a.button:hover {
 }
 
 .description-content p{
-	margin: 20px 0;
+	margin: 50px auto;
+	width: 75%;
 }
 
-.home-slogan{
+.description-content div{
+	text-align: left;
+}
+
+.home-copy{
 	font-size: 25px;
 	margin: 0 0 10px 0;
+}
+
+.home-social-bar{
+	opacity: 0.7;
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+}
+
+.home-social-bar ul li{
+	text-align: center;
+	display: inline-block;
+	width: 33%;
 }
