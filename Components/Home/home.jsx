@@ -4,7 +4,8 @@ import React, {Component} from 'react'
 // TODO: think of a better slogan to place on home page
 // TODO: plan out the rest of the site
 // TODO: give credit to original designer somewhere.
-// TODO: make responsive
+// TODO: make mobile responsive
+// TODO: 'upgrading UI' spinner before client display work page
 
 // Stylesheets
 require('../../public/styles/home.scss');
@@ -19,8 +20,8 @@ class Homepage extends Component {
         <div className="wrapper">
           <nav className="site clear home-nav">
             <ul className="home-nav-list">
-              <li><a href="#" title="">Projects</a></li>
-              <li><a href="#" title="">Work</a></li>
+              <li><a href="#" title="">Companies</a></li>
+              <li><a href="#" title="">Works</a></li>
               <li><a href="#" title="">About</a></li>
               <li><a href="#" title="">Contact</a></li>
             </ul>
@@ -32,7 +33,7 @@ class Homepage extends Component {
                 <img src="./public/images/text-logo.png" className="text-logo" />
               </div>
               <div className="col two">
-                <h1><br /> <b>M</b>erits <b>A</b>nalysis <b>R</b>eal-Time <b>C</b>omputer (M.A.R.C.)</h1>
+                <h1><br /> <b>M</b>erits <b>A</b>nalysis <b>R</b>eal-Time <b>C</b>omputer (M.A.R.C)</h1>
                 <p className="home-copy">System Administrator (SYSADM) - Marc Zenn</p>
                 <p>---------------------------------------------------</p>
                 <p className="home-copy">Fanatic of all things tech, innovative & socially-conscience missions.</p>
@@ -43,8 +44,20 @@ class Homepage extends Component {
             <div className="description-content">
               <h2>Administrator Biography &amp; Official Under-Taking  (A.B.O.U.T)</h2>
               <div>
-                <p className="home-copy">I'm a deep thinker and an overtly anaylitcal person that, despite certain challenges, has managed to find a calling in life and attained the means to pursue it. These days I spend my time living and working in beautiful Boulder, Colorado enjoying my post-CU, (University of Colorado boulder), days as a web engineer. As a kid I felt an incredible pressure to succeed and support my family. To lift all tides, so to speak. Since then I've realized no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity.</p>
+                <p className="home-copy">I'm a deep thinker and an overtly anaylitcal person that, despite certain challenges, has managed to find a calling in life and attained the means to pursue it. These days I spend my time living and working in beautiful Boulder, Colorado enjoying my post-CU, (University of Colorado boulder), days as a web engineer.</p>
+                <p className="home-copy">As a kid I felt an incredible pressure to succeed and support my family. To lift all tides, so to speak. Since then I've realized no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity.</p>
                 <p className="home-copy">But true success also depends on how you define it. For me, success means the ability to gather disparate groups of people for the simple idea of social progress. There is a myriad of problems facing the world today. If I could have even a small role in solving at least one of those problems, I'd consider myself successful. </p>
+              </div>
+            </div>
+
+            <div className="work-content">
+              <h2>Web Orientated Recently Kompleted Singletons (W.O.R.K.S)</h2>
+              <div>
+                <ul className="works-list">
+                  <li><a href="http://www.kickfurther.com"><img src="./public/images/kf_logo_large.png" /></a></li>
+                  <li><a href="http://www.kickfurther.com"><img src="./public/images/" /></a></li>
+                  <li><a href="http://www.kickfurther.com"><img src="" /></a></li>
+                </ul>
               </div>
             </div>
 
