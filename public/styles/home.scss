@@ -160,7 +160,7 @@ span {
     margin: 0 0 80px 0;
   	text-transform: uppercase;
 
-    .text-logo{
+    img{
       display: block;
     	height: auto;
     	margin: 0 auto;
@@ -340,6 +340,13 @@ p {
 .home-footer {
 	border-top: 1px solid rgba(0,221,0,1);
 	border-top-style: dashed;
+	width: 100%;
+	padding: 20px 50px;
+
+	img{
+		width: 50%;
+		
+	}
 }
 
 .home-nav-list {

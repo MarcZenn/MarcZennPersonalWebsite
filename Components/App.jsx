@@ -29,5 +29,5 @@ export default App
   - If you prefer to use just webpack and webpack-dev-server alone then you can run
   this command in the terminal.
 
-  webpack-dev-server --hotload --inline
+  npm install react-hot-loader --save-dev
 -------------------------------------------------------------------------------- */

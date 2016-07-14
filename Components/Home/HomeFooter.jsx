@@ -5,6 +5,9 @@ class HomeFooter extends Component {
  render (){
    return (
      <footer className="home-footer">
+      <div>
+        <img src="./public/images/text-logo.png"  />
+      </div>
        <div className="home-social-bar">
          <ul>
            <li><a href="https://github.com/MarcZenn">Github</a></li>
