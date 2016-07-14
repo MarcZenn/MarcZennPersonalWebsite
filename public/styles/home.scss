@@ -171,6 +171,15 @@ span {
 	z-index: 10;
 	width: auto;
 	text-align: center;
+
+	h1{
+		margin: 0 0 10px 0;
+	}
+
+	.slogan {
+		font-size: 30px;
+		margin: 0 0 10px 0;
+	}
 }
 
 .wrapper {
@@ -272,7 +281,7 @@ img.pip-hero {
   }
 }
 
-.description-content, .work-content{
+.description-content {
 	margin: 20px 0 0 0;
 	text-align: center;
 	position: relative;
@@ -294,34 +303,6 @@ img.pip-hero {
   }
 }
 
-.work-content{
-  background-image: url('/images/green_circuits.jpg');
-  background-repeat: no-repeat;
-  background-size:contain;
-  border-top: none;
-  position: relative;
-  padding: 20px;
-
-  .works-list{
-    margin: 50px auto;
-    border: 1px solid rgba(0,221,0,1);
-    border-style: dashed;
-    width: 65%;
-    padding: 0;
-
-    li{
-      display: inline-block;
-      margin: 0;
-      width: 33%;
-
-      img{
-        width: 100%;
-        height: 95px;
-      }
-    }
-  }
-}
-
 .contact-content {
 	position: relative;
 	z-index: 10;
@@ -330,7 +311,7 @@ img.pip-hero {
 	border-top-style: dashed;
 	text-align: left;
 
-  h3{
+  h2{
     margin: 0 auto;
   	text-align: center;
   }
