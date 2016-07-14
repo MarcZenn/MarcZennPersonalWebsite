@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 
-
 class HomeNav extends Component {
   render(){
     return(

@@ -7,8 +7,9 @@ import React, {Component} from 'react'
 // TODO: 'upgrading UI' spinner before client display work page
 // TODO: incorporate google analytics to track site hits.
 
-// Components 
+// Components
 import HomeNav from './HomeNav.jsx';
+import HomeFooter from './HomeFooter.jsx';
 
 // Stylesheets
 require('../../public/styles/home.scss');
@@ -62,13 +63,7 @@ class Homepage extends Component {
               </form>
             </div>
 
-            <div className="home-social-bar">
-              <ul>
-                <li><a href="https://github.com/MarcZenn">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/marcosmartinez2">LinkedIn</a></li>
-                <li><a href="">Google+</a></li>
-              </ul>
-            </div>
+            <HomeFooter />
 
           </div>
         </div>
