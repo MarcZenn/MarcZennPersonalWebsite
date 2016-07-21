@@ -7,6 +7,9 @@ class HomeFooter extends Component {
      <footer className="home-footer">
       <div>
         <img src="./public/images/text-logo.png"  />
+        <a class="widget ng-scope" ng-href="https://www.thumbtack.com/-Boulder-CO/service/2512017" target="_blank" href="https://www.thumbtack.com/-Boulder-CO/service/2512017">
+          <img ng-src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/white/2016.svg" src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/white/2016.svg" />
+        </a>
       </div>
        <div className="home-social-bar">
          <ul>
