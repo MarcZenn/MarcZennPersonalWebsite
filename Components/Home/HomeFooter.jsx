@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 
+// Stylesheets
+// import {Grid, Row, Col} from 'react-bootstrap'
+// import 'bootstrap/dist/css/bootstrap.css';
+
 
 class HomeFooter extends Component {
  render (){
