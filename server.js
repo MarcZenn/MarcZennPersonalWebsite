@@ -1,11 +1,11 @@
-// small dev server
-// import webpack from 'webpack' as webpack;
+/*----------------------------------------------------------------------------
+                  SMALL FRONT-END DEV ENV SERVER INSTANCE
+                  - using ES5 syntax for extension .js-
+--------------------------------------------------------------------------------*/
+
 var webpack = require('webpack');
 var WebPackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config');
-
-// import 'webpack-dev-server' as WebPackDevServer;
-// import './webpack.config' as config;
 
 
 new WebPackDevServer(webpack(config), {
