@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
 
+// TODO: plan out the rest of the site
+// TODO: give credit to original designer somewhere.
+// TODO: make mobile responsive w/ materialize or bootstrap
+// TODO: 'upgrading UI' spinner before client display work page
+// TODO: incorporate google analytics to track site hits.
+
 // Components
-import Homepage from './Home/Home.jsx';
+import Homepage from '../Components/Home/Home.jsx';
 
 // Stylesheets
 require('../public/styles/app.scss');
@@ -24,10 +30,6 @@ export default App
   - Run this command in terminal to hotload assets via react-hot-loader instead of
   just webpack-dev-server.
 
-  ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot
+  npm start
 
-  - If you prefer to use just webpack and webpack-dev-server alone then you can run
-  this command in the terminal.
-
-  npm install react-hot-loader --save-dev
 -------------------------------------------------------------------------------- */

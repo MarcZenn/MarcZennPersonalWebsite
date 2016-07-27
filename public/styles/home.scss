@@ -182,8 +182,8 @@ img.pip-hero {
 	border: 1px solid #00dd00;
 	padding: 10px;
 	border-style: dashed;
-	width: 75%;
-	margin: 0 auto;
+	width: 80%;
+	margin: 20px auto;
 
   label{
     clear: left;
@@ -278,7 +278,7 @@ img.pip-hero {
   }
   p{
     margin: 50px auto;
-  	width: 50%;
+  	width: 75%;
   }
 }
 
@@ -340,12 +340,15 @@ p {
 .home-footer {
 	border-top: 1px solid rgba(0,221,0,1);
 	border-top-style: dashed;
-	width: 100%;
+	// width: 100%;
 	padding: 20px 50px;
+	position: relative;
+	z-index: 10;
 
 	img{
-		width: 50%;
-		
+		width: 300px;
+		height: 200px;
+		margin: 20px 0;
 	}
 }
 
@@ -390,5 +393,4 @@ p {
 .home-social-bar{
 	border-top: 1px solid rgba(0,221,0,1);
 	border-top-style: dashed;
-	border-bottom: none;
 }
