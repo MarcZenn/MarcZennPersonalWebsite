@@ -1,6 +1,8 @@
+// Webpack is required here in order to call its HotModuleReplacementPlugin() method which is synonmous to the --hot command when initiating webpack-dev-server --inline in terminal.
 var path = require('path');
 var webpack = require('webpack');
-// Export a configuration object
+
+// Exported but not sure where this is being imported?
 module.exports = {
   // First property references the entry file. Then specifies the output file as well as configuration for webpack hot reload of assets.
   entry: [
@@ -17,7 +19,7 @@ module.exports = {
   },
   // tell webpack to take .jsx file and pass them to Bable for transpiling. The way you do this is
   // with loaders. Having devtools option as `source-map` generates the source map files which helps to debug on development. You can simple tack on more loaders as needed like the SASS loader below.
-  devtool: 'source-map',
+  devtool: 'eval',
   module: {
     loaders: [
       {

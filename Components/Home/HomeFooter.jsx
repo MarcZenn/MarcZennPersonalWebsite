@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
-// Stylesheets
-import {Grid, Row, Col} from 'react-bootstrap/lib'
+import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 
 class HomeFooter extends Component {
@@ -31,13 +30,6 @@ class HomeFooter extends Component {
         </Row>
       </Grid>
 
-       {/*<div className="home-social-bar">
-         <ul>
-           <li><a href="https://github.com/MarcZenn">Github</a></li>
-           <li><a href="https://www.linkedin.com/in/marcosmartinez2">LinkedIn</a></li>
-           <li><a href="">Google+</a></li>
-         </ul>
-       </div>*/}
      </footer>
    )
  }

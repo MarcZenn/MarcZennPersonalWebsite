@@ -9,6 +9,8 @@ import HomeFooter from './HomeFooter.jsx';
 require('../../public/styles/home.scss');
 
 
+
+
 class Homepage extends Component {
   render(){
     return (
@@ -39,6 +41,14 @@ class Homepage extends Component {
                 <p className="home-copy">I would say that I'm a somewhat of a ponderer (some would say overtly analytical perhaps?) that despite a myriad of challenges have managed to find a calling in life and am now working hard to bring it to fruition. These days I spend my time living and working in beautiful Boulder, Colorado enjoying most of my days as a web engineer and startup enthusiast. The rest of the time I'm pursuing the improbable or impossible.</p>
                 <p className="home-copy">When I was younger I felt this incredible pressure to not just succeed but to succeed in such a way that there would be no limit to how many people I could help in one way or another. Since then I've realized no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity. That success depends on how you define it as much as how you attain it.</p>
               </div>
+            </div>
+
+            <div className="home-social-bar">
+              <ul>
+                <li><a href="https://github.com/MarcZenn">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/marcosmartinez2">LinkedIn</a></li>
+                <li><a href="">Google+</a></li>
+              </ul>
             </div>
 
 

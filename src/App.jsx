@@ -1,10 +1,16 @@
-import React, {Component} from 'react';
-
 // TODO: plan out the rest of the site
 // TODO: give credit to original designer somewhere.
 // TODO: make mobile responsive w/ materialize or bootstrap
 // TODO: 'upgrading UI' spinner before client display work page
 // TODO: incorporate google analytics to track site hits.
+
+
+import React, {Component} from 'react';
+
+
+// Bootstrap Layouts
+// import {Col, Row, Grid} from 'react-bootstrap/lib';
+
 
 // Components
 import Homepage from '../Components/Home/Home.jsx';

@@ -363,6 +363,7 @@ p {
 	border-bottom: 1px solid rgba(0,221,0,1);
 	border-bottom-style: dashed;
   margin: 0 0 40px 0;
+	padding: 25px 0;
 
   ul{
     padding: 0;
@@ -391,6 +392,8 @@ p {
 }
 
 .home-social-bar{
-	border-top: 1px solid rgba(0,221,0,1);
-	border-top-style: dashed;
+		border-top: 1px solid rgba(0,221,0,1);
+		border-top-style: dashed;
+		border-bottom: none;
+		margin: 0;
 }
