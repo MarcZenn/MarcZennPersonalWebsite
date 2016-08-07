@@ -9,7 +9,7 @@ import React, {Component} from 'react';
 
 
 // Components
-import Homepage from '../Components/Home/Home.jsx';
+import Homepage from '../Components/Home/Homepage.jsx';
 
 // Stylesheets
 require('../public/styles/app.scss');
