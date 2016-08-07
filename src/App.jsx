@@ -8,10 +8,6 @@
 import React, {Component} from 'react';
 
 
-// Bootstrap Layouts
-// import {Col, Row, Grid} from 'react-bootstrap/lib';
-
-
 // Components
 import Homepage from '../Components/Home/Home.jsx';
 
