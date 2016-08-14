@@ -29,8 +29,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
-        include: path.join(__dirname, 'public') // only load scss files from inside the public folder.
+        loaders:['style', 'css?sourceMap', 'sass?sourceMap'] // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
       }
     ]
   },
