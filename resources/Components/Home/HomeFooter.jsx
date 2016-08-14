@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 
+
+// Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
-
+// React Render
 class HomeFooter extends Component {
  render (){
    return (
@@ -36,7 +38,6 @@ class HomeFooter extends Component {
           </Col>
         </Row>
       </Grid>
-
      </footer>
    )
  }

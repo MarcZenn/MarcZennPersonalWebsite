@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 
+
+// Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
+
+// React Render
 class HomeNav extends Component {
   render(){
     return(

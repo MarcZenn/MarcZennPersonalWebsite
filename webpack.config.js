@@ -8,7 +8,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:8080', // webpack-dev-server host and port
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-    './src/index', // actual entry point.
+    './resources/src/index', // actual entry point.
   ],
   output: {
     path: __dirname,
@@ -30,7 +30,7 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
-        include: path.join(__dirname, 'public') // only load scss files from inside the public folder.
+        include: path.join(__dirname, '/resources/assets/scss') // only load scss files from inside the scss folder inside resources/assets.
       }
     ]
   },

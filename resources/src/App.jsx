@@ -11,9 +11,9 @@ import React, {Component} from 'react';
 import Homepage from '../Components/Home/Homepage.jsx';
 
 // Stylesheets
-require('../public/styles/app.scss');
+require('../assets/scss/app.scss');
 
-
+// React Render
 class App extends Component {
   render(){
     return (
@@ -26,7 +26,7 @@ export default App
 
 
 /* ----------------------------------------------------------------------------
-                  WEPBACK SERVE ASSETS LIVE FOR DEVELOPMENT
+                          WEPBACK SERVE ASSETS LOCALLY
 
   - Run this command in terminal to hotload assets via react-hot-loader instead of
   just webpack-dev-server.

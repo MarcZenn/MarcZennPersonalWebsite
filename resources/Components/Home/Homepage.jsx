@@ -8,11 +8,9 @@ import HomeFooter from './HomeFooter.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 // Stylesheets
-require('../../public/styles/home.scss');
+require('../../assets/scss/home.scss');
 
-
-
-
+// React Render
 class Homepage extends Component {
   render(){
     return (

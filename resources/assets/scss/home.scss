@@ -164,7 +164,7 @@ span {
       display: block;
     	height: auto;
     	margin: 0 auto;
-    	width: 780px;
+    	max-width: 75%;
     }
   }
 }
@@ -176,6 +176,33 @@ img.pip-hero {
 	margin: 5px 10px 5px 0;
 	width: 120px;
 }
+
+.description-content {
+	margin: 20px 0 0 0;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	padding: 50px 20px 10px 20px;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,221,0,1);
+	border-top: 1px solid rgba(0,221,0,1);
+	border-top-style: dashed;
+	border-bottom-style: dashed;
+
+	h2 {
+		font-size: 35px;
+	}
+
+  p{
+  	margin: 50px auto;
+  	width: 50%;
+  }
+
+  div{
+  	text-align: left;
+  }
+}
+
 
 .home-contact-form {
 	text-align: center;
@@ -239,32 +266,6 @@ img.pip-hero {
   	color: #383838;
   	opacity: 0.8;
     cursor: pointer;
-  }
-}
-
-.description-content {
-	margin: 20px 0 0 0;
-	text-align: center;
-	position: relative;
-	z-index: 10;
-	padding: 50px 20px 10px 20px;
-	width: 100%;
-	border-bottom: 1px solid rgba(0,221,0,1);
-	border-top: 1px solid rgba(0,221,0,1);
-	border-top-style: dashed;
-	border-bottom-style: dashed;
-
-	h2 {
-		font-size: 35px;
-	}
-
-  p{
-  	margin: 50px auto;
-  	width: 50%;
-  }
-
-  div{
-  	text-align: left;
   }
 }
 
@@ -359,7 +360,7 @@ p {
 	ul{
 		li{
 			padding: 10px;
-			
+
 			a {
 				color: rgba(0,221,0,1);
 			}
