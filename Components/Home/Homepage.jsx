@@ -5,6 +5,8 @@ import React, {Component} from 'react'
 import HomeNav from './HomeNav.jsx';
 import HomeFooter from './HomeFooter.jsx';
 
+import {Col, Row, Grid} from 'react-bootstrap/lib';
+
 // Stylesheets
 require('../../public/styles/home.scss');
 
@@ -43,13 +45,21 @@ class Homepage extends Component {
               </div>
             </div>
 
-            <div className="home-social-bar">
-              <ul>
-                <li><a href="https://github.com/MarcZenn">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/marcosmartinez2">LinkedIn</a></li>
-                <li><a href="">Google+</a></li>
-              </ul>
-            </div>
+            <Row>
+                <div className="home-social-bar">
+                  <ul>
+                    <Col md={4} xs={12}>
+                      <li><a href="https://github.com/MarcZenn">Github</a></li>
+                    </Col>
+                    <Col md={4} xs={12}>
+                      <li><a href="https://www.linkedin.com/in/marcosmartinez2">LinkedIn</a></li>
+                    </Col>
+                    <Col md={4} xs={12}>
+                      <li><a href="">Google+</a></li>
+                    </Col>
+                  </ul>
+                </div>
+            </Row>
 
 
             <div className="contact-content">
