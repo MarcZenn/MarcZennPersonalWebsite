@@ -1,6 +1,5 @@
 // TODO: plan out the rest of the site
 // TODO: give credit to original designer somewhere.
-// TODO: make mobile responsive w/ materialize or bootstrap
 // TODO: 'upgrading UI' spinner before client display work page
 // TODO: incorporate google analytics to track site hits.
 
