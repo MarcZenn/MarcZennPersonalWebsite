@@ -11,7 +11,7 @@ class HomeFooter extends Component {
         <Row className="show-grid">
           <Col md={ 4 } xs={ 12 } >
             <div>
-              <img src="public/images/symbol-logo.png"  />
+              <img src="Public/images/symbol-logo.png"  />
             </div>
           </Col>
           <Col md={ 8 } xs={ 12 } >
