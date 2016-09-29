@@ -4,17 +4,18 @@ import HomeNav from './HomeNav.jsx';
 import HomeFooter from './HomeFooter.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
-// Stylesheets
+// Require ONLY the relevant Stylesheets
 require('../../assets/scss/home.scss');
+require('../../assets/scss/terminal_effect.scss');
 
 // React Render
 class Homepage extends Component {
   render(){
     return (
       <section className="homepage-content">
-        <div className="overlay"></div>
-        <div className="scanline"></div>
-        <div className="wrapper">
+        <div className="terminal-overlay"></div>
+        <div className="terminal-scanline"></div>
+        <div className="fallout-wrapper">
 
           <HomeNav />
 
