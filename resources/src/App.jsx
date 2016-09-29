@@ -7,11 +7,10 @@
 // TODO: setup http secure protocol (HTTPS)
 
 
-import React, {Component} from 'react';
-
-
 // Components
+import React, {Component} from 'react';
 import Homepage from '../Components/Home/Homepage.jsx';
+
 
 // Stylesheets
 require('../assets/scss/app.scss');
@@ -20,7 +19,10 @@ require('../assets/scss/app.scss');
 class App extends Component {
   render(){
     return (
-    <Homepage />
+    // <Homepage />
+    <section className="main-body">
+      {this.props.children}
+    </section>
     )
   }
 }

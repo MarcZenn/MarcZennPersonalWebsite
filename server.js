@@ -11,7 +11,7 @@ var config = require('./webpack.config');
 new WebPackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
-  historyApiFallback: true
+  historyApiFallback: false
 }).listen(process.env.PORT || 8080, function(err, result) {
   if (err) {
     return console.log(err);
