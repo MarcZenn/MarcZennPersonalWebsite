@@ -1,10 +1,7 @@
-import React, {Component} from 'react'
-
-
 // Components
+import React, {Component} from 'react'
 import HomeNav from './HomeNav.jsx';
 import HomeFooter from './HomeFooter.jsx';
-
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 // Stylesheets
@@ -38,8 +35,8 @@ class Homepage extends Component {
             <div className="description-content">
               <h2>Administrator Biography &amp; Official Under-Taking  (A.B.O.U.T)</h2>
               <div>
-                <p className="home-copy">I would say that I'm a somewhat of a ponderer (some would say overtly analytical perhaps?) that despite a myriad of challenges have managed to find a calling in life and am now working hard to bring it to fruition. These days I spend my time living and working in beautiful Boulder, Colorado enjoying most of my days as a web engineer and startup enthusiast. The rest of the time I'm pursuing the improbable or impossible.</p>
-                <p className="home-copy">When I was younger I felt this incredible pressure to not just succeed but to succeed in such a way that there would be no limit to how many people I could help in one way or another. Since then I've realized no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity. That success depends on how you define it as much as how you attain it.</p>
+                <p className="home-copy">When you start life at the bottom of a well you have to climb the usual ladders several rungs at a time. Nothing comes easy, there's no such thing as the expected outcome, plans always go awry and if you're not careful you can easily become a victim of others' expectations. A victim of "you can't do that" or "I doubt you'll get there". But these perspectives are false obstacles. Ironically if I hadn't encountered such circumstances in my youth I don't think I'd be where I am today. False obstacles can give way challenges, and challenges are meant to be overcome!</p>
+                <p className="home-copy">These days I spend my time living and working in beautiful Boulder, Colorado enjoying most of my days as a web engineer and startup enthusiast. The rest of the time I'm pursuing the improbable or the impossible. When I was younger I felt this incredible pressure to not just succeed but to succeed in such a way that there would be little limit to how many suffering people I could help in some regard. Since then I've realized no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity. That success depends on how you define it as much as how you attain it.</p>
               </div>
             </div>
 

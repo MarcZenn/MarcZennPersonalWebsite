@@ -1,7 +1,6 @@
+// Components
 import React, {Component} from 'react';
 
-
-// Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 // React Render
