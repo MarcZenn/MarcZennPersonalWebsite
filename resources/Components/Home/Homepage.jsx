@@ -10,7 +10,7 @@ import {Col, Row, Grid} from 'react-bootstrap/lib';
 require('../../assets/scss/home.scss');
 require('../../../public/stylesheets/fallout.scss');
 
-// React Render
+
 class Homepage extends Component {
   render(){
     return (

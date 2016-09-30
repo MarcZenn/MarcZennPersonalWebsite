@@ -7,6 +7,18 @@ import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute} from 'react-router';
 import routes from '../../app/routes.js';
 
+// React Google Analytics - Initialize Unique Tracking Number & output additional feedback to console via debug: true.
+var ReactGA = require('react-ga');
+ReactGA.initialize('UA-84944356-1', {
+  debug: true,
+});
+
+// React Google Analytics - Log Page View
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
 // Components
 import App from './App.jsx'; // Import the outermost Parent Component.
 
@@ -14,6 +26,6 @@ import App from './App.jsx'; // Import the outermost Parent Component.
 
 // Tell the React virtual DOM where to mount the App Component.
 ReactDOM.render(
-  <Router routes={routes} />,
+  <Router routes={routes} onUpdate={logPageView} history={hashHistory} />,
   document.getElementById('root')
 )
