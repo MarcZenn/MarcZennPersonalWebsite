@@ -52,9 +52,7 @@
 
 .home-contact-form {
 	text-align: center;
-	border: 1px solid #00dd00;
 	padding: 10px;
-	border-style: dashed;
 	width: 80%;
 	margin: 20px auto;
 
@@ -126,12 +124,14 @@
   h2{
     margin: 0 auto 20px auto;
   	text-align: center;
-		font-size: 35px;
+		font-size: 45px;
   }
 
   p{
     margin: 50px auto;
-  	width: 75%;
+		font-size: 25px;
+		font-family: 'VT323', Courier;
+		text-align: left;
   }
 }
 
@@ -205,7 +205,11 @@ p {
 			padding: 10px;
 
 			a {
-				color: rgba(0,221,0,1);
+				color: #FFC519;
+
+				&:hover {
+					color: #FF0000;
+				}
 			}
 		}
 	}
@@ -231,9 +235,11 @@ p {
 	      display: inline;
 	      text-align: center;
 	      width: 25%;
+				border: none;
 
 		    a {
-		    	color: white;
+		    	color: #FFC519;
+					font-size: 35px;
 		    	text-decoration: none;
 		    }
 		    a:before{
@@ -246,6 +252,7 @@ p {
 		    }
 		    a:hover {
 		    	color: #FF0000;
+					text-decoration: none;
 		    }
 			}
 			@media (min-width: 300px) and (max-width: 992px) {
@@ -265,6 +272,8 @@ p {
 }
 
 .home-social-bar{
+		position: relative;
+		z-index: 100;
 		border-top: 1px solid rgba(0,221,0,1);
 		border-top-style: dashed;
 		border-bottom: none;

@@ -1,5 +1,7 @@
-// Components
+// import React
 import React, {Component} from 'react'
+
+// Components
 import HomeNav from './HomeNav.jsx';
 import HomeFooter from './HomeFooter.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';

@@ -1,20 +1,24 @@
 // import React
 import React, {Component} from 'react';
 
+
+// Components
+import {Col, Row, Grid} from 'react-bootstrap/lib';
+
 // Require ONLY the relevant Stylesheets
 require('../../../public/stylesheets/fallout.scss');
 require('../../../public/stylesheets/alignments.scss');
-require('../../assets/scss/error_pages.scss');
 
-class PageNotFound extends Component {
+
+class WorkIndex extends Component {
   render() {
-    return (
+    return(
       <section className="fallout-wrapper">
         <div className="terminal-overlay"></div>
         <div className="terminal-scanline"></div>
         <div className="fallout-wrapper">
-          <div className="text-center flexbox-aligner copy-404">
-            <h1 className="flexbox-aligner-item">Server 0089 Response: <br /><span>404</span> <br /> you requested a page that does not exist. SYSADMIN has been notified.</h1>
+          <div className="text-center flexbox-aligner">
+            <h1 className="flexbox-aligner-item">Server 0089 Response: <br /> page currently under construction. SYSADMIN has been notified.</h1>
           </div>
         </div>
       </section>
@@ -23,8 +27,9 @@ class PageNotFound extends Component {
 }
 
 
-PageNotFound.propTypes = {
+WorkIndex.propTypes = {
   // propTypes
 }
 
-export default PageNotFound
+
+export default WorkIndex

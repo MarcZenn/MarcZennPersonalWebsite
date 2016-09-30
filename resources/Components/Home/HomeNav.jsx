@@ -1,8 +1,11 @@
+// import React
 import React, {Component} from 'react';
 
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
+import {Link} from 'react-router';
+
 
 
 // React Render
@@ -14,16 +17,16 @@ class HomeNav extends Component {
           <Grid>
             <Row className="show-grid">
               <Col md={3} xs={12}>
-                <li><a href="#" title="">Companies</a></li>
+                <li><Link to="/companies">Companies</Link></li>
               </Col>
               <Col md={3} xs={12}>
-                <li><a href="#" title="">Works</a></li>
+                <li><Link to="/works">Work</Link></li>
               </Col>
               <Col md={3} xs={12}>
-                <li><a href="#" title="">About</a></li>
+                <li><Link to="/about">About</Link></li>
               </Col>
               <Col md={3} xs={12}>
-                <li><a href="#" title="">Contact</a></li>
+                <li><Link to="/contact">Contact</Link></li>
               </Col>
             </Row>
           </Grid>
