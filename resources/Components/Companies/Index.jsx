@@ -19,7 +19,7 @@ class CompaniesIndex extends Component {
         <div className="terminal-scanline"></div>
         <div className="fallout-wrapper">
           <div className="text-center flexbox-aligner">
-            <h1 className="flexbox-aligner-item">Server 0089 Response: <br /> page currently under construction. SYSADMIN has been notified.</h1>
+            <h1 className="flexbox-aligner-item">Server 0089 Response: <br /> page currently under construction.</h1>
           </div>
         </div>
       </section>
