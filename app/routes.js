@@ -2,11 +2,11 @@
 
 // Components
 import React from 'react';
-// 'hashHistory' is whatever the user types in the browser after the domain
-import {Router, Route, IndexRoute} from 'react-router';
+
+import {Router, Route, IndexRoute, hashHistory} from 'react-router'; // 'hashHistory' is whatever the user types in the browser after the domain.
 import App from '../resources/src/App.jsx';
 import Homepage from '../resources/Components/Home/Homepage.jsx';
-import Notfound from '../resources/Components/Notfound/404.jsx';
+import Notfound from '../resources/Components/ErrorPages/404.jsx';
 
 
 export default (

@@ -19,7 +19,6 @@ require('../assets/scss/app.scss');
 class App extends Component {
   render(){
     return (
-    // <Homepage />
     <section className="main-body">
       {this.props.children}
     </section>

@@ -14,7 +14,6 @@ import App from './App.jsx'; // Import the outermost Parent Component.
 
 // Tell the React virtual DOM where to mount the App Component.
 ReactDOM.render(
-  // <App />,
   <Router routes={routes} />,
   document.getElementById('root')
 )
