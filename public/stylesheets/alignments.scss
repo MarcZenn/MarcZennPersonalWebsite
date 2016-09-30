@@ -1,0 +1,20 @@
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flexbox-aligner {
+  display: flex;
+  align-items: center;
+  min-height: 20em;
+  justify-content: center;
+}
+
+.flexbox-aligner-item {
+  width: 100%;
+  display: block;
+  flex: 1;
+}

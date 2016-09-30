@@ -6,12 +6,12 @@ import React from 'react';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router'; // 'hashHistory' is whatever the user types in the browser after the domain.
 import App from '../resources/src/App.jsx';
 import Homepage from '../resources/Components/Home/Homepage.jsx';
-import Notfound from '../resources/Components/ErrorPages/404.jsx';
+import PageNotFound from '../resources/Components/ErrorPages/404.jsx';
 
 
 export default (
   <Router path='/' component={App}>
     <IndexRoute component={Homepage}/>
-    <Route path='*' component={Notfound}/>
+    <Route path='*' component={PageNotFound}/>
   </Router>
 );

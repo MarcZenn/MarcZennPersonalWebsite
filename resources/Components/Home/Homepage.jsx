@@ -6,7 +6,7 @@ import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 // Require ONLY the relevant Stylesheets
 require('../../assets/scss/home.scss');
-require('../../assets/scss/terminal_effect.scss');
+require('../../../public/stylesheets/fallout.scss');
 
 // React Render
 class Homepage extends Component {
@@ -28,7 +28,7 @@ class Homepage extends Component {
                 <h1><br /> <b>M</b>erits <b>A</b>nalysis <b>R</b>eal-Time <b>C</b>omputer (M.A.R.C)</h1>
                 <p>---------------------------------------------------</p>
                 <p className="slogan">- Web Engineer, Tinkerer, Aspiring Social-Entrepreneur -</p>
-                <p className="home-copy">System Administrator (SYSADM) - Marc Zenn</p>
+                <p className="home-copy">System Administrator (SYSADMIN) - Marc Zenn</p>
                 <p className="home-copy">Version 1.0.0 - Server 0089</p>
               </div>
             </header>
@@ -59,9 +59,9 @@ class Homepage extends Component {
 
 
             <div className="contact-content">
-              <h2>Contact</h2>
               <form className="home-contact-form">
-                <p>Fill out the fields below and press the SUBMIT button. The system administrator (SYSADM) will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator's Office.</p>
+                <h2>Contact the System Administrator (SYSADMIN)</h2>
+                <p>Fill out the fields below and press the SUBMIT button. The SYSADMIN will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator's Office.</p>
                 <label>Name >></label><input type="text" /><br />
                 <label>Email >></label><input type="text" /><br />
                 <label>Subject >></label><input type="text" /><br />

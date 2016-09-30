@@ -9,7 +9,6 @@
 
 // Components
 import React, {Component} from 'react';
-import Homepage from '../Components/Home/Homepage.jsx';
 
 
 // Stylesheets
