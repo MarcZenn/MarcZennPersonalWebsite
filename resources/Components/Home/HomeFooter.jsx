@@ -35,6 +35,11 @@ class HomeFooter extends Component {
               </Row>
               </div>
           </Col>
+          <Col md={ 8 } xs={ 12 } >
+            <div>
+              <p></p>
+            </div>
+          </Col>
         </Row>
       </Grid>
      </footer>
