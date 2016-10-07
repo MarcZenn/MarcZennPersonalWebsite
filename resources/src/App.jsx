@@ -3,6 +3,8 @@
 // TODO: hookup contact form
 // TODO: add form validation for contact form
 // TODO: setup http secure protocol (HTTPS)
+// TODO: setup ads on the site.
+
 
 
 // Components
