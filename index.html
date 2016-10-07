@@ -2,10 +2,12 @@
                       ADHERING TO SYMANTEC HTML6
 ========================================================================== -->
 <!DOCTYPE html>
-<html>
+<html class="no-fouc">
 <head>
-  <title>Marc Zenn</title>
+  <style type="text/css">.no-fouc{display: none;}</style> <!-- Notice the class "no-fouc" on the html/body tags. We set the entire html tag to hidden immediately on page load and then override this styling at the bottom of the body with a simple script. This helps in fighting FOUC! http://www.techrepublic.com/blog/web-designer/how-to-prevent-flash-of-unstyled-content-on-your-websites/ -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+  <title>Marc Zenn</title>
 
   <!-- Favicon 'public/favicons' -->
   <link rel="apple-touch-icon" sizes="57x57" href="public/favicons/apple-icon-57x57.png">
@@ -29,5 +31,6 @@
 <body>
   <div id='root'></div>
   <script type="text/javascript" src="bundle.js"></script>
+  <script>(function(){document.getElementsByClassName('no-fouc')[0].className = 'fouc-fought';})();</script>
 </body>
 </html>

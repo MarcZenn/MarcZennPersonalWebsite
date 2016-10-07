@@ -1,6 +1,5 @@
 // TODO: plan out the rest of the site
 // TODO: give credit to original designer somewhere.
-// TODO: 'upgrading UI' spinner before client display work page
 // TODO: hookup contact form
 // TODO: add form validation for contact form
 // TODO: setup http secure protocol (HTTPS)

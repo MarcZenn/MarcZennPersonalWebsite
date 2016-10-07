@@ -1,7 +1,9 @@
-// Components
+// import React
 import React, {Component} from 'react';
 
+// Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
+import {Link} from 'react-router';
 
 // React Render
 class HomeFooter extends Component {
@@ -10,35 +12,31 @@ class HomeFooter extends Component {
      <footer className="home-footer">
       <Grid>
         <Row className="show-grid">
-          <Col md={ 4 } xs={ 12 } >
+          <Col md={ 3 } xs={ 12 } >
             <div>
               <img src="/Public/Images/symbol-logo.png"  />
+              <p>&copy; 2016 MARC ZENN ALL RIGHTS RESERVED</p>
             </div>
           </Col>
-          <Col md={ 8 } xs={ 12 } >
+          <Col md={ 9 } xs={ 12 } >
               <div className="home-footer-list">
               <Row>
                 <ul>
-                  <Col xs={ 12 }>
-                    <li><a href="#" title="">Companies</a></li>
+                  <Col xs={ 3 }>
+                    <li><Link to="/companies">Companies</Link></li>
                   </Col>
-                  <Col  xs={ 12 }>
-                    <li><a href="#" title="">Works</a></li>
+                  <Col  xs={ 3 }>
+                    <li><Link to="/works">Work</Link></li>
                   </Col>
-                  <Col  xs={ 12 }>
-                    <li><a href="#" title="">About</a></li>
+                  <Col  xs={ 3 }>
+                    <li><Link to="/about">About</Link></li>
                   </Col>
-                  <Col  xs={ 12 }>
-                    <li><a href="#" title="">Contact</a></li>
+                  <Col  xs={ 3 }>
+                    <li><Link to="/contact">Contact</Link></li>
                   </Col>
                 </ul>
               </Row>
               </div>
-          </Col>
-          <Col md={ 8 } xs={ 12 } >
-            <div>
-              <p></p>
-            </div>
           </Col>
         </Row>
       </Grid>

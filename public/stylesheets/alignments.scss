@@ -9,7 +9,7 @@
 .flexbox-aligner {
   display: flex;
   align-items: center;
-  min-height: 20em;
+  min-height: 100vh;
   justify-content: center;
 }
 
@@ -17,4 +17,8 @@
   width: 100%;
   display: block;
   flex: 1;
+}
+
+.up-down-padder {
+  padding: 20px 0;
 }

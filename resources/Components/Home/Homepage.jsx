@@ -18,9 +18,7 @@ class Homepage extends Component {
         <div className="terminal-overlay"></div>
         <div className="terminal-scanline"></div>
         <div className="fallout-wrapper">
-
           <HomeNav />
-
           <div className="home-content clearfix">
             <header className="site clearfix home-header">
               <div className="col one">
@@ -34,15 +32,13 @@ class Homepage extends Component {
                 <p className="home-copy">Version 1.0.0 - Server 0089</p>
               </div>
             </header>
-
             <div className="description-content">
-              <h2>Administrator Biography &amp; Official Under-Taking  (A.B.O.U.T)</h2>
+              <h2>Administrator Biography &amp; Official Under Taking  (A.B.O.U.T)</h2>
               <div>
                 <p className="home-copy">When you start life at the bottom of a well you have to climb the usual ladders several rungs at a time. Nothing comes easy, there's no such thing as the expected outcome, plans always go awry and if you're not careful you can easily become a victim of others' expectations. A victim of "you can't do that" or "I doubt you'll get there". But these perspectives are false obstacles. Ironically if I hadn't encountered such circumstances in my youth I don't think I'd be where I am today. False obstacles can give way challenges, and challenges are meant to be overcome!</p>
                 <p className="home-copy">These days I spend my time living and working in beautiful Boulder, Colorado enjoying most of my days as a web engineer and startup enthusiast. The rest of the time I'm pursuing the improbable or the impossible. When I was younger I felt this incredible pressure to not just succeed but to succeed in such a way that there would be little limit to how many suffering people I could help in some regard. Since then I've realized no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity. That success depends on how you define it as much as how you attain it.</p>
               </div>
             </div>
-
             <Row>
                 <div className="home-social-bar">
                   <ul>
@@ -58,8 +54,6 @@ class Homepage extends Component {
                   </ul>
                 </div>
             </Row>
-
-
             <div className="contact-content">
               <form className="home-contact-form">
                 <h2>Contact the System Administrator (SYSADMIN)</h2>
@@ -72,10 +66,9 @@ class Homepage extends Component {
                 <input type="submit" value="Cancel" />
               </form>
             </div>
-
             <HomeFooter />
-
           </div>
+
         </div>
       </section>
     )
