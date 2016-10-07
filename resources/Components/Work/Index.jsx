@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import UpgradingUI from '../partials/UpgradingUI.jsx';
+import UpgradingUI from '.././Partials/UpgradingUI.jsx';
 
 // Require ONLY the relevant Stylesheets
 require('../../../public/stylesheets/fallout.scss');
