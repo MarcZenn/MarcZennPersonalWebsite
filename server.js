@@ -1,11 +1,14 @@
 /*----------------------------------------------------------------------------
-                  SMALL FRONT-END DEV ENV SERVER INSTANCE
                   - using ES5 syntax for extension .js-
 --------------------------------------------------------------------------------*/
 
-var webpack = require('webpack');
-var WebPackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+
+
+
+
+const webpack = require('webpack');
+const WebPackDevServer = require('webpack-dev-server');
+const config = require('./webpack.config');
 
 
 new WebPackDevServer(webpack(config), {

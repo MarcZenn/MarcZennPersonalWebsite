@@ -4,6 +4,7 @@ import React, {Component} from 'react'
 // Components
 import HomeNav from './HomeNav.jsx';
 import HomeFooter from './HomeFooter.jsx';
+import ContactPartial from '.././Partials/ContactPartial.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 // Require ONLY the relevant Stylesheets
@@ -54,7 +55,7 @@ class Homepage extends Component {
                   </ul>
                 </div>
             </Row>
-            <div className="contact-content">
+            {/* <div className="contact-content">
               <form className="home-contact-form">
                 <h2>Contact the System Administrator (SYSADMIN)</h2>
                 <p>Fill out the fields below and press the SUBMIT button. The SYSADMIN will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator's Office.</p>
@@ -65,7 +66,8 @@ class Homepage extends Component {
                 <input type="submit" value="Submit" />
                 <input type="submit" value="Cancel" />
               </form>
-            </div>
+            </div> */}
+            <ContactPartial />
             <HomeFooter />
           </div>
 
