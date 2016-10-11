@@ -10,6 +10,7 @@ import Companies from '../resources/Components/Companies/Index.jsx';
 import About from '../resources/Components/About/Index.jsx';
 import Works from '../resources/Components/Work/Index.jsx';
 import Contact from '../resources/Components/Work/Index.jsx';
+import PrivacyPolicy from '../resources/Components/Static/PrivacyPolicy.jsx';
 
 
 
@@ -20,6 +21,7 @@ export default (
     <Route path='/about' component={About}/>
     <Route path='/works' component={Works}/>
     <Route path='/contact' component={Contact}/>
+    <Route path='/privacy-policy' component={PrivacyPolicy}/>
 
     {/* error/maintenance pages */}
     <Route path='/*' component={PageNotFound}/>

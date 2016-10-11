@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Import the react dom which we will use to render our React Component into the DOM. Make sure react-dom is installed in package.json.
+// Import the react dom which we will use to render our React Component into the DOM. Make sure react-dom is installed in package.json. react helps us create components, react-dom helps us put our react code into the DOM
 import ReactDOM from 'react-dom';
 
 // Routes/Routing
@@ -19,7 +19,7 @@ function logPageView() {
   ReactGA.pageview(window.location.pathname);
 }
 
-// Components
+// Outermost Parent Component
 import App from './App.jsx'; // Import the outermost Parent Component.
 
 
