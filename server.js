@@ -31,16 +31,3 @@ app.get('*', function response(req, res) {
 });
 
 app.listen(8080);
-
-//
-// new WebPackDevServer(webpack(config), {
-//   publicPath: config.output.publicPath,
-//   hot: true,
-//   historyApiFallback: false
-// }).listen(process.env.PORT || 8080, function(err, result) {
-//   if (err) {
-//     return console.log(err);
-//   }
-//
-//   console.log('listening at port 8080');
-// });
