@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "A personal portfolio website for Marc Zenn",
   "main": "index.js",
+  "engines" : {
+    "node": "5.11.1"
+  },
   "scripts": {
     "postinstall": "webpack",
     "start": "node server.js",
