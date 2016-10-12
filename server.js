@@ -17,17 +17,37 @@ const webpackHotMiddleware = require('webpack-hot-middleware');
 const WebPackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
 
+
+const devEnv = process.env.NODE_ENV !== 'production';
 const app = express();
-const compiler = webpack(config);
 
 
-// Setup server paths
-app.use(express.static(__dirname + '/../')); // Serve from root directory
-app.use(webpackMiddleware(compiler));
-app.use(webpackHotMiddleware(compiler));
 
-app.get('*', function response(req, res) {
-  res.sendFile(path.join(__dirname, './index.html'));
-});
+// Check environment and dictate app behavior accordingly. Environment set in package.json scripts (if env is NOT production use webpack.production.config).
+if(devEnv) {
 
-app.listen(8080);
+  new WebPackDevServer(webpack(config), {
+    publicPath: config.output.publicPath,
+    hot: true,
+    historyApiFallback: true
+  }).listen(8080, 'localhost', function(err, result) {
+    if (err) {
+      return console.log(err);
+    }
+    console.log('listening at port 8080');
+  });
+
+} else {
+
+  app.use(express.static(__dirname));
+  app.get('*', function response(req, res) {
+    res.sendFile(path.join(__dirname));
+  });
+
+  app.listen(devEnv ? 8080 : process.env.PORT, function onStart(err) {
+    if (err) {
+      console.log(err);
+    }
+    console.log('listening at port' + process.env.PORT);
+  });
+}

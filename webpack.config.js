@@ -18,7 +18,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   // tell webpack to take .jsx file and pass them to Bable for transpiling. The way you do this is with loaders. Having devtools option as `source-map` generates the source map files which helps to debug on development. You can simple tack on more loaders as needed like the SASS loader below.
-  devtool: 'eval-source-map',
+  devtool: 'eval',
   module: {
     loaders: [
       {
