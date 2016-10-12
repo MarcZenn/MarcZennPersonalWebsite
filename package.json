@@ -5,6 +5,7 @@
   "description": "A personal portfolio website for Marc Zenn",
   "main": "index.js",
   "scripts": {
+    "postinstall": "webpack",
     "start": "node server.js"
   },
   "repository": {
