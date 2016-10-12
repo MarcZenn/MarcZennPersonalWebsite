@@ -4,7 +4,7 @@
                   - using ES6 syntax for extension .js-
 --------------------------------------------------------------------------------*/
 
-const path = require('path');
+// const path = require('path');
 const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
