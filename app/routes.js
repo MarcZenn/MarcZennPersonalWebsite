@@ -2,7 +2,7 @@
 import React from 'react';
 
 // React Router sets up Routing for a react application. It lets one mimic url changes for a single page app i.e. if you have an About page then '...com/about' will return the About Component.
-import {Router, Route, IndexRoute, hashHistory} from 'react-router'; // 'hashHistory' is whatever the user types in the browser after the domain.
+import {Router, Route, IndexRoute, browserHistory} from 'react-router'; // 'browserHistory' is whatever the user types in the browser after the domain.
 import App from '../resources/src/App.jsx';
 import Homepage from '../resources/Components/Home/Homepage.jsx';
 import PageNotFound from '../resources/Components/ErrorPages/404.jsx';
@@ -15,7 +15,7 @@ import PrivacyPolicy from '../resources/Components/Static/PrivacyPolicy.jsx';
 
 
 export default (
-  <Router path='/' component={App}>
+  <Router path='/' history={browserHistory} component={App}>
     <IndexRoute component={Homepage}/>
     <Route path='/companies' component={Companies} />
     <Route path='/about' component={About}/>
