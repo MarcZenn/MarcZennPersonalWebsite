@@ -11,14 +11,14 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const devEnv = process.env.NODE_ENV !== 'production';
-const port = devEnv ? 8080 : process.env.PORT;
+const port = devEnv ? 8080 : process.env.PORT || 3000;
 
 
 const app = express();
 
 
 // Check environment and dictate app behavior accordingly. Environment set in package.json scripts (if env is NOT production use webpack.production.config).
-if(devEnv) {
+if(process.env.NODE_ENV !== 'production') {
 
   const webpackDevMiddleware = require('webpack-dev-middleware');
   const webpackHotMiddleware = require('webpack-hot-middleware');
@@ -33,10 +33,10 @@ if(devEnv) {
   }));
   app.use(webpackHotMiddleware(compiler));
 
-} else if (!devEnv) {
+} else if (process.env.NODE_ENV == 'production') {
 
   app.use(express.static(__dirname ));
-  app.get('*', function response(req, res) {
+  app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + './index.html'))
     // res.sendFile(path.resolve('./index.html'))
   });
