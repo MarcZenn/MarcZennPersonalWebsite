@@ -19,7 +19,7 @@ if(process.env.NODE_ENV !== 'production') {
   const webpackDevMiddleware = require('webpack-dev-middleware');
   const webpackHotMiddleware = require('webpack-hot-middleware');
   const webpack = require('webpack');
-  const config = require('./webpack.config');
+  const config = require('../webpack.config');
   const compiler = webpack(config);
 
   app.use(webpackDevMiddleware(compiler, {
@@ -34,11 +34,10 @@ if(process.env.NODE_ENV !== 'production') {
 
 }
 
+app.use(express.static(path.join(__dirname + '/../')));
 
-app.use(express.static(path.join(__dirname)));
-
-app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index.html')
+app.get('/', function(req, res) {
+  res.sendFile(path.resolve('./index.html'))
 });
 
 
