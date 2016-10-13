@@ -8,7 +8,7 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8080;
 
 
 const app = express();
@@ -42,7 +42,7 @@ app.get('/', function(request, response) {
 });
 
 
-app.listen(port, '0.0.0.0', function(error) {
+app.listen(port, function(error) {
   if (error) {
     console.error(error);
   } else {
