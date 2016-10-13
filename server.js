@@ -8,8 +8,7 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const devEnv = process.env.NODE_ENV !== 'production';
-const port = devEnv ? 8080 : process.env.PORT;
+const port = process.env.PORT || 8080
 
 
 const app = express();

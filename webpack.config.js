@@ -5,8 +5,6 @@ var webpack = require('webpack');
 module.exports = {
   // First property references the entry file. Then specifies the output file as well as configuration for webpack hot reload of assets.
   entry: [
-    'webpack-dev-server/client?http://0.0.0.0:8080', // webpack-dev-server host and port. The 0.0.0.0 host lets the server listen for requests from the network not just localhost allowing for testing on multiple devices on the same network.
-    'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     './resources/src/index' // actual entry point.
   ],
   output: {
