@@ -8,7 +8,7 @@
     "node": "5.11.1"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.production.config.js",
+    "postinstall": "cross-env NODE_ENV=production webpack --config ./webpack.production.config.js",
     "start": "node server.js"
   },
   "repository": {
