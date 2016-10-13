@@ -39,9 +39,10 @@ if(devEnv) {
 
 } else {
 
-  app.use(express.static(__dirname));
+  app.use(express.static(__dirname + '/../'));
   app.get('*', function response(req, res) {
-    res.sendFile(path.join(__dirname));
+    // res.sendFile(path.join(__dirname))
+    res.sendFile(path.resolve('./index.html'))
   });
 
   app.listen(devEnv ? 8080 : process.env.PORT, function onStart(err) {
