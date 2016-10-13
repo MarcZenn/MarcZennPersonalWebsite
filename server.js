@@ -42,7 +42,7 @@ app.get('/', function(request, response) {
 });
 
 
-app.listen(port, 'localhost', function(error) {
+app.listen(port, '0.0.0.0', function(error) {
   if (error) {
     console.error(error);
   } else {
