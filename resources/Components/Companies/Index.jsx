@@ -15,6 +15,7 @@ require('../../../public/stylesheets/alignments.scss');
 class Companies extends Component {
   // Use ES6 constructor to add childVisible prop to Components state i.e. Companies Component and set to true. This sets a true state used to conditionally render any child components below specifically the UpgradingUI component.
   constructor() {
+    // super simply allows us to call methods defined on any parent Components of this Component
     super();
     this.state = {
      childVisible: true,
