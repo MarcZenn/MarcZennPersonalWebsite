@@ -55,7 +55,7 @@ class Homepage extends Component {
                   </ul>
                 </div>
             </Row>
-            <ContactPartial />
+            <ContactPartial sendEmail={this.sendEmail}/>
             <HomeFooter />
           </div>
 
@@ -63,10 +63,16 @@ class Homepage extends Component {
       </section>
     )
   }
+
+  sendEmail(emailBody) {
+    console.log(emailBody);
+
+    // TODO:: send email body to sendgrid server
+  }
 }
 
 Homepage.propTypes = {
-  // sendEmail: React.PropTypes.func.isRequired
+  //
 }
 
 

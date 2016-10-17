@@ -11,9 +11,9 @@ require('../../../public/stylesheets/fallout.scss');
 
 class ContactPartial extends Component {
 
-  constructor() {
-    // super simply allows us to call methods defined on any parent Components of this Component
-    super();
+  constructor(props) {
+    // Super() simply allows us to call methods defined on any parent Components of this Component
+    super(props);
     this.state = {
       name: '',
       email: '',
@@ -36,7 +36,7 @@ class ContactPartial extends Component {
           <input type="text" ref="subject" name="subject" value={this.state.subject} onChange={this.handleChange.bind(this)}/><br />
           <label>Message >></label>
           <textarea id="text" rows="1" ref="message" name="message" value={this.state.message} onChange={this.handleChange.bind(this)}></textarea><br /><br /><br />
-          <input action="submit" type="submit" value="Submit" />
+          <input type="submit" value="Submit" />
           {/* <input type="submit" value="Cancel" /> */}
         </form>
       </section>
@@ -46,25 +46,21 @@ class ContactPartial extends Component {
   handleChange(e) {
     // Dynamically set controlled component, input value state.
     this.setState({[e.target.name]: e.target.value});
+
+    // TODO:: handle robust form validation here....if it does not pass hide submit button else show. 
   }
 
   onSubmit(e) {
     e.preventDefault();
-    this.setState({
-      name: this.refs.name.value,
-      email : this.refs.email.value,
-      subject : this.refs.subject.value,
-      message : this.refs.message.value
-    });
-
-    this.props.sendEmail(email, subject, message);
-
-    // const email = e.target.value;
+    this.props.sendEmail(this.state);
   }
+
 }
 
+
+
 ContactPartial.propTypes = {
-  // sendEmail: React.PropTypes.func.isRequired
+  //
 }
 
 
