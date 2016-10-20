@@ -1,3 +1,5 @@
+@import '../../.././public/stylesheets/variables';
+
 .spinner {
   margin: 40px auto;
   height: 70px;
@@ -6,7 +8,7 @@
 }
 
 .spinner > div {
-  background-color: rgba(0,221,0,1);
+  background-color: $primary-green;
   height: 100%;
   width: 10px;
   display: inline-block;

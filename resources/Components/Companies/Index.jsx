@@ -6,11 +6,6 @@ import React, {Component} from 'react';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 import UpgradingUI from '.././Partials/UpgradingUI.jsx';
 
-// Require ONLY the relevant Stylesheets
-require('../../../public/stylesheets/fallout.scss');
-require('../../../public/stylesheets/alignments.scss');
-
-
 
 class Companies extends Component {
   // Use ES6 constructor to add childVisible prop to Components state i.e. Companies Component and set to true. This sets a true state used to conditionally render any child components below specifically the UpgradingUI component.

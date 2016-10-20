@@ -7,10 +7,6 @@ import HomeFooter from './HomeFooter.jsx';
 import ContactPartial from '.././Partials/ContactPartial.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
-// Require ONLY the relevant Stylesheets
-require('../../assets/scss/home.scss');
-require('../../../public/stylesheets/fallout.scss');
-
 
 class Homepage extends Component {
   render(){

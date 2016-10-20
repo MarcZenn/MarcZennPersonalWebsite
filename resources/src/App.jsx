@@ -11,7 +11,7 @@
 import React, {Component} from 'react';
 
 
-// Stylesheets
+// Master Stylesheet
 require('../assets/scss/app.scss');
 
 // React Render

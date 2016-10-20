@@ -6,10 +6,6 @@ import React, {Component} from 'react';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 import UpgradingUI from '.././Partials/UpgradingUI.jsx';
 
-// Require ONLY the relevant Stylesheets
-require('../../../public/stylesheets/fallout.scss');
-require('../../../public/stylesheets/alignments.scss');
-
 
 class Works extends Component {
   // Use ES6 constructor to add childVisible prop to Components state i.e. About Component and set to true. This sets a true state used to conditionally render any child components below specifically the UpgradingUI component.
@@ -32,16 +28,20 @@ class Works extends Component {
         {
           // Ternary to show UpgradingUI child component for 4 seconds then show hidden parent component.
           this.state.childVisible ? <UpgradingUI /> :
-          <div className="text-center flexbox-aligner under-construction-copy">
-            <Row>
-              <Col xs={12}>
-                <p className="flexbox-aligner-item up-down-padder">Server 0089 Response:</p>
+          <section>
+            <Row className="work-landing">
+              <Col xs={6} className="personal-landing">
+                <div className="text-center flexbox-aligner">
+                  <h2 className="flexbox-aligner-item">Personal</h2>
+                </div>
               </Col>
-              <Col xs={12}>
-                <h1>Page Currently Under Construction</h1>
+              <Col xs={6} className="professional-landing">
+                <div className="text-center flexbox-aligner">
+                  <h2 className="flexbox-aligner-item">Professional</h2>
+                </div>
               </Col>
             </Row>
-          </div>
+          </section>
         }
       </section>
     )

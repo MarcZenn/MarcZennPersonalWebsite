@@ -6,12 +6,6 @@ import React, {Component} from 'react';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 import UpgradingUI from '.././Partials/UpgradingUI.jsx';
 
-// Require ONLY the relevant Stylesheets
-require('../../../public/stylesheets/fallout.scss');
-require('../../../public/stylesheets/alignments.scss');
-require('../../../public/stylesheets/fonts.scss');
-require('../../assets/scss/partials.scss');
-
 
 
 class PrivacyPolicy extends Component {

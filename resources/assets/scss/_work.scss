@@ -1,0 +1,25 @@
+// @import '../../.././public/stylesheets/variables';
+
+/* ------------------------------------------------ */
+
+.work-landing {
+  div.personal-landing {
+    // background-color: #85FFC7;
+    h2 {
+      color: $primary-red;
+      font-family: Montserrat, sans-serif;
+    }
+  }
+
+  div.professional-landing {
+    // background-color: #FF8552;
+    h2 {
+      color: $primary-indigo;
+      font-family: Montserrat, sans-serif;
+    }
+  }
+
+  // h2 {
+  //   color: $primary-white;
+  // }
+}

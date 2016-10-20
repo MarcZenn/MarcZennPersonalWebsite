@@ -4,11 +4,6 @@ import React, {Component} from 'react'
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
-// Require ONLY the relevant Stylesheets
-require('../../assets/scss/home.scss');
-require('../../../public/stylesheets/fallout.scss');
-
-
 class ContactPartial extends Component {
 
   constructor(props) {
@@ -47,7 +42,7 @@ class ContactPartial extends Component {
     // Dynamically set controlled component, input value state.
     this.setState({[e.target.name]: e.target.value});
 
-    // TODO:: handle robust form validation here....if it does not pass hide submit button else show. 
+    // TODO:: handle robust form validation here....if it does not pass hide submit button else show.
   }
 
   onSubmit(e) {

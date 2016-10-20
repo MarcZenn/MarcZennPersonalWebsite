@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
+@import './variables';
+
+/* ------------------------------------------------ */
 
 html, body {
 	margin: 0;
@@ -9,7 +12,7 @@ html, body {
 
 .fallout-wrapper {
 	background: #383838;
-	color: #00dd00;
+	color: $primary-green;
 	font-size: 64.5%;
 	font-size: 1.4em;
 	font-family: 'VT323', Courier;
@@ -82,9 +85,9 @@ span {
 
 .scanline {
 	animation: scroll 10s 5s infinite;
-	background: -moz-linear-gradient(top,  rgba(0,221,0,0) 0%, rgba(0,221,0,1) 50%, rgba(0,221,0,0) 100%);
-	background: -webkit-linear-gradient(top,  rgba(0,221,0,0) 0%,rgba(0,221,0,1) 50%,rgba(0,221,0,0) 100%);
-	background: linear-gradient(to bottom,  rgba(0,221,0,0) 0%,rgba(0,221,0,1) 50%,rgba(0,221,0,0) 100%);
+	background: -moz-linear-gradient(top,  rgba(0,221,0,0) 0%, $primary-green 50%, rgba(0,221,0,0) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,221,0,0) 0%,$primary-green 50%,rgba(0,221,0,0) 100%);
+	background: linear-gradient(to bottom,  rgba(0,221,0,0) 0%,$primary-green 50%,rgba(0,221,0,0) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000dd00', endColorstr='#0000dd00',GradientType=0 );
 	display: block;
 	height: 20px;
