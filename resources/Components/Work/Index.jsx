@@ -30,14 +30,14 @@ class Works extends Component {
           this.state.childVisible ? <UpgradingUI /> :
           <section>
             <Row className="work-landing">
-              <Col xs={6} className="personal-landing">
+              <Col xs={12} className="personal-landing">
                 <div className="text-center flexbox-aligner">
-                  <h2 className="flexbox-aligner-item">Personal</h2>
+                  <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Personal Projects</h2>
                 </div>
               </Col>
-              <Col xs={6} className="professional-landing">
+              <Col xs={12} className="professional-landing">
                 <div className="text-center flexbox-aligner">
-                  <h2 className="flexbox-aligner-item">Professional</h2>
+                  <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Professional Contributions</h2>
                 </div>
               </Col>
             </Row>

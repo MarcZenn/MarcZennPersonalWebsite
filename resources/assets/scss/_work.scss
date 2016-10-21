@@ -1,25 +1,126 @@
-// @import '../../.././public/stylesheets/variables';
-
-/* ------------------------------------------------ */
 
 .work-landing {
+  background-color: $primary-white;
+
+  div {
+    padding: 0;
+    margin: 0;
+
+    i {
+      display: block;
+      font-size: 100px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  h2 {
+    font-family: $h-font;
+    font-size: 35px;
+    position: relative;
+    z-index: 1;
+  }
+
   div.personal-landing {
-    // background-color: #85FFC7;
+    position: relative;
+    border-right: 3px solid lightgrey;
+
     h2 {
       color: $primary-red;
-      font-family: Montserrat, sans-serif;
+    }
+
+    i.fa-toggle-on {
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: linear-gradient(
+        rgba(242, 27, 63, 0.6),
+        rgba(255, 153, 20, 0.7)
+      ), url(../../.././public/images/skulls.png);
+      opacity: 0;
+      transition: all 0.5s ease-in;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      h2 {
+        color: $primary-white;
+      }
+
+      i.fa-toggle-off {
+        display: none;
+      }
+
+      i.fa-toggle-on {
+        position: relative;
+        z-index: 1;
+        display: block;
+      }
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 
   div.professional-landing {
-    // background-color: #FF8552;
+    position: relative;
+    border-right: 3px solid lightgrey;
+
     h2 {
       color: $primary-indigo;
-      font-family: Montserrat, sans-serif;
+    }
+
+    i.fa-toggle-on {
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: linear-gradient(
+        rgba(89, 46, 131, 0.6),
+        rgba(8, 189, 189, 0.7)
+      ), url(../../.././public/images/triangular.png);
+      opacity: 0;
+      transition: all 0.5s ease-in;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      h2 {
+        color: $primary-white;
+      }
+
+      i.fa-toggle-off {
+        display: none;
+      }
+
+      i.fa-toggle-on {
+        position: relative;
+        z-index: 1;
+        display: block;
+      }
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
-
-  // h2 {
-  //   color: $primary-white;
-  // }
 }
