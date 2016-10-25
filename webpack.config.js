@@ -27,13 +27,9 @@ module.exports = {
         exclude: /node_modules/ // exclude node modules.
       },
       {
-        test: /\.(eotwoff|png|jpg|gif)$/,
+        test: /\.(eot|woff|png|jpg|gif)$/,
         loader: 'url-loader?limit=10000'
       },
-      {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader?mimetype=application/font-woff"},
-      {test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader?mimetype=application/font-woff"},
-      {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader?mimetype=application/octet-stream"},
-      {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader"},
       {
         test: /\.scss$/,
         loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.

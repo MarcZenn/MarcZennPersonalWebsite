@@ -4,7 +4,7 @@ import React, {Component} from 'react'
 // Components
 import HomeNav from './HomeNav.jsx';
 import HomeFooter from './HomeFooter.jsx';
-import ContactPartial from '.././Partials/ContactPartial.jsx';
+import ContactPartial from '../.././Containers/Partials/ContactPartial.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 
@@ -19,7 +19,7 @@ class Homepage extends Component {
           <div className="home-content clearfix">
             <header className="site clearfix home-header">
               <div className="col one">
-                <img src="/Public/Images/text-logo.png"  />
+                <img src="/Public/Images/text-logo-2.png"  />
               </div>
               <div className="col two">
                 <h1><br /> <b>M</b>erits <b>A</b>nalysis <b>R</b>eal-Time <b>C</b>omputer (M.A.R.C)</h1>
@@ -51,19 +51,13 @@ class Homepage extends Component {
                   </ul>
                 </div>
             </Row>
-            <ContactPartial sendEmail={this.sendEmail}/>
+            <ContactPartial />
             <HomeFooter />
           </div>
 
         </div>
       </section>
     )
-  }
-
-  sendEmail(emailBody) {
-    console.log(emailBody);
-
-    // TODO:: send email body to sendgrid server
   }
 }
 

@@ -21,7 +21,7 @@
       display: block;
     	height: auto;
     	margin: 0 auto;
-    	max-width: 75%;
+    	max-width: 65%;
     }
   }
 }
@@ -123,7 +123,9 @@
 	z-index: 10;
 	padding: 75px 20px;
 	border-top: 1px solid $primary-green;
+	border-bottom: 1px solid $primary-green;
 	border-top-style: dashed;
+	border-bottom-style: dashed;
 	text-align: left;
 
   h2{
@@ -193,11 +195,8 @@ p {
 }
 
 .home-footer {
-	border-top: 1px solid $primary-green;
-	border-top-style: dashed;
 	padding: 20px 50px;
 	position: relative;
-	z-index: 10;
 
 	img{
 		width: 230px;
@@ -207,6 +206,8 @@ p {
 
 	ul{
 		list-style-type: none;
+		position: relative;
+		z-index: 10;
 
 		li{
 			padding: 10px;

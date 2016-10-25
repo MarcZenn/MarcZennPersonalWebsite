@@ -6,9 +6,9 @@ import {Col, Row, Grid} from 'react-bootstrap/lib';
 
 class ContactPartial extends Component {
 
-  constructor(props) {
+  constructor() {
     // Super() simply allows us to call methods defined on any parent Components of this Component
-    super(props);
+    super();
     this.state = {
       name: '',
       email: '',
@@ -32,7 +32,6 @@ class ContactPartial extends Component {
           <label>Message >></label>
           <textarea id="text" rows="1" ref="message" name="message" value={this.state.message} onChange={this.handleChange.bind(this)}></textarea><br /><br /><br />
           <input type="submit" value="Submit" />
-          {/* <input type="submit" value="Cancel" /> */}
         </form>
       </section>
     )
@@ -47,7 +46,13 @@ class ContactPartial extends Component {
 
   onSubmit(e) {
     e.preventDefault();
-    this.props.sendEmail(this.state);
+    this.sendEmail(this.state);
+  }
+
+  sendEmail(emailBody) {
+    console.log(emailBody);
+
+    // TODO:: send email body to sendgrid server
   }
 
 }

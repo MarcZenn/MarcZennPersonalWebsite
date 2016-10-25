@@ -1,4 +1,50 @@
-@import '../../.././public/stylesheets/variables';
+.main-nav {
+  background-color: $primary-white;
+  width: 100%;
+	position: relative;
+	z-index: 100;
+	border-bottom: 1px solid $accent-orange;
+	padding: 20px 0;
+
+  ul{
+    padding: 0;
+		list-style-type: none;
+
+    div {
+
+			li{
+	      display: inline;
+	      text-align: center;
+	      width: 25%;
+				border: none;
+
+		    a {
+		    	color: $accent-purple;
+					font-size: 20px;
+		    	text-decoration: none;
+          font-family: $p-font;
+		    }
+		    a:hover {
+		    	color: $primary-red;
+					text-decoration: none;
+		    }
+			}
+			@media (min-width: 300px) and (max-width: 992px) {
+				width: 100%;
+				padding: 20px 0;
+				border-bottom: 1px solid $primary-green;
+
+				&:last-child {
+					border: none;
+				}
+			}
+		}
+  }
+	@media (min-width: 300px) and (max-width: 992px) {
+		padding: 5px 0;
+	}
+}
+
 
 .spinner {
   margin: 40px auto;
