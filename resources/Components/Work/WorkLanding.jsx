@@ -4,7 +4,6 @@ import React, {Component} from 'react';
 
 // Components
 import UpgradingUI from '.././Partials/UpgradingUI.jsx';
-import Nav from '.././Partials/Nav.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 import {Link} from 'react-router';
 import Waypoint from 'react-waypoint';
@@ -20,7 +19,7 @@ class Works extends Component {
      entered: false
    };
   }
-  // Remove child component after 4 seconds and show parent component.
+  // Remove child component after 4 seconds and show parent component then set entered state to true for initial waypoint UI rendering.
   componentDidMount(e) {
     setTimeout(function() {
       this.setState({
@@ -30,7 +29,6 @@ class Works extends Component {
     }.bind(this), 4000);
   }
 
-  // TODO:: refactor this as it does not account for initial landing...
   setWaypoint(bool, int) {
     // Set waypoint state
     if (!bool) {
@@ -54,7 +52,6 @@ class Works extends Component {
           // Ternary to show UpgradingUI child component for 4 seconds then show hidden parent component.
           this.state.childVisible ? <UpgradingUI /> :
           <section>
-            <Nav />
             <Row className="work-landing">
               <Col xs={12} className="personal-landing">
                 <Waypoint

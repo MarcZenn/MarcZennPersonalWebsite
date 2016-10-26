@@ -17,7 +17,9 @@ class Nav extends Component {
           <Grid>
             <Row className="show-grid">
               <Col md={6}>
-                <div>test</div>
+                <li>
+                  <img src="/Public/Images/symbol-logo-2.png"  />
+                </li>
               </Col>
               <Col md={6}>
                 <Col md={3} xs={12}>
