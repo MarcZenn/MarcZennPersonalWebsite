@@ -58,7 +58,7 @@
       }
     }
 
-    &::before {
+    &::after {
       content: '';
       position: absolute;
       left: 0px;
@@ -79,7 +79,7 @@
         color: $primary-white;
       }
 
-      &::before {
+      &::after {
         opacity: 1;
       }
     }
