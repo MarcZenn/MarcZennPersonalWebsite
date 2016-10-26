@@ -1,10 +1,10 @@
-// Webpack is required here in order to call its HotModuleReplacementPlugin() method which is synonmous to the --hot command when initiating webpack-dev-server --inline in terminal.
+// Webpack is required here in order to call its DefinePlugin() method which detects the environment.
 var path = require('path');
 var webpack = require('webpack');
 
 // Exported but not sure where this is being imported?
 module.exports = {
-  // First property references the entry file. Then specifies the output file as well as configuration for webpack hot reload of assets.
+  // First property references the entry file. Then specifies the output file.
   entry: [
     './resources/src/index', // actual entry point.
   ],
@@ -16,7 +16,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  // tell webpack to take .jsx file and pass them to Bable for transpiling. The way you do this is with loaders. Having devtools option as `source-map` generates the source map files which helps to debug on development. You can simple tack on more loaders as needed like the SASS loader below.
+  // Tell webpack to take .jsx file and pass them to Bable for transpiling. The way you do this is with loaders. Having devtools option as `source-map` generates the source map files which helps to debug on development. You can simple tack on more loaders as needed like the SASS loader below.
   devtool: 'source-map',
   module: {
     loaders: [
@@ -26,6 +26,7 @@ module.exports = {
         exclude: /node_modules/ // exclude node modules.
       },
       {
+        // Beware of the limit here, if images are not showing up in production and silently failing then the limit here might be the culprit.
         test: /\.(eot|woff|png|jpg|gif)$/,
         loader: 'url-loader?limit=100000'
       },
@@ -33,11 +34,6 @@ module.exports = {
         test: /\.scss$/,
         loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
         include: path.join(__dirname),
-        // To load ONLY the scss files you specify use syntax below or someting similar. Not sure what syntax should be just yet.
-        // include: [
-        //   path.join(__dirname, '/resources/assets/scss'),
-        //   path.join(__dirname, '/public/stylesheets/scss')
-        // ]
         resolve: {
           alias: {
             images: path.join(__dirname, 'public/images')
