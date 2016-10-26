@@ -10,7 +10,7 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    publicPath: process.env.PORT,
+    publicPath: 'http://0.0.0.0:' + process.env.PORT,
     filename: 'bundle.js'
   },
   resolve: {
