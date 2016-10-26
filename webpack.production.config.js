@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
+        loaders:['style', 'css', 'sass'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
         include: path.join(__dirname)
         // To load ONLY the scss files you specify use syntax below or someting similar. Not sure what syntax should be just yet.
         // include: [
