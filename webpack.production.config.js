@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.(eot|woff|png|jpg|gif)$/,
-        loader: 'url-loader?limit=10000'
+        loader: 'url-loader?limit=100000'
       },
       {
         test: /\.scss$/,
