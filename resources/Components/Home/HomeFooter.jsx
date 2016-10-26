@@ -14,7 +14,7 @@ class HomeFooter extends Component {
         <Row className="show-grid">
           <Col md={ 3 } xs={ 12 } >
             <div>
-              <img src="/Public/Images/symbol-logo-2.png"  />
+              <img src="/public/images/symbol-logo-2.png"  />
               <p><i className="fa fa-copyright" aria-hidden="true"></i> 2016 MARC ZENN ALL RIGHTS RESERVED</p>
             </div>
           </Col>
