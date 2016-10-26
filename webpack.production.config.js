@@ -31,13 +31,18 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders:['style', 'css', 'sass'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
-        include: path.join(__dirname)
+        loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
+        include: path.join(__dirname),
         // To load ONLY the scss files you specify use syntax below or someting similar. Not sure what syntax should be just yet.
         // include: [
         //   path.join(__dirname, '/resources/assets/scss'),
         //   path.join(__dirname, '/public/stylesheets/scss')
         // ]
+        resolve: {
+          alias: {
+            images: path.join(__dirname, 'public/images')
+          }
+        }
       }
     ]
   },
