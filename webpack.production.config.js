@@ -26,6 +26,10 @@ module.exports = {
         exclude: /node_modules/ // exclude node modules.
       },
       {
+        test: /\.(eot|woff|png|jpg|gif)$/,
+        loader: 'url-loader?limit=10000'
+      },
+      {
         test: /\.scss$/,
         loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
         include: path.join(__dirname)
