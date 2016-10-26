@@ -1,3 +1,8 @@
+@import '../../.././public/stylesheets/variables';
+
+/* ------------------------------------------------ */
+
+
 .home-content {
 	animation: scroll 3s 1;
   overflow: hidden;
@@ -16,7 +21,7 @@
       display: block;
     	height: auto;
     	margin: 0 auto;
-    	max-width: 75%;
+    	max-width: 65%;
     }
   }
 }
@@ -28,8 +33,8 @@
 	z-index: 10;
 	padding: 50px 20px;
 	width: 100%;
-	border-bottom: 1px solid rgba(0,221,0,1);
-	border-top: 1px solid rgba(0,221,0,1);
+	border-bottom: 1px solid $primary-green;
+	border-top: 1px solid $primary-green;
 	border-top-style: dashed;
 	border-bottom-style: dashed;
 
@@ -51,7 +56,6 @@
 
 
 .home-contact-form {
-	// text-align: center;
 	padding: 10px;
 	width: 80%;
 	margin: 20px auto;
@@ -69,7 +73,7 @@
   textarea {
   	background: transparent;
   	border: none;
-  	color: #00dd00;
+  	color: $primary-green;
   	display: block;
   	float: left;
   	font-family: 'VT323', Courier;
@@ -89,9 +93,9 @@
   input[type=submit],
   a.button {
   	background: transparent;
-  	border: 1px solid #00dd00;
+  	border: 1px solid $primary-green;
   	clear: both;
-  	color: #00dd00;
+  	color: $primary-green;
   	cursor: hand;
   	display: inline-block;
   	font-family: 'VT323', Courier;
@@ -107,7 +111,7 @@
 
   input[type=submit]:hover,
   a.button:hover {
-  	background: #00dd00;
+  	background: $primary-green;
   	color: #383838;
   	opacity: 0.8;
     cursor: pointer;
@@ -118,8 +122,10 @@
 	position: relative;
 	z-index: 10;
 	padding: 75px 20px;
-	border-top: 1px solid rgba(0,221,0,1);
+	border-top: 1px solid $primary-green;
+	border-bottom: 1px solid $primary-green;
 	border-top-style: dashed;
+	border-bottom-style: dashed;
 	text-align: left;
 
   h2{
@@ -189,11 +195,8 @@ p {
 }
 
 .home-footer {
-	border-top: 1px solid rgba(0,221,0,1);
-	border-top-style: dashed;
 	padding: 20px 50px;
 	position: relative;
-	z-index: 10;
 
 	img{
 		width: 230px;
@@ -203,6 +206,8 @@ p {
 
 	ul{
 		list-style-type: none;
+		position: relative;
+		z-index: 10;
 
 		li{
 			padding: 10px;
@@ -213,7 +218,7 @@ p {
 				font-size: 35px;
 
 				&:hover {
-					color: #FF0000;
+					color: $primary-red;
 				}
 			}
 		}
@@ -224,7 +229,7 @@ p {
 	width: 100%;
 	position: relative;
 	z-index: 100;
-	border-bottom: 1px solid rgba(0,221,0,1);
+	border-bottom: 1px solid $primary-green;
 	border-bottom-style: dashed;
   margin: 0 0 40px 0;
 	padding: 25px 0;
@@ -248,22 +253,22 @@ p {
 		    	text-decoration: none;
 		    }
 		    a:before{
-		      color: #00dd00;
+		      color: $primary-green;
 		    	content: ' [ ';
 		    }
 		    a:after{
-		      color: #00dd00;
+		      color: $primary-green;
 		    	content: ' ] ';
 		    }
 		    a:hover {
-		    	color: #FF0000;
+		    	color: $primary-red;
 					text-decoration: none;
 		    }
 			}
 			@media (min-width: 300px) and (max-width: 992px) {
 				width: 100%;
 				padding: 20px 0;
-				border-bottom: 1px solid rgba(0,221,0,1);
+				border-bottom: 1px solid $primary-green;
 
 				&:last-child {
 					border: none;
@@ -279,7 +284,7 @@ p {
 .home-social-bar{
 		position: relative;
 		z-index: 100;
-		border-top: 1px solid rgba(0,221,0,1);
+		border-top: 1px solid $primary-green;
 		border-top-style: dashed;
 		border-bottom: none;
 }

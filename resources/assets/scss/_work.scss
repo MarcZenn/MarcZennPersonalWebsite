@@ -1,0 +1,188 @@
+.work-landing {
+  background-color: $primary-white;
+
+  div {
+    padding: 0;
+    margin: 0;
+
+    i {
+      display: block;
+      font-size: 100px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  h2 {
+    font-family: $h-font;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  div.personal-landing {
+    position: relative;
+    border-right: 3px solid lightgrey;
+
+    i.fa-toggle-on {
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    i.fa-toggle-off {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      color: $primary-red;
+
+      &:hover{
+        i.fa-toggle-off {
+          display: none;
+        }
+
+        i.fa-toggle-on {
+          display: block;
+          cursor: pointer
+        }
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: linear-gradient(
+        rgba(242, 27, 63, 0.6),
+        rgba(255, 153, 20, 0.7)
+      ), url(../../.././public/images/skulls.png);
+      opacity: 0;
+      transition: all 0.5s ease-in;
+    }
+
+    &:hover {
+
+      h2 {
+        color: $primary-white;
+      }
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  div.professional-landing {
+    position: relative;
+    border-right: 3px solid lightgrey;
+
+    i.fa-toggle-on {
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    i.fa-toggle-off {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      color: $primary-indigo;
+
+      &:hover{
+        i.fa-toggle-off {
+          display: none;
+        }
+
+        i.fa-toggle-on {
+          display: block;
+          cursor: pointer
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: linear-gradient(
+        rgba(89, 46, 131, 0.6),
+        rgba(8, 189, 189, 0.7)
+      ), url(../../.././public/images/triangular.png);
+      opacity: 0;
+      transition: all 0.5s ease-in;
+    }
+
+    &:hover {
+
+      h2 {
+        color: $primary-white;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.scroll-tracker {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 35px;
+  padding: 14px 12px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  box-shadow: 0 2px 2px rgba(0,0,0,.25);
+  border-radius: 16px;
+  background: $primary-white;
+  -webkit-user-select: none;
+  transition: right .3s,background-color .3s;
+
+  #wp-dot-1, #wp-dot-2 {
+    position: relative;
+    border: 2px solid $primary-red;
+    border-radius: 50%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    opacity: 0.8;
+    -webkit-box-shadow: 0 0 1px 0px rgb( 255, 255, 255);
+    box-shadow: 0 0 1px 0px rgb( 255, 255, 255);
+    width: 15px;
+    height: 15px;
+    margin: 10px 0;
+  }
+
+  div.empty {
+    background-color: transparent;
+    -webkit-transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -ms-transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
+  }
+
+  div.filled {
+    background-color: $primary-red;
+    border: 2px solid $primary-red;
+  }
+}

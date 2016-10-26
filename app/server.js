@@ -34,7 +34,8 @@ if(process.env.NODE_ENV !== 'production') {
 
 }
 
-app.use(express.static(path.join(__dirname + '/../')));
+app.use(bodyParser.json({type: '*/*', limit: '50mb'})); // Parse requests to JSON
+app.use(express.static(path.join(__dirname + '/../'))); // Serve from root directory
 
 app.get('/', function(req, res) {
   res.sendFile(path.resolve('./index.html'))

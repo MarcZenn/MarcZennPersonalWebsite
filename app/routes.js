@@ -8,9 +8,11 @@ import Homepage from '../resources/Components/Home/Homepage.jsx';
 import PageNotFound from '../resources/Components/ErrorPages/404.jsx';
 import Companies from '../resources/Components/Companies/Index.jsx';
 import About from '../resources/Components/About/Index.jsx';
-import Works from '../resources/Components/Work/Index.jsx';
-import Contact from '../resources/Components/Work/Index.jsx';
+import Works from '../resources/Components/Work/WorkLanding.jsx';
+import Contact from '../resources/Components/Contact/Index.jsx';
 import PrivacyPolicy from '../resources/Components/Static/PrivacyPolicy.jsx';
+import PersonalProjects from '../resources/Components/Work/PersonalProjects.jsx';
+import ProfessionalContributions from '../resources/Components/Work/ProfessionalContributions.jsx';
 
 
 
@@ -22,6 +24,8 @@ export default (
     <Route path='/works' component={Works}/>
     <Route path='/contact' component={Contact}/>
     <Route path='/privacy-policy' component={PrivacyPolicy}/>
+    <Route path='/personal-projects' component={PersonalProjects}/>
+    <Route path='/professional-contributions' component={ProfessionalContributions}/>
 
     {/* error/maintenance pages */}
     <Route path='/*' component={PageNotFound}/>

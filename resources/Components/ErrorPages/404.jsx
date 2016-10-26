@@ -1,11 +1,6 @@
 // import React
 import React, {Component} from 'react';
 
-// Require ONLY the relevant Stylesheets
-require('../../../public/stylesheets/fallout.scss');
-require('../../../public/stylesheets/alignments.scss');
-require('../../assets/scss/error_pages.scss');
-
 class PageNotFound extends Component {
   render() {
     return (

@@ -1,15 +1,11 @@
-// import React
+// import React with sugar on top
 import React, {Component} from 'react'
 
 // Components
 import HomeNav from './HomeNav.jsx';
 import HomeFooter from './HomeFooter.jsx';
-import ContactPartial from '.././Partials/ContactPartial.jsx';
+import ContactPartial from '../.././Containers/Partials/ContactPartial.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-
-// Require ONLY the relevant Stylesheets
-require('../../assets/scss/home.scss');
-require('../../../public/stylesheets/fallout.scss');
 
 
 class Homepage extends Component {
@@ -23,7 +19,7 @@ class Homepage extends Component {
           <div className="home-content clearfix">
             <header className="site clearfix home-header">
               <div className="col one">
-                <img src="/Public/Images/text-logo.png"  />
+                <img src="/Public/Images/text-logo-2.png"  />
               </div>
               <div className="col two">
                 <h1><br /> <b>M</b>erits <b>A</b>nalysis <b>R</b>eal-Time <b>C</b>omputer (M.A.R.C)</h1>
@@ -55,18 +51,6 @@ class Homepage extends Component {
                   </ul>
                 </div>
             </Row>
-            {/* <div className="contact-content">
-              <form className="home-contact-form">
-                <h2>Contact the System Administrator (SYSADMIN)</h2>
-                <p>Fill out the fields below and press the SUBMIT button. The SYSADMIN will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator's Office.</p>
-                <label>Name >></label><input type="text" /><br />
-                <label>Email >></label><input type="text" /><br />
-                <label>Subject >></label><input type="text" /><br />
-                <label>Message >></label><textarea id="text" rows="1"></textarea><br /><br /><br />
-                <input type="submit" value="Submit" />
-                <input type="submit" value="Cancel" />
-              </form>
-            </div> */}
             <ContactPartial />
             <HomeFooter />
           </div>
@@ -78,7 +62,7 @@ class Homepage extends Component {
 }
 
 Homepage.propTypes = {
- // propTypes
+  //
 }
 
 
