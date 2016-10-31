@@ -1,5 +1,8 @@
-// import React with sugar on top
-import React, {Component} from 'react'
+// Import React
+import React, {Component} from 'react';
+
+// Import react-redux connect to forge connection between react and redux.
+import {connect} from 'react-redux';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
@@ -55,6 +58,10 @@ class ContactPartial extends Component {
     // TODO:: send email body to sendgrid server
   }
 
+}
+
+function mapStateToProps() {
+  
 }
 
 

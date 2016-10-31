@@ -5,8 +5,8 @@ import React, {Component} from 'react';
 // Components
 import UpgradingUI from '.././Partials/UpgradingUI.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import {Link} from 'react-router';
 import Waypoint from 'react-waypoint';
+import {Link} from 'react-router';
 
 
 class Works extends Component {

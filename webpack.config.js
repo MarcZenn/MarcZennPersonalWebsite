@@ -27,7 +27,7 @@ module.exports = {
         exclude: /node_modules/ // exclude node modules.
       },
       {
-        test: /\.(eot|woff|png|jpg|gif)$/,
+        test: /\.(eot|woff|png|jpg|gif|svg|ttf)$/,
         loader: 'url-loader?limit=10000'
       },
       {

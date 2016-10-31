@@ -13,7 +13,7 @@
   }
 
   h2 {
-    font-family: $h-font;
+    font-family: $h-font-family-1;
     font-size: 50px;
     position: relative;
     z-index: 1;
@@ -145,11 +145,72 @@
 }
 
 
+.professional-contributions-content {
+  background-color: $primary-white;
+
+  h1 {
+
+  }
+
+  h2 {
+    font-family: $p-font;
+    position: relative;
+    z-index: 1;
+  }
+
+  .work-item {
+    height:100vh;
+    padding: 130px 50px 0 50px;
+  }
+
+  .professional-contributions-header {
+    background-color: $primary-white;
+    border-bottom: 1px solid $primary-red;
+
+    h1 {
+      font-size: 45px;
+      color: lightgrey;
+      margin: 0 0 20px 0;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        margin: 30px 10px;
+        display: inline-block;
+
+        img {
+          width: 75px;
+          height: 75px;
+        }
+      }
+    }
+  }
+
+  .kickfurther {
+    background-color: $primary-red;
+
+
+    h2 {
+      font-family: Proxima-Nova, sans-serif;
+      font-size: 45px;
+      color: $accent-orange;
+      margin: 20px 0;
+    }
+
+    p {
+      color: $primary-white;
+    }
+  }
+
+}
+
 .scroll-tracker {
   position: fixed;
   z-index: 1000;
   top: 50%;
-  left: 35px;
+  right: 35px;
   padding: 14px 12px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
