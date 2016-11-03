@@ -14,13 +14,10 @@
 
   h2 {
     font-family: $h-font-family-1;
-    font-size: 50px;
+    font-size: 55px;
     position: relative;
+    font-weight: 700;
     z-index: 1;
-
-    &:hover{
-      cursor: pointer;
-    }
   }
 
   a:hover {
@@ -45,6 +42,7 @@
 
     h2 {
       color: $primary-red;
+      transition: all 0.5s ease-in-out;
 
       &:hover{
         i.fa-toggle-off {
@@ -69,18 +67,12 @@
         rgba(242, 27, 63, 0.6),
         rgba(255, 153, 20, 0.7)
       ), url(../../.././public/images/skulls.png);
-      opacity: 0;
-      transition: all 0.5s ease-in;
+      opacity: 1;
     }
 
     &:hover {
-
-      h2 {
+      i.fa-toggle-on {
         color: $primary-white;
-      }
-
-      &::after {
-        opacity: 1;
       }
     }
   }
@@ -103,6 +95,7 @@
 
     h2 {
       color: $primary-indigo;
+      transition: all 0.5s ease-in-out;
 
       &:hover{
         i.fa-toggle-off {
@@ -127,18 +120,12 @@
         rgba(89, 46, 131, 0.6),
         rgba(8, 189, 189, 0.7)
       ), url(../../.././public/images/triangular.png);
-      opacity: 0;
-      transition: all 0.5s ease-in;
+      opacity: 1;
     }
 
     &:hover {
-
-      h2 {
+      i.fa-toggle-on {
         color: $primary-white;
-      }
-
-      &::after {
-        opacity: 1;
       }
     }
   }
@@ -149,18 +136,20 @@
   background-color: $primary-white;
 
   h1 {
-
+    padding: 0 50px;;
   }
 
   h2 {
     font-family: $p-font;
     position: relative;
     z-index: 1;
+    padding: 0 50px;
   }
 
   .work-item {
-    height:100vh;
-    padding: 130px 50px 0 50px;
+    position: relative;
+    min-height: 99vh;
+    padding: 130px 0 0 0;
   }
 
   .professional-contributions-header {
@@ -175,14 +164,15 @@
 
     ul {
       list-style-type: none;
+      margin: 0 auto;
 
       li {
         margin: 30px 10px;
         display: inline-block;
+        padding: 0;
 
-        img {
-          width: 75px;
-          height: 75px;
+        i {
+          font-size: 50px;
         }
       }
     }
@@ -191,19 +181,48 @@
   .kickfurther {
     background-color: $primary-red;
 
-
     h2 {
       font-family: Proxima-Nova, sans-serif;
-      font-size: 45px;
+      font-size: 50px;
       color: $accent-orange;
       margin: 20px 0;
     }
 
     p {
       color: $primary-white;
+      padding: 0 50px;
+    }
+
+    img {
+      width: 100%;
+      -webkit-box-shadow: -8px -4px 10px 1px rgba(56,52,49,.5);
+      -moz-box-shadow: -8px -4px 10px 1px rgba(56,52,49,.5);
+      box-shadow: -8px -4px 10px 1px rgba(56,52,49,.5);
     }
   }
 
+  .cpb {
+    background-color: $primary-grey;
+
+    h2 {
+      font-family: Proxima-Nova, sans-serif;
+      font-size: 50px;
+      color: $accent-purple;
+      margin: 20px 0;
+    }
+
+    p {
+      color: $primary-white;
+      padding: 0 50px;
+    }
+
+    img {
+      width: 100%;
+      -webkit-box-shadow: -8px -4px 10px 1px rgba(56,52,49,.5);
+      -moz-box-shadow: -8px -4px 10px 1px rgba(56,52,49,.5);
+      box-shadow: -8px -4px 10px 1px rgba(56,52,49,.5);
+    }
+  }
 }
 
 .scroll-tracker {
@@ -220,7 +239,7 @@
   -webkit-user-select: none;
   transition: right .3s,background-color .3s;
 
-  #wp-dot-1, #wp-dot-2 {
+  #wp-dot-1, #wp-dot-2, #wp-dot-3, #wp-dot-4 {
     position: relative;
     border: 2px solid $primary-red;
     border-radius: 50%;

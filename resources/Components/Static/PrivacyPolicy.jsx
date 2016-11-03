@@ -21,7 +21,7 @@ class PrivacyPolicy extends Component {
   componentDidMount(e) {
     setTimeout(function() {
       this.setState({childVisible: !this.state.childVisible});
-    }.bind(this), 4000);
+    }.bind(this), 2000);
   }
   render() {
     return(

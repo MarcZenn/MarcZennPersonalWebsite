@@ -24,9 +24,9 @@ class Works extends Component {
     setTimeout(function() {
       this.setState({
         childVisible: !this.state.childVisible,
-        entered: true
       });
-    }.bind(this), 4000);
+      this.setWaypoint(true, 1);
+    }.bind(this), 2000);
   }
 
   setWaypoint(bool, int) {

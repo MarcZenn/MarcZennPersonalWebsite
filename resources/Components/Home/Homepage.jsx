@@ -23,6 +23,7 @@ class Homepage extends Component {
               </div>
               <div className="col two">
                 <h1><br /> <b>M</b>erits <b>A</b>nalysis <b>R</b>eal-Time <b>C</b>omputer (M.A.R.C)</h1>
+                <p>Please pardon the dust. Site currently under construction.</p>
                 <p>---------------------------------------------------</p>
                 <p className="slogan">- Web Engineer, Tinkerer, Aspiring Social-Entrepreneur -</p>
                 <p className="home-copy">System Administrator (SYSADMIN) - Marc Zenn</p>

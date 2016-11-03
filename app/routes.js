@@ -18,7 +18,7 @@ import ProfessionalContributions from '../resources/Components/Work/Professional
 
 export default (
   <Router path='/' history={browserHistory} component={App}>
-    <IndexRoute component={Homepage}/>
+    <IndexRoute component={Homepage} ignoreScrollBehavior/>
     <Route path='/companies' component={Companies} />
     <Route path='/about' component={About}/>
     <Route path='/works' component={Works}/>
