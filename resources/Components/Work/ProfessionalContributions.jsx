@@ -54,65 +54,7 @@ class ProfessionalContributions extends Component {
               <h1>This page represents a collective body of work built during my employment as a full-time developer within an organization, startup or agency. Feel free to peruse the projects and contact me if you have any questions, concerns or skeptical inquiries.</h1>
             </Col>
             <Col xs={12}>
-              <ul>
-                <li>
-                  <i className="devicon-angularjs-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-bootstrap-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-css3-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-d3js-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-git-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-gitlab-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-gulp-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-heroku-original colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-javascript-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-laravel-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-less-plain-wordmark colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-linux-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-mongodb-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-mysql-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-nodejs-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-php-plain colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-react-original colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-sass-original colored"></i>
-                </li>
-                <li>
-                  <i className="devicon-backbonejs-plain colored"></i>
-                </li>
-              </ul>
+              <img src="/public/images/devicons.png"  />
             </Col>
           </Row>
 
