@@ -15,7 +15,7 @@ import React, {Component} from 'react';
 const WebFont = require('webfontloader');
  WebFont.load({
    google: {
-     families: ['Raleway', 'Roboto Condensed']
+     families: ['Raleway', 'Roboto Condensed', 'Bungee Hairline']
    }
  });
 

@@ -65,8 +65,8 @@ class ProfessionalContributions extends Component {
                 onEnter={this.setWaypoint.bind(this, true, 2)}
                 onLeave={this.setWaypoint.bind(this, false, 2)}
               />
-              <h2>A Thing Called Kickfurther</h2>
-              <p>The Micro-Retail Revolution.</p>
+              <h2>So It's Like Kickstarter?</h2>
+              <p>Hmm, yes and no...</p>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/kf-example_image.png" />
@@ -81,11 +81,11 @@ class ProfessionalContributions extends Component {
                 onEnter={this.setWaypoint.bind(this, true, 3)}
                 onLeave={this.setWaypoint.bind(this, false, 3)}
               />
-              <h2>Reality Check from Crispin Porter + Bogusky</h2>
-              <p>My First Real Boy Development Position.</p>
+              <h2>Interning at Crispin Porter + Bogusky</h2>
+              <p>You WILL sleep over at the office at least once.</p>
             </Col>
             <Col xs={12} md={6}>
-              <img src="/public/images/kf-example_image.png" />
+              <img src="/public/images/iphone6plus.png" />
             </Col>
           </Row>
 

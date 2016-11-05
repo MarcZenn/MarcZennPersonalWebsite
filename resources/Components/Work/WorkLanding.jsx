@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 
 // Components
 import UpgradingUI from '.././Partials/UpgradingUI.jsx';
+import Nav from '.././Partials/Nav.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 import Waypoint from 'react-waypoint';
 import {Link} from 'react-router';
@@ -52,6 +53,7 @@ class Works extends Component {
           // Ternary to show UpgradingUI child component for 4 seconds then show hidden parent component.
           this.state.childVisible ? <UpgradingUI /> :
           <section>
+            <Nav />
             <Row className="work-landing">
               <Col xs={12} className="personal-landing">
                 <Waypoint
@@ -60,14 +62,14 @@ class Works extends Component {
                 />
                 <Link to="/personal-projects">
                   <div className="text-center flexbox-aligner">
-                    <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Personal Projects</h2>
+                    <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Personal</h2>
                   </div>
                 </Link>
               </Col>
               <Col xs={12} className="professional-landing">
                 <Link to="/professional-contributions">
                   <div className="text-center flexbox-aligner">
-                    <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Professional Contributions</h2>
+                    <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Professional</h2>
                   </div>
                 </Link>
                 <Waypoint
