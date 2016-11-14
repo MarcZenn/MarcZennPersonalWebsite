@@ -27,7 +27,7 @@ class Works extends Component {
         childVisible: !this.state.childVisible,
       });
       this.setWaypoint(true, 1);
-    }.bind(this), 2000);
+    }.bind(this), 1500);
   }
 
   setWaypoint(bool, int) {

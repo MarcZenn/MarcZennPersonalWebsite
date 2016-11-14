@@ -15,17 +15,16 @@ import PersonalProjects from '../resources/Components/Work/PersonalProjects.jsx'
 import ProfessionalContributions from '../resources/Components/Work/ProfessionalContributions.jsx';
 
 
-
 export default (
   <Router path='/' history={browserHistory} component={App}>
-    <IndexRoute component={Homepage} ignoreScrollBehavior/>
+    <IndexRoute component={Homepage} />
     <Route path='/companies' component={Companies} />
     <Route path='/about' component={About}/>
     <Route path='/works' component={Works}/>
     <Route path='/contact' component={Contact}/>
     <Route path='/privacy-policy' component={PrivacyPolicy}/>
     <Route path='/personal-projects' component={PersonalProjects}/>
-    <Route path='/professional-contributions' component={ProfessionalContributions}/>
+    <Route path='/professional-contributions' component={ProfessionalContributions} />
 
     {/* error/maintenance pages */}
     <Route path='/*' component={PageNotFound}/>

@@ -1,11 +1,11 @@
-//import react
+// Import react
 import React, {Component} from 'react';
 
 // Components
 import Nav from '.././Partials/Nav.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import Waypoint from 'react-waypoint';
 import {Link} from 'react-router';
+import Waypoint from 'react-waypoint';
 
 
 class ProfessionalContributions extends Component {
@@ -24,7 +24,6 @@ class ProfessionalContributions extends Component {
   }
 
   setWaypoint(bool, int) {
-    console.log(int);
     // Set waypoint state
     if (!bool) {
       this.setState({ entered: false});
@@ -34,9 +33,9 @@ class ProfessionalContributions extends Component {
 
     // Use updated state for UI waypoints animation.
     if(!this.state.entered) {
-      document.getElementById('wp-dot-' + int).className = 'empty';
-    } else {
       document.getElementById('wp-dot-' + int).className = 'filled';
+    } else {
+      document.getElementById('wp-dot-' + int).className = 'empty';
     }
   }
 
@@ -59,12 +58,11 @@ class ProfessionalContributions extends Component {
           </Row>
 
           <Row className="work-item kickfurther">
+            <Waypoint
+              onEnter={this.setWaypoint.bind(this, true, 2)}
+              onLeave={this.setWaypoint.bind(this, false, 2)}
+            />
             <Col className="text-left" xs={12} md={6}>
-              <Waypoint
-                debug={true}
-                onEnter={this.setWaypoint.bind(this, true, 2)}
-                onLeave={this.setWaypoint.bind(this, false, 2)}
-              />
               <h2>So It's Like Kickstarter?</h2>
               <p>Hmm, yes and no...</p>
             </Col>
@@ -75,12 +73,11 @@ class ProfessionalContributions extends Component {
 
 
           <Row className="work-item cpb">
+            <Waypoint
+              onEnter={this.setWaypoint.bind(this, true, 3)}
+              onLeave={this.setWaypoint.bind(this, false, 3)}
+            />
             <Col className="text-left" xs={12} md={6}>
-              <Waypoint
-                debug={true}
-                onEnter={this.setWaypoint.bind(this, true, 3)}
-                onLeave={this.setWaypoint.bind(this, false, 3)}
-              />
               <h2>Interning at Crispin Porter + Bogusky</h2>
               <p>You WILL sleep over at the office at least once.</p>
             </Col>

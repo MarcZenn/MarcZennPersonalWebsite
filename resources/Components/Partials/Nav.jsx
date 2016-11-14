@@ -7,8 +7,6 @@ import {Col, Row, Grid} from 'react-bootstrap/lib';
 import {Link} from 'react-router';
 
 
-
-// React Render
 class Nav extends Component {
   render(){
     return(
@@ -17,9 +15,11 @@ class Nav extends Component {
           <Grid>
             <Row className="show-grid">
               <Col md={6}>
-                <li>
-                  <img src="/public/images/symbol-logo-white.png"  />
-                </li>
+                <Link to="/">
+                  <li>
+                    <img src="/public/images/symbol-logo-white.png"  />
+                  </li>
+                </Link>
               </Col>
               <Col md={6}>
                 <Col md={3} xs={12}>
