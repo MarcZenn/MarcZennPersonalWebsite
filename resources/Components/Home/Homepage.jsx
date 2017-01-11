@@ -32,7 +32,6 @@ class Homepage extends Component {
                   <li><Link to='/personal-projects'>Personal</Link></li>
                   <li><Link to='/professional-contributions'>Professional</Link></li>
                 </ul>
-                <p>Please pardon the dust. Site currently under construction.</p>
               </div>
             </header>
             <Row>
