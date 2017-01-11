@@ -67,7 +67,7 @@ app.use(bodyParser.json({type: '*/*', limit: '50mb'})); // Parse requests to JSO
 app.use(express.static(path.join(__dirname + '/../'))); // Serve from root directory
 
 // Pull in our public routes
-process.env.NODE_ENV !== 'production' ? app.use('/api', publicRoutes) : app.use('/api', publicRoutes)
+app.use('/api', publicRoutes)
 
 
 app.listen(port, function(error) {
