@@ -30,11 +30,12 @@
 
 		li {
 			display: inline-block;
-			width: 50%;
-			padding: 20px;
+			padding: 15px;
 			text-align: center;
 
 			a {
+				width: 350px;
+				display: block;
 				padding: 20px 85px;
 				border: 1px solid $primary-green;
 				background: transparent;

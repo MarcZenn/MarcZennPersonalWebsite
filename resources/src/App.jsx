@@ -1,7 +1,7 @@
-// TODO: plan out the rest of the site
-// TODO: hookup contact form
-// TODO: add form front-end vs. back-end? validation for contact form
-// TODO: setup http secure protocol (HTTPS)
+// TODO: hookup contact form with mailgun API.
+// TODO: add form front-end validation for contact form
+// TODO: setup express/node server API routes
+// TODO: setup http secure protocol (HTTPS) in Node
 // TODO: find the right way to setup font awesome
 // TODO: use cookies to not show upgrading UI component if they've already visited that page OR toggle entire websites CSS between the two....
 

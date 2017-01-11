@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 
 // Components
 import Nav from '.././Partials/Nav.jsx';
+import Footer from '.././Partials/Footer.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import {Link} from 'react-router';
 import Waypoint from 'react-waypoint';
 
 
@@ -50,7 +50,7 @@ class PersonalProjects extends Component {
                 onEnter={this.setWaypoint.bind(this, true, 1)}
                 onLeave={this.setWaypoint.bind(this, false, 1)}
               />
-              <h1>This page represents a collective body of work built during my employment as a full-time developer within an organization, startup or agency. Feel free to peruse the projects and contact me if you have any questions, concerns or skeptical inquiries.</h1>
+              <h1>Here you will find mostly personal passion type projects. Projects I felt compelled to build for one reason or another...I simply had to build them. Feel free to peruse the projects and contact me if you have any questions, concerns or harsh remarks.</h1>
             </Col>
             <Col xs={12}>
               <img src="/public/images/devicons.png"  />
@@ -63,11 +63,11 @@ class PersonalProjects extends Component {
               onLeave={this.setWaypoint.bind(this, false, 2)}
             />
             <Col className="text-left" xs={12} md={6}>
-              <h2>So It's Like Kickstarter?</h2>
-              <p><Link to="#">Because eating healthy is simple.</Link></p>
+              <h2>Just Foodle It!</h2>
+              <p><a href="http://www.foodle-it.com">Because eating healthy isn't rocket science...</a></p>
             </Col>
             <Col xs={12} md={6}>
-              <img src="/public/images/kf-example_image.png" />
+              <img src="/public/images/foodle.png" />
             </Col>
           </Row>
 
@@ -77,6 +77,7 @@ class PersonalProjects extends Component {
             <div className="empty" id="wp-dot-2"></div>
           </div>
         </div>
+        <Footer />
       </section>
     )
   }

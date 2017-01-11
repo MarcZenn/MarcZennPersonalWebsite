@@ -72,12 +72,6 @@ if(process.env.NODE_ENV !== 'production') {
   app.use(webpackHotMiddleware(compiler));
 }
 
-// app.use(function(req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "http://localhost:9090");
-//   res.header("Access-Control-Allow-Credentials", "true");
-//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//   next();
-// });
 app.use(bodyParser.json({type: '*/*', limit: '50mb'})); // Parse requests to JSON
 app.use(express.static(path.join(__dirname + '/../'))); // Serve from root directory
 

@@ -26,7 +26,10 @@ class Footer extends Component {
                     <li><Link to="/companies">Companies</Link></li>
                   </Col>
                   <Col  xs={ 2 }>
-                    <li><Link to="/works">Work</Link></li>
+                    <li><Link to="/professional-contributions">Professional</Link></li>
+                  </Col>
+                  <Col  xs={ 2 }>
+                    <li><Link to="/personal-projects">Personal</Link></li>
                   </Col>
                   <Col  xs={ 2 }>
                     <li><Link to="/about">About</Link></li>
@@ -35,7 +38,7 @@ class Footer extends Component {
                     <li><Link to="/contact">Contact</Link></li>
                   </Col>
                   <Col  xs={ 2 }>
-                    <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                    <li><Link to="/privacy-policy">Privacy</Link></li>
                   </Col>
                   <Col  xs={ 2 }>
                     <li><Link to="https://github.com/MarcZenn">Github</Link></li>

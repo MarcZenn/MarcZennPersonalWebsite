@@ -1,0 +1,84 @@
+.contact-content {
+	position: relative;
+	z-index: 10;
+  margin: 65px auto;
+	padding: 75px 20px;
+	text-align: left;
+
+  h2{
+    margin: 0 auto 20px auto;
+  	text-align: center;
+		font-size: 45px;
+    font-family: $h-font-family-1;
+  }
+
+  p{
+    margin: 50px auto;
+		font-size: 25px;
+		text-align: left;
+    color: grey;
+  }
+}
+
+.home-contact-form {
+	padding: 10px;
+	width: 80%;
+	margin: 20px auto;
+
+  label{
+    clear: left;
+  	display: block;
+  	float: left;
+  	margin-right: 10px;
+		font-size: 25px;
+    font-family: $p-font;
+  }
+
+  input[type=text],
+  textarea {
+    border: none;
+  	background: transparent;
+  	color: $primary-green;
+  	display: block;
+  	font-size: 1.5em;
+  	width: 80%;
+  }
+
+  textarea {
+    height: 100px;
+    border-bottom: 1px solid $primary-green;
+  }
+
+  input[type=text]:focus,
+  textarea:focus,
+  input[type=submit]:focus,
+  a.button:focus {
+  	outline: 0;
+  }
+
+  input[type=submit],
+  a.button {
+  	background: transparent;
+  	border: 2px solid $primary-green;
+  	clear: both;
+  	color: $primary-green;
+  	cursor: hand;
+  	display: inline-block;
+  	font-size: 1.5em;
+  	margin-bottom: 20px;
+  	padding: 10px 100px;
+  	position: relative;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	z-index: 10;
+  	margin: 50px 10px;
+  }
+
+  input[type=submit]:hover,
+  a.button:hover {
+  	background: $primary-green;
+  	color: #383838;
+  	opacity: 0.8;
+    cursor: pointer;
+  }
+}

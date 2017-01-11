@@ -120,10 +120,6 @@
 .professional-contributions-content, .personal-projects-content {
   background-color: $primary-white;
 
-  h1 {
-    padding: 0 50px;;
-  }
-
   h2 {
     font-family: $p-font;
     position: relative;
@@ -149,7 +145,8 @@
     h1 {
       font-size: 45px;
       color: lightgrey;
-      margin: 45px 0 20px 0;
+      margin: 65px auto 25px auto;
+      padding: 0 20px 0 55px;
     }
 
     img {
@@ -211,7 +208,7 @@
       color: #EB0D8C;
       margin: 20px 0;
     }
-    
+
     a {
       color: #4f4e4d;
 
@@ -225,7 +222,7 @@
       width: 275px;
       height: 560px;
       display: block;
-      margin: -50px 0 0 150px;
+      margin: 0 0 0 150px;
       -webkit-transform: rotate(18deg);
       -moz-transform: rotate(18deg);
       -ms-transform: rotate(18deg);
@@ -236,28 +233,37 @@
   .foodle {
     background-color: #fff;
     overflow: hidden;
+    border-bottom: 1px solid #FA8422;
 
     h2 {
       font-family: Proxima-Nova, sans-serif;
       font-size: 60px;
-      color: #EB0D8C;
+      color: #FA8422;
       margin: 20px 0;
     }
 
-    p {
-      color: #4f4e4d;
+    a {
+      color: #27AE60;
+
+      &:hover {
+        color: #1568D6;
+        text-decoration: none;
+      }
     }
 
     img {
-      width: 275px;
-      height: 560px;
-      display: block;
-      margin: -50px 0 0 150px;
-      -webkit-transform: rotate(18deg);
-      -moz-transform: rotate(18deg);
-      -ms-transform: rotate(18deg);
-      transform: rotate(18deg);
+      width: 100%;
+      margin: 105px 0 0 0;
+      -webkit-box-shadow: -3px 4px 10px 1px rgba(56,52,49,.1);
+      -moz-box-shadow: -3px 4px 10px 1px rgba(56,52,49,.1);
+      box-shadow: -3px 4px 10px 1px rgba(56,52,49,.1);
     }
+  }
+}
+
+.personal-projects-content {
+  h1 {
+    color: #FFC519 !important;
   }
 }
 

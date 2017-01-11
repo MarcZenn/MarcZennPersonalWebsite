@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 
 // Components
 import Nav from '.././Partials/Nav.jsx';
+import Footer from '.././Partials/Footer.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import {Link} from 'react-router';
 import Waypoint from 'react-waypoint';
 
 
@@ -64,7 +64,7 @@ class ProfessionalContributions extends Component {
             />
             <Col className="text-left" xs={12} md={6}>
               <h2>So It's Like Kickstarter?</h2>
-              <p><Link to="/">Hmm, yes and no...</Link></p>
+              <p><a href="http://www.kickfurther.com">Hmm, yes and no...</a></p>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/kf-example_image.png" />
@@ -79,7 +79,7 @@ class ProfessionalContributions extends Component {
             />
             <Col className="text-left" xs={12} md={6}>
               <h2>Interning at Crispin Porter + Bogusky</h2>
-              <p><Link to="/">You WILL sleep over at the office at least once.</Link></p>
+              <p><a href="/">You WILL sleep over at the office at least once.</a></p>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/iphone6plus.png" />
@@ -95,6 +95,7 @@ class ProfessionalContributions extends Component {
             <div className="empty" id="wp-dot-3"></div>
           </div>
         </div>
+        <Footer />
       </section>
     )
   }

@@ -4,6 +4,7 @@ import React, {Component} from 'react'
 // Components
 import HomeNav from './HomeNav.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
+import {Link} from 'react-router';
 
 
 class Homepage extends Component {
@@ -17,7 +18,6 @@ class Homepage extends Component {
           <div className="home-content clearfix">
             <header className="site clearfix home-header">
               <div className="col one">
-                {/* <img style={{position:'absolute', width:50 + 'px', margin: 0 'auto', left: 20 + '%'}} src="/public/images/8bitme.jpg"  /> */}
                 <img src="/public/images/text-logo-2.png"  />
               </div>
               <div className="col two">
@@ -26,13 +26,13 @@ class Homepage extends Component {
                 <p className="slogan">- Web Developer, Programmer, Tinkerer, Aspiring Entrepreneur -</p>
                 <p className="home-copy"><br /> <b>M</b>erits <b>A</b>nalysis <b>R</b>eal-Time <b>C</b>omputer (M.A.R.C)</p>
                 <p className="home-copy">Version 1.0.05 - Server 1989</p>
-                <p>Please pardon the dust. Site currently under construction.</p>
               </div>
               <div className="text-center">
                 <ul className="home-cta-list">
-                  <li><a>Analyze Professional Work</a></li>
-                  <li><a>Anaylize Personal Work</a></li>
+                  <li><Link to='/personal-projects'>Personal</Link></li>
+                  <li><Link to='/professional-contributions'>Professional</Link></li>
                 </ul>
+                <p>Please pardon the dust. Site currently under construction.</p>
               </div>
             </header>
             <Row>
