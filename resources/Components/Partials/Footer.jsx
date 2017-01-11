@@ -6,15 +6,15 @@ import {Col, Row, Grid} from 'react-bootstrap/lib';
 import {Link} from 'react-router';
 
 // React Render
-class HomeFooter extends Component {
+class Footer extends Component {
  render (){
    return (
-     <footer className="home-footer">
+     <footer className="footer">
       <Grid>
         <Row className="show-grid">
           <Col md={ 3 } xs={ 12 } >
             <div>
-              <img src="/public/images/symbol-logo-2.png"  />
+              <img src="/public/images/symbol-logo-white.png"  />
               <p><i className="fa fa-copyright" aria-hidden="true"></i> 2016 MARC ZENN ALL RIGHTS RESERVED</p>
             </div>
           </Col>
@@ -22,17 +22,29 @@ class HomeFooter extends Component {
               <div className="home-footer-list">
               <Row>
                 <ul>
-                  <Col xs={ 3 }>
+                  <Col xs={ 2 }>
                     <li><Link to="/companies">Companies</Link></li>
                   </Col>
-                  <Col  xs={ 3 }>
+                  <Col  xs={ 2 }>
                     <li><Link to="/works">Work</Link></li>
                   </Col>
-                  <Col  xs={ 3 }>
+                  <Col  xs={ 2 }>
                     <li><Link to="/about">About</Link></li>
                   </Col>
-                  <Col  xs={ 3 }>
+                  <Col  xs={ 2 }>
                     <li><Link to="/contact">Contact</Link></li>
+                  </Col>
+                  <Col  xs={ 2 }>
+                    <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                  </Col>
+                  <Col  xs={ 2 }>
+                    <li><Link to="https://github.com/MarcZenn">Github</Link></li>
+                  </Col>
+                  <Col  xs={ 2 }>
+                    <li><Link to="https://www.linkedin.com/in/marcosmartinez2">LinkedIn</Link></li>
+                  </Col>
+                  <Col  xs={ 2 }>
+                    <li><Link to="/resume">Resume</Link></li>
                   </Col>
                 </ul>
               </Row>
@@ -46,9 +58,9 @@ class HomeFooter extends Component {
 }
 
 
-HomeFooter.propTypes = {
+Footer.propTypes = {
   // propTypes
 }
 
 
-export default HomeFooter
+export default Footer

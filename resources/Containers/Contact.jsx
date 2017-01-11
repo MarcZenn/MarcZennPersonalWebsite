@@ -6,8 +6,10 @@ import {connect} from 'react-redux';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
+import Nav from '.././Components/Partials/Nav.jsx';
+import Footer from '.././Components/Partials/Footer.jsx';
 
-class ContactPartial extends Component {
+class Contact extends Component {
 
   constructor() {
     // Super() simply allows us to call methods defined on any parent Components of this Component
@@ -23,6 +25,7 @@ class ContactPartial extends Component {
   render(){
     return (
       <section className="contact-content">
+        <Nav />
         <form className="home-contact-form text-center" onSubmit={this.onSubmit.bind(this)}>
           <h2>Contact the System Administrator (SYSADMIN)</h2>
           <p>Fill out the fields below and press the SUBMIT button. The SYSADMIN will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator's Office.</p>
@@ -36,6 +39,7 @@ class ContactPartial extends Component {
           <textarea id="text" rows="1" ref="message" name="message" value={this.state.message} onChange={this.handleChange.bind(this)}></textarea><br /><br /><br />
           <input type="submit" value="Submit" />
         </form>
+        <Footer />
       </section>
     )
   }
@@ -61,14 +65,14 @@ class ContactPartial extends Component {
 }
 
 function mapStateToProps() {
-  
+
 }
 
 
 
-ContactPartial.propTypes = {
+Contact.propTypes = {
   //
 }
 
 
-export default ContactPartial
+export default Contact

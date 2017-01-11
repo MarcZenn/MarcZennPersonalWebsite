@@ -6,24 +6,52 @@
 .home-content {
 	animation: scroll 3s 1;
   overflow: hidden;
-	padding: 40px 0;
 	position: relative;
 
   header{
     margin: 0 0 80px 0;
   	text-transform: uppercase;
 
-		h1 {
-			font-size: 50px;
-		}
-
     img{
       display: block;
     	height: auto;
     	margin: 0 auto;
-    	max-width: 65%;
+    	max-width: 60%;
+			opacity: 0.7;
     }
   }
+
+	ul.home-cta-list {
+		list-style-type: none;
+		display: block;
+		margin: 75px 0 0 0;
+		position: relative;
+		z-index: 10;
+
+		li {
+			display: inline-block;
+			width: 50%;
+			padding: 20px;
+			text-align: center;
+
+			a {
+				padding: 20px 85px;
+				border: 1px solid $primary-green;
+				background: transparent;
+				margin: 0 auto;
+				color: $primary-green;
+				font-size: 25px;
+				font-family: 'VT323', Courier;
+
+				&:hover{
+					cursor: pointer;
+					background-color: $primary-green;
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 
 .description-content {
@@ -54,118 +82,13 @@
   }
 }
 
-
-.home-contact-form {
-	padding: 10px;
-	width: 80%;
-	margin: 20px auto;
-
-  label{
-    clear: left;
-  	display: block;
-  	float: left;
-  	margin-right: 10px;
-  	padding-top: 5px;
-		font-size: 25px;
-  }
-
-  input[type=text],
-  textarea {
-  	background: transparent;
-  	border: none;
-  	color: $primary-green;
-  	display: block;
-  	float: left;
-  	font-family: 'VT323', Courier;
-  	font-size: 1.2em;
-  	position: relative;
-  	width: 80%;
-  	z-index: 10
-  }
-
-  input[type=text]:focus,
-  textarea:focus,
-  input[type=submit]:focus,
-  a.button:focus {
-  	outline: 0;
-  }
-
-  input[type=submit],
-  a.button {
-  	background: transparent;
-  	border: 1px solid $primary-green;
-  	clear: both;
-  	color: $primary-green;
-  	cursor: hand;
-  	display: inline-block;
-  	font-family: 'VT323', Courier;
-  	font-size: 1em;
-  	margin-bottom: 20px;
-  	padding: 10px 100px;
-  	position: relative;
-  	text-decoration: none;
-  	text-transform: uppercase;
-  	z-index: 10;
-  	margin: 60px 10px;
-  }
-
-  input[type=submit]:hover,
-  a.button:hover {
-  	background: $primary-green;
-  	color: #383838;
-  	opacity: 0.8;
-    cursor: pointer;
-  }
-}
-
-.contact-content {
-	position: relative;
-	z-index: 10;
-	padding: 75px 20px;
-	border-top: 1px solid $primary-green;
-	border-bottom: 1px solid $primary-green;
-	border-top-style: dashed;
-	border-bottom-style: dashed;
-	text-align: left;
-
-  h2{
-    margin: 0 auto 20px auto;
-  	text-align: center;
-		font-size: 45px;
-  }
-
-  p{
-    margin: 50px auto;
-		font-size: 25px;
-		font-family: 'VT323', Courier;
-		text-align: left;
-  }
-}
-
-.home-social-bar{
-	opacity: 0.7;
-	position: relative;
-	z-index: 10;
-	text-align: center;
-	margin: 0;
-	padding: 10px;
-
-  ul {
-    li{
-      text-align: center;
-    	display: inline-block;
-    	width: 33%;
-    }
-  }
-}
-
 textarea {
 	margin-bottom: 20px;
 	overflow: auto;
 	resize: none;
 }
 
-.home-copy{
+.home-copy {
 	font-size: 25px;
 	margin: 0 0 10px 0;
 }
@@ -198,13 +121,13 @@ p {
 	padding: 20px 50px;
 	position: relative;
 
-	img{
+	img {
 		width: 230px;
 		height: 200px;
 		margin: 20px 0;
 	}
 
-	ul{
+	ul {
 		list-style-type: none;
 		position: relative;
 		z-index: 10;
@@ -281,10 +204,22 @@ p {
 	}
 }
 
-.home-social-bar{
-		position: relative;
-		z-index: 100;
-		border-top: 1px solid $primary-green;
-		border-top-style: dashed;
-		border-bottom: none;
+.home-social-bar {
+	opacity: 0.7;
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	margin: 45px 0 0 0;
+	height: 100px;
+	border-top: 1px solid $primary-green;
+	border-top-style: dashed;
+	border-bottom: none;
+
+  ul {
+    li{
+      text-align: center;
+    	display: inline-block;
+    	width: 33%;
+    }
+  }
 }

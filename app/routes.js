@@ -7,9 +7,10 @@ import App from '../resources/src/App.jsx';
 import Homepage from '../resources/Components/Home/Homepage.jsx';
 import PageNotFound from '../resources/Components/ErrorPages/404.jsx';
 import Companies from '../resources/Components/Companies/Index.jsx';
-import About from '../resources/Components/About/Index.jsx';
+import About from '../resources/Components/Static/About/About.jsx';
+import Resume from '../resources/Components/Static/About/Resume.jsx';
 import Works from '../resources/Components/Work/WorkLanding.jsx';
-import Contact from '../resources/Components/Contact/Index.jsx';
+import Contact from '../resources/Containers/Contact.jsx';
 import PrivacyPolicy from '../resources/Components/Static/PrivacyPolicy.jsx';
 import PersonalProjects from '../resources/Components/Work/PersonalProjects.jsx';
 import ProfessionalContributions from '../resources/Components/Work/ProfessionalContributions.jsx';
@@ -20,6 +21,7 @@ export default (
     <IndexRoute component={Homepage} />
     <Route path='/companies' component={Companies} />
     <Route path='/about' component={About}/>
+    <Route path='/resume' component={Resume}/>
     <Route path='/works' component={Works}/>
     <Route path='/contact' component={Contact}/>
     <Route path='/privacy-policy' component={PrivacyPolicy}/>

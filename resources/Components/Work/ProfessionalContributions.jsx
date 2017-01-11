@@ -64,7 +64,7 @@ class ProfessionalContributions extends Component {
             />
             <Col className="text-left" xs={12} md={6}>
               <h2>So It's Like Kickstarter?</h2>
-              <p>Hmm, yes and no...</p>
+              <p><Link to="/">Hmm, yes and no...</Link></p>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/kf-example_image.png" />
@@ -79,7 +79,7 @@ class ProfessionalContributions extends Component {
             />
             <Col className="text-left" xs={12} md={6}>
               <h2>Interning at Crispin Porter + Bogusky</h2>
-              <p>You WILL sleep over at the office at least once.</p>
+              <p><Link to="/">You WILL sleep over at the office at least once.</Link></p>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/iphone6plus.png" />

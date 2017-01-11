@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
-class UpgradingUI extends Component {
+class Spinner extends Component {
   render() {
     return (
       <section className="fallout-wrapper">
@@ -13,7 +13,7 @@ class UpgradingUI extends Component {
         <div className="text-center flexbox-aligner upgradingUI-copy">
           <Row>
             <Col xs={12}>
-              <h1 className="flexbox-aligner-item">Upgrading UI...</h1>
+              <h1 className="flexbox-aligner-item">Accessing Device Terminal...</h1>
             </Col>
             <Col xs={12}>
               <div className="spinner">
@@ -32,8 +32,8 @@ class UpgradingUI extends Component {
 }
 
 
-UpgradingUI.propTypes = {
+Spinner.propTypes = {
   // propTypes
 }
 
-export default UpgradingUI
+export default Spinner

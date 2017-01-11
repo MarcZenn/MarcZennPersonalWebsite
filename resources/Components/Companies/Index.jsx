@@ -4,30 +4,12 @@ import React, {Component} from 'react';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import UpgradingUI from '.././Partials/UpgradingUI.jsx';
 
 
 class Companies extends Component {
-  // Use ES6 constructor to add childVisible prop to Components state i.e. Companies Component and set to true. This sets a true state used to conditionally render any child components below specifically the UpgradingUI component.
-  constructor() {
-    // super simply allows us to call methods defined on any parent Components of this Component
-    super();
-    this.state = {
-     childVisible: true,
-   };
-  }
-  // Remove child component after 4 seconds and show parent component.
-  componentDidMount(e) {
-    setTimeout(function() {
-      this.setState({childVisible: !this.state.childVisible});
-    }.bind(this), 2000);
-  }
   render() {
     return(
       <section>
-        {
-          // Ternary to show UpgradingUI child component for 4 seconds then show hidden parent component.
-          this.state.childVisible ? <UpgradingUI /> :
           <div className="text-center flexbox-aligner under-construction-copy">
             <Row>
               <Col xs={12}>
@@ -38,7 +20,6 @@ class Companies extends Component {
               </Col>
             </Row>
           </div>
-        }
       </section>
     )
   }
