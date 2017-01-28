@@ -15,7 +15,7 @@ class Footer extends Component {
           <Col md={ 3 } xs={ 12 } >
             <div>
               <img src="/public/images/symbol-logo-white.png"  />
-              <p><i className="fa fa-copyright" aria-hidden="true"></i> 2016 MARC ZENN ALL RIGHTS RESERVED</p>
+              <p><i className="fa fa-copyright" aria-hidden="true"></i> 2017 MARC ZENN ALL RIGHTS RESERVED</p>
             </div>
           </Col>
           <Col md={ 9 } xs={ 12 } >

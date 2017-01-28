@@ -65,6 +65,7 @@ class ProfessionalContributions extends Component {
             <Col className="text-left" xs={12} md={6}>
               <h2>So It's Like Kickstarter?</h2>
               <p><a href="http://www.kickfurther.com">Hmm, yes and no...</a></p>
+              <a href="http://www.foodle-it.com"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/kf-example_image.png" />
@@ -80,6 +81,7 @@ class ProfessionalContributions extends Component {
             <Col className="text-left" xs={12} md={6}>
               <h2>Interning at Crispin Porter + Bogusky</h2>
               <p><a href="/">You WILL sleep over at the office at least once.</a></p>
+              <a href="http://www.foodle-it.com"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/iphone6plus.png" />

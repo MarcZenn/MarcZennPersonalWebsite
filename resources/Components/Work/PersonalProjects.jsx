@@ -64,7 +64,8 @@ class PersonalProjects extends Component {
             />
             <Col className="text-left" xs={12} md={6}>
               <h2>Just Foodle It!</h2>
-              <p><a href="http://www.foodle-it.com">Because eating healthy isn't rocket science...</a></p>
+              <p><a href="http://www.foodle-it.com">Because eating healthy isn't rocket science.</a></p>
+              <a href="http://www.foodle-it.com"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </Col>
             <Col xs={12} md={6}>
               <img src="/public/images/foodle.png" />

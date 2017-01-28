@@ -13,10 +13,10 @@
   }
 
   h2 {
-    font-family: $h-font-family-2;
+    font-family: $p-font;
     font-size: 75px;
     position: relative;
-    font-weight: 700;
+    font-weight: 200;
     z-index: 1;
   }
 
@@ -54,7 +54,7 @@
         i.fa-toggle-on {
           display: block;
           cursor: pointer;
-          color: $primary-green;
+          color: #27AE60;
         }
       }
     }
@@ -99,7 +99,7 @@
         i.fa-toggle-on {
           display: block;
           cursor: pointer;
-          color: $primary-green;
+          color: #27AE60;
         }
       }
     }
@@ -173,12 +173,12 @@
   }
 
   .kickfurther {
-    background-color: $primary-red;
+    background-color: #2fd656;
 
     h2 {
       font-family: Proxima-Nova, sans-serif;
       font-size: 60px;
-      color: $accent-orange;
+      color: $accent-purple;
       margin: 20px 0;
     }
 
@@ -188,6 +188,17 @@
       &:hover {
         color: #1568d6;
         text-decoration: none;
+      }
+    }
+
+    i {
+      display: inline-block;
+      font-size: 55px;
+      color: $primary-white;
+      margin: 10px 50px;
+
+      &:hover {
+        color: #1568d6;
       }
     }
 
@@ -214,8 +225,19 @@
       color: #4f4e4d;
 
       &:hover {
-        color: #1568d6;
+        color: #EB0D8C;
         text-decoration: none;
+      }
+    }
+
+    i {
+      display: inline-block;
+      font-size: 55px;
+      color: #4f4e4d;
+      margin: 10px 50px;
+
+      &:hover {
+        color: #EB0D8C;
       }
     }
 
@@ -247,8 +269,19 @@
       color: #27AE60;
 
       &:hover {
-        color: #1568D6;
+        color: #FA8422;
         text-decoration: none;
+      }
+    }
+
+    i {
+      display: inline-block;
+      font-size: 55px;
+      color: #27AE60;
+      margin: 10px 50px;
+
+      &:hover {
+        color: #FA8422;
       }
     }
 

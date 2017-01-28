@@ -3,7 +3,6 @@
 // TODO: setup express/node server API routes
 // TODO: finish resume landing page
 // TODO: setup http secure protocol (HTTPS) in Node
-// TODO: find the right way to setup font awesome
 
 
 // Import React Component
@@ -34,24 +33,25 @@ class App extends Component {
   }
 
   componentWillMount() {
-    console.log(reactCookie.setRawCookie('setRawCookie'));
+    // TODO:: Decide whether or not to utilize this.
+    // console.log(reactCookie.setRawCookie('setRawCookie'));
     // cookie.save('userRevisit', userRevisit, { path: '/'});
-      // this.setState({userRevisitId});
-      // var date = new Date();
-      // var time = date.getTime();
-      // time += 3600 * 1000;
-      // date.setTime(time);
-      // var exp = date.toGMTString();
-      //
-      // cookie.save('userRevisitId', userRevisitId, {
-      //   path : '/',
-      //    exp:date.toUTCString()
-      //  })
-
-
-      var ass = cookie.load('userRevisit');
-      console.log(ass)
-      console.log(cookie.userRevisit)
+    //   this.setState({userRevisitId});
+    //   var date = new Date();
+    //   var time = date.getTime();
+    //   time += 3600 * 1000;
+    //   date.setTime(time);
+    //   var exp = date.toGMTString();
+    //
+    //   cookie.save('userRevisitId', userRevisitId, {
+    //     path : '/',
+    //      exp:date.toUTCString()
+    //    })
+    //
+    //
+    //   var ass = cookie.load('userRevisit');
+    //   console.log(ass)
+    //   console.log(cookie.userRevisit)
   }
 
   render(){
