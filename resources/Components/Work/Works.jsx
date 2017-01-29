@@ -5,7 +5,6 @@ import React, {Component} from 'react';
 // Components
 import Nav from '.././Partials/Nav.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import Waypoint from 'react-waypoint';
 import {Link} from 'react-router';
 
 
@@ -47,34 +46,21 @@ class Works extends Component {
           <div>
             <Nav />
             <Row className="work-landing">
-              <Col xs={12} className="personal-landing">
-                <Waypoint
-                  onEnter={this.setWaypoint.bind(this, true, 1)}
-                  onLeave={this.setWaypoint.bind(this, false, 1)}
-                />
+              <Col xs={6} className="personal-landing">
                 <Link to="/personal-projects">
                   <div className="text-center flexbox-aligner">
                     <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Personal</h2>
                   </div>
                 </Link>
               </Col>
-              <Col xs={12} className="professional-landing">
+              <Col xs={6} className="professional-landing">
                 <Link to="/professional-contributions">
                   <div className="text-center flexbox-aligner">
                     <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Professional</h2>
                   </div>
                 </Link>
-                <Waypoint
-                  onEnter={this.setWaypoint.bind(this, true, 2)}
-                  onLeave={this.setWaypoint.bind(this, false, 2)}
-                />
               </Col>
             </Row>
-
-            <div className="scroll-tracker">
-              <div className="filled" id="wp-dot-1"></div>
-              <div className="empty" id="wp-dot-2"></div>
-            </div>
           </div>
       </section>
     )

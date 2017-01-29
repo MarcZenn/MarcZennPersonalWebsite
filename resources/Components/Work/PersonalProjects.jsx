@@ -33,9 +33,9 @@ class PersonalProjects extends Component {
 
     // Use updated state for UI waypoints animation.
     if(!this.state.entered) {
-      document.getElementById('wp-dot-' + int).className = 'filled';
-    } else {
       document.getElementById('wp-dot-' + int).className = 'empty';
+    } else {
+      document.getElementById('wp-dot-' + int).className = 'filled';
     }
   }
 
@@ -44,12 +44,12 @@ class PersonalProjects extends Component {
       <section>
         <Nav />
         <div className="personal-projects-content">
+          <Waypoint
+            onEnter={this.setWaypoint.bind(this, true, 1)}
+            onLeave={this.setWaypoint.bind(this, false, 1)}
+          />
           <Row className="work-item personal-projects-header">
             <Col xs={12} className="text-left">
-              <Waypoint
-                onEnter={this.setWaypoint.bind(this, true, 1)}
-                onLeave={this.setWaypoint.bind(this, false, 1)}
-              />
               <h1>Here you will find mostly personal passion type projects. Projects I felt compelled to build for one reason or another...I simply had to build them. Feel free to peruse the projects and contact me if you have any questions, concerns or harsh remarks.</h1>
             </Col>
             <Col xs={12}>
@@ -58,24 +58,24 @@ class PersonalProjects extends Component {
           </Row>
 
           <Row className="work-item foodle">
-            <Waypoint
-              onEnter={this.setWaypoint.bind(this, true, 2)}
-              onLeave={this.setWaypoint.bind(this, false, 2)}
-            />
             <Col className="text-left" xs={12} md={6}>
               <h2>Just Foodle It!</h2>
               <p><a href="http://www.foodle-it.com">Because eating healthy isn't rocket science.</a></p>
-              <a href="http://www.foodle-it.com"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </Col>
             <Col xs={12} md={6}>
-              <img src="/public/images/foodle.png" />
+              <i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i>
+              <a href="http://www.foodle-it.com"><img src="/public/images/foodle.png" /></a>
             </Col>
           </Row>
+          <Waypoint
+            onEnter={this.setWaypoint.bind(this, true, 2)}
+            onLeave={this.setWaypoint.bind(this, false, 2)}
+          />
 
 
           <div className="scroll-tracker">
-            <div className="filled" id="wp-dot-1"></div>
-            <div className="empty" id="wp-dot-2"></div>
+            <div className="empty" id="wp-dot-1"></div>
+            <div className="filled" id="wp-dot-2"></div>
           </div>
         </div>
         <Footer />

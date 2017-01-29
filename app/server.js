@@ -66,6 +66,7 @@ app.use(bodyParser.json({type: '*/*', limit: '50mb'})); // Parse requests to JSO
 
 app.use(express.static(path.join(__dirname + '/../'))); // Serve from root directory
 
+
 // Pull in our public routes
 app.use('/api', publicRoutes)
 

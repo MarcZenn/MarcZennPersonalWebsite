@@ -45,14 +45,14 @@ class ProfessionalContributions extends Component {
         <Nav />
         <div className="professional-contributions-content">
           <Row className="work-item professional-contributions-header">
-            <Col xs={12} className="text-left">
+            <Col xs={11} className="text-left">
               <Waypoint
                 onEnter={this.setWaypoint.bind(this, true, 1)}
                 onLeave={this.setWaypoint.bind(this, false, 1)}
               />
               <h1>This page represents a collective body of work built during my employment as a full-time developer within an organization, startup or agency. Feel free to peruse the projects and contact me if you have any questions, concerns or skeptical inquiries.</h1>
             </Col>
-            <Col xs={12}>
+            <Col xs={11}>
               <img src="/public/images/devicons.png"  />
             </Col>
           </Row>
@@ -65,10 +65,10 @@ class ProfessionalContributions extends Component {
             <Col className="text-left" xs={12} md={6}>
               <h2>So It's Like Kickstarter?</h2>
               <p><a href="http://www.kickfurther.com">Hmm, yes and no...</a></p>
-              <a href="http://www.foodle-it.com"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </Col>
-            <Col xs={12} md={6}>
-              <img src="/public/images/kf-example_image.png" />
+            <Col xs={11} md={6}>
+              <i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i>
+              <a href="http://www.kickfurther.com"><img src="/public/images/kf-example_image.png" /></a>
             </Col>
           </Row>
 
@@ -81,10 +81,10 @@ class ProfessionalContributions extends Component {
             <Col className="text-left" xs={12} md={6}>
               <h2>Interning at Crispin Porter + Bogusky</h2>
               <p><a href="/">You WILL sleep over at the office at least once.</a></p>
-              <a href="http://www.foodle-it.com"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </Col>
-            <Col xs={12} md={6}>
-              <img src="/public/images/iphone6plus.png" />
+            <Col xs={11} md={6}>
+              <i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i>
+              <a href="http://www.foodle-it.com"><img src="/public/images/iphone6plus.png" /></a>
             </Col>
           </Row>
 

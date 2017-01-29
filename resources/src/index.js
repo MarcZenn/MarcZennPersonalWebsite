@@ -20,12 +20,12 @@ function logPageView() {
 }
 
 // Outermost Parent Component
-import App from './App.jsx'; 
+import App from './App.jsx';
 
 
 
 // Tell the React virtual DOM where to mount the App Component and also include react-router routes. Notice the onUpdate method...without this when visiting a new page, the previous pages window position will be stored and you will land at that same scroll position upon visiting the new page (could be at the bottom or middle of the page)....Hate that this is necessary. Will try to find a cleaner fix asap.
 ReactDOM.render(
-  <Router routes={routes} onUpdate={() => window.scrollTo(0, 0)} />,
+  <Router routes={routes} onUpdate={() => window.scrollTo(0, 0)}  />,
   document.getElementById('root')
 )

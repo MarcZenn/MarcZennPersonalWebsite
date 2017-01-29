@@ -1,7 +1,9 @@
 .work-landing {
   background-color: $primary-white;
+  overflow-x: hidden;
 
   div {
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
 
@@ -14,7 +16,7 @@
 
   h2 {
     font-family: $p-font;
-    font-size: 75px;
+    font-size: 55px;
     position: relative;
     font-weight: 200;
     z-index: 1;
@@ -25,9 +27,9 @@
   }
 
   div.personal-landing {
-    border-bottom: 1px solid $primary-green;
     position: relative;
-    border-right: 3px solid lightgrey;
+    border-right: 1px solid $primary-green;
+    margin: 0;
 
     i.fa-toggle-on {
       display: none;
@@ -43,7 +45,7 @@
     }
 
     h2 {
-      color: $accent-orange;
+      color: grey;
       transition: all 0.5s ease-in-out;
 
       &:hover{
@@ -72,7 +74,7 @@
 
   div.professional-landing {
     position: relative;
-    border-right: 3px solid lightgrey;
+    margin: 0;
 
     i.fa-toggle-on {
       display: none;
@@ -88,7 +90,7 @@
     }
 
     h2 {
-      color: $accent-purple;
+      color: grey;
       transition: all 0.5s ease-in-out;
 
       &:hover{
@@ -119,6 +121,7 @@
 
 .professional-contributions-content, .personal-projects-content {
   background-color: $primary-white;
+  overflow-x: hidden;
 
   h2 {
     font-family: $p-font;
@@ -140,7 +143,6 @@
 
   .professional-contributions-header, .personal-projects-header {
     background-color: $primary-white;
-    border-bottom: 1px solid $primary-red;
 
     h1 {
       font-size: 45px;
@@ -193,20 +195,34 @@
 
     i {
       display: inline-block;
-      font-size: 55px;
-      color: $primary-white;
+      font-size: 115px;
+      color: $accent-purple;;
       margin: 10px 50px;
+      position: absolute;
+      top: 175px;
+      left: 185px;
+      text-align: center;
 
-      &:hover {
-        color: #1568d6;
+      p {
+        display: block;
+        font-size: 15px;
+        font-family: $p-font;
+        color: $accent-purple;
       }
     }
 
     img {
       width: 100%;
+      position: relative;
       -webkit-box-shadow: -3px 4px 10px 1px rgba(56,52,49,.5);
       -moz-box-shadow: -3px 4px 10px 1px rgba(56,52,49,.5);
       box-shadow: -3px 4px 10px 1px rgba(56,52,49,.5);
+      transition: all 0.3s ease-in;
+
+      &:hover{
+        opacity: 0.15;
+        cursor: pointer;
+      }
     }
   }
 
@@ -232,12 +248,18 @@
 
     i {
       display: inline-block;
-      font-size: 55px;
-      color: #4f4e4d;
+      font-size: 115px;
+      color: grey;
       margin: 10px 50px;
+      position: absolute;
+      top: 150px;
+      left: 185px;
+      text-align: center;
 
-      &:hover {
-        color: #EB0D8C;
+      p {
+        display: block;
+        font-size: 15px;
+        font-family: $p-font;
       }
     }
 
@@ -250,13 +272,18 @@
       -moz-transform: rotate(18deg);
       -ms-transform: rotate(18deg);
       transform: rotate(18deg);
+      transition: all 0.3s ease-in;
+
+      &:hover{
+        opacity: 0.15;
+        cursor: pointer;
+      }
     }
   }
 
   .foodle {
     background-color: #fff;
-    overflow: hidden;
-    border-bottom: 1px solid #FA8422;
+    border-top: 1px solid #FA8422;
 
     h2 {
       font-family: Proxima-Nova, sans-serif;
@@ -276,11 +303,18 @@
 
     i {
       display: inline-block;
-      font-size: 55px;
-      color: #27AE60;
+      font-size: 115px;
+      color: #FA8422;
       margin: 10px 50px;
+      position: absolute;
+      top: 175px;
+      left: 185px;
+      text-align: center;
 
-      &:hover {
+      p {
+        display: block;
+        font-size: 15px;
+        font-family: $p-font;
         color: #FA8422;
       }
     }
@@ -288,9 +322,16 @@
     img {
       width: 100%;
       margin: 105px 0 0 0;
+      position: relative;
       -webkit-box-shadow: -3px 4px 10px 1px rgba(56,52,49,.1);
       -moz-box-shadow: -3px 4px 10px 1px rgba(56,52,49,.1);
       box-shadow: -3px 4px 10px 1px rgba(56,52,49,.1);
+      transition: all 0.3s ease-in;
+
+      &:hover{
+        opacity: 0.15;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -305,8 +346,8 @@
   position: fixed;
   z-index: 1000;
   top: 50%;
-  right: 35px;
-  padding: 14px 12px;
+  right: 5px;
+  padding: 14px 5px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   box-shadow: 0 2px 2px rgba(0,0,0,.25);

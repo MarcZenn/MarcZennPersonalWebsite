@@ -9,7 +9,7 @@ import PageNotFound from '../resources/Components/ErrorPages/404.jsx';
 import Companies from '../resources/Components/Companies/Index.jsx';
 import About from '../resources/Components/Static/About/About.jsx';
 import Resume from '../resources/Components/Static/About/Resume.jsx';
-import Works from '../resources/Components/Work/WorkLanding.jsx';
+import Works from '../resources/Components/Work/Works.jsx';
 import Contact from '../resources/Containers/Contact.jsx';
 import PrivacyPolicy from '../resources/Components/Static/PrivacyPolicy.jsx';
 import PersonalProjects from '../resources/Components/Work/PersonalProjects.jsx';
@@ -17,7 +17,7 @@ import ProfessionalContributions from '../resources/Components/Work/Professional
 
 
 export default (
-  <Router path='/' history={browserHistory} component={App}>
+  <Router history={browserHistory} path='/' component={App}>
     <IndexRoute component={Homepage} />
     <Route path='/companies' component={Companies} />
     <Route path='/about' component={About}/>

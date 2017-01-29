@@ -20,7 +20,7 @@ class About extends Component {
           <p className="about-copy">It's my firm belief that no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity. That success depends on how you define it as much as how you attain it and that success alone is not enough if it only benefits you, maybe even a select few.</p>
           <h1>Work</h1>
           <p className="about-copy">
-            Currently I'm experienced in object-oriented programming, agile, testing, debugging, refactoring & evaluating the full-stack. Hoping to dive into Ethereum Decentralization Platform, Augmented/Virtual Reality, Machine-Learning, Social E-commerce, AI, Statically Typed Languages. For the time being I work for a startup as a Junior Developer and 9th team hire.
+            Currently I'm experienced in object-oriented programming, agile, testing, debugging, refactoring & evaluating the full-stack. Hoping to dive into Ethereum Decentralization Platform, Augmented/Virtual Reality, Machine-Learning, Social E-commerce, AI, Statically Typed Languages. For the time being I work for a successful startup as a Junior Developer and 9th team hire.
           </p>
           <h1>Life</h1>
           <p className="about-copy">These days I spend my time living and working in beautiful Boulder, Colorado enjoying my days as a web engineer and startup enthusiast. The rest of the time I'm pursuing something I personally feel passionate about. I think the one thing I'd say my soul couldn't live without would be music...if only I had any musical talent whatsoever. Regardless, I'm good have to settle for the occasional hike or road trip and a good beer or two once in a while.</p>
