@@ -18,9 +18,8 @@ class PersonalProjects extends Component {
   }
 
   componentDidMount(e) {
-    setTimeout(function() {
-      this.setWaypoint(true, 1);
-    }.bind(this), 10);
+    this.setWaypoint(false, 2);
+    this.setWaypoint(true, 1);
   }
 
   setWaypoint(bool, int) {
@@ -50,7 +49,7 @@ class PersonalProjects extends Component {
           />
           <Row className="work-item personal-projects-header">
             <Col xs={12} className="text-left">
-              <h1>Here you will find mostly personal passion type projects. Projects I felt compelled to build for one reason or another...I simply had to build them. Feel free to peruse the projects and contact me if you have any questions, concerns or harsh remarks.</h1>
+              <h1>Here you will find personal passion type projects. Projects I felt compelled to build for one reason or another...I simply had to build them. Feel free to peruse the projects and contact me if you have any questions, concerns or harsh remarks.</h1>
             </Col>
             <Col xs={12}>
               <img src="/public/images/devicons.png"  />
@@ -74,7 +73,7 @@ class PersonalProjects extends Component {
 
 
           <div className="scroll-tracker">
-            <div className="empty" id="wp-dot-1"></div>
+            <a href=""><div className="empty" id="wp-dot-1"></div></a>
             <div className="filled" id="wp-dot-2"></div>
           </div>
         </div>

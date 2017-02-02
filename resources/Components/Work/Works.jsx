@@ -13,31 +13,6 @@ class Works extends Component {
   constructor(props) {
     // super simply allows us to call methods defined on any parent Components of this Component
     super(props);
-    this.state = {
-     entered: false
-   };
-  }
-  // Remove child component after 4 seconds and show parent component then set entered state to true for initial waypoint UI rendering.
-  componentDidMount(e) {
-    setTimeout(function() {
-      this.setWaypoint(true, 1);
-    }.bind(this), 1500);
-  }
-
-  setWaypoint(bool, int) {
-    // Set waypoint state
-    if (!bool) {
-      this.setState({ entered: false});
-    } else {
-      this.setState({entered: true});
-    }
-
-    // Use updated state for UI waypoints animation.
-    if(!this.state.entered) {
-      document.getElementById('wp-dot-' + int).className = 'empty';
-    } else {
-      document.getElementById('wp-dot-' + int).className = 'filled';
-    }
   }
 
   render() {
