@@ -25,11 +25,6 @@ module.exports = {
         test: /\.scss$/,
         loaders:['style', 'css?sourceMap', 'sass?sourceMap'], // utilizing source map options for css debugging in dev tools. Displays source file for given css selector or element.
         include: path.join(__dirname),
-        // To load ONLY the scss files you specify use syntax below or someting similar. Not sure what syntax should be just yet.
-        // include: [
-        //   path.join(__dirname, '/resources/assets/scss'),
-        //   path.join(__dirname, '/public/stylesheets/scss')
-        // ]
         resolve: {
           alias: {
             images: path.join(__dirname, 'public/images')
@@ -42,8 +37,11 @@ module.exports = {
         exclude: /node_modules/ // exclude node modules.
       },
       {
-        test: /\.(eot|woff|png|jpg|gif|svg|ttf)$/,
-        loader: 'url-loader?limit=10000'
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
+      },
+      {
+        test: /\.css$/, loader: 'style!css'
       }
     ]
   },

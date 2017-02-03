@@ -41,11 +41,25 @@
 		    	color: $primary-red;
 					text-decoration: none;
 		    }
+        a.hirecta {
+          color: #4FAA41;
+          padding: 2px 3px;
+          border-radius: 2px;
+          border:1px solid transparent;
+
+          &:hover {
+            color: $primary-white;
+            border:1px solid #4FAA41;
+            background-color: #4FAA41;
+          }
+        }
 			}
+
 			@media (min-width: 300px) and (max-width: 992px) {
 				width: 100%;
-				padding: 20px 0;
+				padding: 10px 0;
 				border-bottom: 1px solid $primary-green;
+        border-top: 1px solid $primary-green;
 
 				&:last-child {
 					border: none;
@@ -55,6 +69,10 @@
   }
 	@media (min-width: 300px) and (max-width: 992px) {
 		padding: 5px 0;
+
+    div {
+      margin: 10px 0;
+    }
 	}
 }
 

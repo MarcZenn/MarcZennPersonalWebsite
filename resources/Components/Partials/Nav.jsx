@@ -32,7 +32,7 @@ class Nav extends Component {
                   <li><Link to="/about">About</Link></li>
                 </Col>
                 <Col md={3} xs={12}>
-                  <li><Link to="/contact">Contact</Link></li>
+                  <li><Link className="hirecta" to="/contact">Hire</Link></li>
                 </Col>
               </Col>
             </Row>
