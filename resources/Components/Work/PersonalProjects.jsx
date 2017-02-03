@@ -21,17 +21,12 @@ class PersonalProjects extends Component {
   constructor(props) {
     super(props);
   }
-  componentDidMount(){
-    // Events.scrollEvent.register('begin', function() {});
-    // Events.scrollEvent.register('end', function() {});
+  componentWillMount(){
     scrollSpy.update();
   }
   componentWillUnmount(){
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
-  }
-  handleSetActive(to) {
-    // console.log(to);
   }
   render(){
     return(

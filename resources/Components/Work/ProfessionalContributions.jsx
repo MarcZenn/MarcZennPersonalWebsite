@@ -18,17 +18,12 @@ class ProfessionalContributions extends Component {
   constructor(props) {
     super(props);
   }
-  componentDidMount(){
-    // Events.scrollEvent.register('begin', function() {});
-    // Events.scrollEvent.register('end', function() {});
+  componentWillMount(){
     scrollSpy.update();
   }
   componentWillUnmount(){
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
-  }
-  handleSetActive(to) {
-    // console.log(to);
   }
   render(){
     return(
@@ -63,8 +58,8 @@ class ProfessionalContributions extends Component {
 
         <div className="scroll-tracker">
           <ul>
-            <li><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} ></Link></li>
-            <li><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500}></Link></li>
+            <li><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={700} ></Link></li>
+            <li><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={700}></Link></li>
             {/* <li><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500}></Link></li> */}
           </ul>
         </div>
