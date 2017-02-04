@@ -36,9 +36,11 @@ module.exports = {
         exclude: /node_modules/ // exclude node modules.
       },
       {
-        // Beware of the limit here, if images are not showing up in production and silently failing then the limit here might be the culprit.
-        test: /\.(eot|woff|png|jpg|gif)$/,
-        loader: 'url-loader?limit=100000'
+      test: /.woff$|.woff2$|.ttf$|.eot$|.svg$/,
+      loader: 'url-loader'
+      },
+      {
+        test: /\.css$/, loader: 'style!css'
       }
     ]
   },
