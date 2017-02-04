@@ -21,6 +21,7 @@ function logPageView() {
 
 // Outermost Parent Component
 import App from './App.jsx';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 
