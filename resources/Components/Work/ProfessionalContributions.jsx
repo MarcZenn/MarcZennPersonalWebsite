@@ -17,6 +17,9 @@ var scrollSpy  = Scroll.scrollSpy;
 class ProfessionalContributions extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      hideImg: true // avoid image slowload
+    }
   }
   componentWillMount(){
     scrollSpy.update();
@@ -24,6 +27,11 @@ class ProfessionalContributions extends Component {
   componentWillUnmount(){
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
+  }
+  componentDidMount(){
+    setTimeout(function() {
+      this.setState({hideImg: false});
+    }.bind(this), 1200);
   }
   render(){
     return(
@@ -38,7 +46,7 @@ class ProfessionalContributions extends Component {
                 <p><a href="http://www.kickfurther.com">Like Kickstarter? Hmm..yes and no.</a></p>
               </Col>
               <Col xs={11} md={12}>
-                <a href="http://www.kickfurther.com"><img src="/public/images/kf_example_image.png" /><i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i></a>
+                <a className={this.state.hideImg ? 'hidden' : ''} ref="projectImage" href="http://www.kickfurther.com"><img src="/public/images/kf_example_image.png" /><i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i></a>
               </Col>
             </Row>
           </Element>
@@ -50,7 +58,7 @@ class ProfessionalContributions extends Component {
                 <p><a href="/">You WILL sleep over at the office at least once.</a></p>
               </Col>
               <Col xs={12} md={12}>
-                <a href="http://www.foodle-it.com"><img src="/public/images/iphone6plus.png" /><i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i></a>
+                <a className={this.state.hideImg ? 'hidden' : ''} href="http://www.foodle-it.com"><img src="/public/images/iphone6plus.png" /><i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i></a>
               </Col>
             </Row>
           </Element>
