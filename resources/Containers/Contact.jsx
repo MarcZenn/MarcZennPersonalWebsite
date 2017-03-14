@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import Nav from '.././Components/Partials/Nav.jsx';
+import Navigation from '.././Components/Partials/Nav.jsx';
 import Footer from '.././Components/Partials/Footer.jsx';
 
 class Contact extends Component {
@@ -25,7 +25,7 @@ class Contact extends Component {
   render(){
     return (
       <section>
-        <Nav />
+        <Navigation />
         <div className="contact-content">
           <form className="home-contact-form text-center" onSubmit={this.onSubmit.bind(this)}>
             <h2>Shoot me an email</h2>

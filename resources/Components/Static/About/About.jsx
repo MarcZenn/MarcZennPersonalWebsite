@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import Nav from '../.././Partials/Nav.jsx';
+import Navigation from '../.././Partials/Nav.jsx';
 import Footer from '../.././Partials/Footer.jsx';
 
 
@@ -12,7 +12,7 @@ class About extends Component {
   render() {
     return(
       <section>
-        <Nav />
+        <Navigation />
         <div className="about-content">
           <img src="/public/images/skulls.png"  />
 

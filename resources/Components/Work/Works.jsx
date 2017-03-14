@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 
 
 // Components
-import Nav from '.././Partials/Nav.jsx';
+import Navigation from '.././Partials/Nav.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 import {Link} from 'react-router';
 
@@ -19,7 +19,7 @@ class Works extends Component {
     return(
       <section>
           <div>
-            <Nav />
+            <Navigation />
             <Row className="work-landing">
               <Col xs={6} className="personal-landing">
                 <Link to="/personal-projects">

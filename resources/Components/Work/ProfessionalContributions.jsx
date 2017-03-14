@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 
 // Components
-import Nav from '.././Partials/Nav.jsx';
+import Navigation from '.././Partials/Nav.jsx';
 import Footer from '.././Partials/Footer.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
@@ -36,29 +36,41 @@ class ProfessionalContributions extends Component {
   render(){
     return(
       <section>
-        <Nav />
+        <Navigation />
 
         <div className="professional-contributions-content">
           <Element name="test1" className="element">
-            <Row className="work-item kickfurther text-center">
-              <Col xs={12} md={12}>
-                <h2>kickfurther Llc.</h2>
-                <p><a href="http://www.kickfurther.com">Like Kickstarter? Hmm..yes and no.</a></p>
+            <Row className="work-item weave text-center">
+              <Col xs={12} md={6}>
+                <h2>Weave IQ</h2>
+                <p><a href="/">Local and Proud.</a><i className="fa fa-long-arrow-right" aria-hidden="true"></i></p>
               </Col>
-              <Col xs={11} md={12}>
-                <a className={this.state.hideImg ? 'hidden' : ''} ref="projectImage" href="http://www.kickfurther.com"><img src="/public/images/kf_example_image.png" /><i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i></a>
+              <Col xs={12} md={6}>
+                <a className={this.state.hideImg ? 'hidden' : ''} href="http://www.weaveiq.com"><img src="/public/images/weavescreen.png" /></a>
               </Col>
             </Row>
           </Element>
 
           <Element name="test2" className="element">
-            <Row className="work-item cpb text-center">
-              <Col xs={12} md={12}>
-                <h2>Interning at Crispin Porter + Bogusky</h2>
-                <p><a href="/">You WILL sleep over at the office at least once.</a></p>
+            <Row className="work-item kickfurther text-left">
+              <Col xs={12} md={6}>
+                <a className={this.state.hideImg ? 'hidden' : ''} ref="projectImage" href="http://www.kickfurther.com"><img src="/public/images/kfwork.png" /></a>
               </Col>
-              <Col xs={12} md={12}>
-                <a className={this.state.hideImg ? 'hidden' : ''} href="http://www.foodle-it.com"><img src="/public/images/iphone6plus.png" /><i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i></a>
+              <Col xs={12} md={6}>
+                <h2>kickfurther Llc.</h2>
+                <p><a href="http://www.kickfurther.com">Like Kickstarter? Yes and No.. </a><i className="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+              </Col>
+            </Row>
+          </Element>
+
+          <Element name="test3" className="element">
+            <Row className="work-item cpb text-center">
+              <Col xs={12} md={6}>
+                <h2>Interning at Crispin Porter + Bogusky</h2>
+                <p><a href="/">You WILL sleep over at the office at least once.</a><i className="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+              </Col>
+              <Col xs={12} md={6}>
+                <a className={this.state.hideImg ? 'hidden' : ''} href="http://www.cpb.com"><img src="/public/images/iphone6plus.png" /></a>
               </Col>
             </Row>
           </Element>
@@ -68,7 +80,7 @@ class ProfessionalContributions extends Component {
           <ul>
             <li><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={700} ></Link></li>
             <li><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={700}></Link></li>
-            {/* <li><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500}></Link></li> */}
+            <li><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500}></Link></li>
           </ul>
         </div>
 

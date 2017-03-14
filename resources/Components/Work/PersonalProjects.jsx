@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 
 
 // Components
-import Nav from '.././Partials/Nav.jsx';
+import Navigation from '.././Partials/Nav.jsx';
 import Footer from '.././Partials/Footer.jsx';
 import {Col, Row, Grid} from 'react-bootstrap/lib';
 
@@ -39,7 +39,7 @@ class PersonalProjects extends Component {
   render(){
     return(
       <section>
-        <Nav />
+        <Navigation />
         <div className="personal-projects-content">
           <Element name="test1" className="element">
             <Row className="work-item foodle text-center">

@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import Nav from '.././Partials/Nav.jsx';
+import Navigation from '.././Partials/Nav.jsx';
 import Footer from '.././Partials/Footer.jsx';
 
 
@@ -12,7 +12,7 @@ class PrivacyPolicy extends Component {
   render() {
     return(
       <section>
-        <Nav />
+        <Navigation />
           <div className="text-center privacy-policy-content">
             <img src="/public/images/skulls.png"  />
             <h1>Privacy Policy</h1>

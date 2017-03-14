@@ -3,49 +3,36 @@ import React, {Component} from 'react';
 
 
 // Components
-import {Col, Row, Grid} from 'react-bootstrap/lib';
+import {Col, Row, Grid, Navbar, NavItem, Nav, NavDropdown, MenuItem} from 'react-bootstrap/lib';
 import {Link} from 'react-router';
 
 
-class Nav extends Component {
+class Navigation extends Component {
   render(){
     return(
-      <nav className="site clear main-nav">
-        <ul>
-          <Grid>
-            <Row className="show-grid">
-              <Col md={6}>
-                <Link to="/">
-                  <li>
-                    <img src="/public/images/symbol-logo-white.png"  />
-                  </li>
-                </Link>
-              </Col>
-              <Col md={6}>
-                <Col md={3} xs={12}>
-                  <li><Link to="/companies">Companies</Link></li>
-                </Col>
-                <Col md={3} xs={12}>
-                  <li><Link to="/works">Work</Link></li>
-                </Col>
-                <Col md={3} xs={12}>
-                  <li><Link to="/about">About</Link></li>
-                </Col>
-                <Col md={3} xs={12}>
-                  <li><Link className="hirecta" to="/contact">Hire</Link></li>
-                </Col>
-              </Col>
-            </Row>
-          </Grid>
-        </ul>
-      </nav>
+      <Navbar id="main-nav"  collapseOnSelect>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <img src="/public/images/symbol-logo-white.png"  />
+          </Navbar.Brand>
+        <Navbar.Toggle />
+      </Navbar.Header>
+      <Navbar.Collapse>
+        <Nav pullRight>
+          <NavItem eventKey={1}><Link className="nav-link" to="/companies">Companies</Link></NavItem>
+          <NavItem eventKey={2}><Link className="nav-link" to="/works">Work</Link></NavItem>
+          <NavItem eventKey={2}><Link className="nav-link" to="/about">About</Link></NavItem>
+          <NavItem eventKey={2}><Link className="hirecta" to="/contact">Hire</Link></NavItem>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
     )
   }
 }
 
-Nav.propTypes = {
+Navigation.propTypes = {
  // propTypes
 }
 
 
-export default Nav
+export default Navigation
