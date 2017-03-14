@@ -24,14 +24,14 @@ class Works extends Component {
               <Col xs={6} className="personal-landing">
                 <Link to="/personal-projects">
                   <div className="text-center flexbox-aligner">
-                    <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Personal</h2>
+                    <h2 className="flexbox-aligner-item">Personal<i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i></h2>
                   </div>
                 </Link>
               </Col>
               <Col xs={6} className="professional-landing">
                 <Link to="/professional-contributions">
                   <div className="text-center flexbox-aligner">
-                    <h2 className="flexbox-aligner-item"><i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i>Professional</h2>
+                    <h2 className="flexbox-aligner-item">Professional<i className="fa fa-toggle-on" aria-hidden="true"></i><i className="fa fa-toggle-off" aria-hidden="true"></i></h2>
                   </div>
                 </Link>
               </Col>

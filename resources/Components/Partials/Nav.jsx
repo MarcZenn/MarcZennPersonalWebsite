@@ -13,7 +13,7 @@ class Navigation extends Component {
       <Navbar id="main-nav"  collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <img src="/public/images/symbol-logo-white.png"  />
+            <Link to="/"><img src="/public/images/symbol-logo-white.png"  /></Link>
           </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>

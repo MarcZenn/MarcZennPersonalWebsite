@@ -43,7 +43,7 @@ class ProfessionalContributions extends Component {
             <Row className="work-item weave text-center">
               <Col xs={12} md={6}>
                 <h2>Weave IQ</h2>
-                <p><a href="/">Local and Proud.</a><i className="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                <p><a href="/">The Cannabis Industry's Smartest Software</a><i className="fa fa-long-arrow-right" aria-hidden="true"></i></p>
               </Col>
               <Col xs={12} md={6}>
                 <a className={this.state.hideImg ? 'hidden' : ''} href="http://www.weaveiq.com"><img src="/public/images/weavescreen.png" /></a>

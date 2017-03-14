@@ -14,8 +14,6 @@ class About extends Component {
       <section>
         <Navigation />
         <div className="about-content">
-          <img src="/public/images/skulls.png"  />
-
           <p className="about-copy">When you start at the bottom of a well you have to climb the usual ladders several rungs at a time. Nothing comes easy, there's no such thing as a safe outcome, plans always go awry and if you're not careful, you can easily become the victim of others' expectations. A victim of "you can't do that" or "I doubt you'll get there with your background" or "it's just too expensive". These perspectives are nothing but obstacles. Obstacles that give way to challenges, and challenges are meant to be overcome.</p>
           <p className="about-copy">It's my firm belief that no one succeeds by the combined efforts of themselves alone and that very few succeed without risk or the pursuit of overlooked value/opportunity. That success depends on how you define it as much as how you attain it and that success alone is not enough if it only benefits you, maybe even a select few.</p>
           <h1>Work</h1>

@@ -43,12 +43,12 @@ class PersonalProjects extends Component {
         <div className="personal-projects-content">
           <Element name="test1" className="element">
             <Row className="work-item foodle text-center">
-              <Col xs={12} md={12}>
+              <Col xs={12} md={6}>
                 <h2>Foodle It!</h2>
-                <p><a href="http://www.foodle-it.com">Because eating healthy isn't rocket science.</a></p>
+                <p><a href="http://www.foodle-it.com">Because eating healthy isn't rocket science.</a><i className="fa fa-long-arrow-right" aria-hidden="true"></i></p>
               </Col>
-              <Col xs={12} md={12}>
-                <a className={this.state.hideImg ? 'hidden' : ''} href="http://www.foodle-it.com"><img src="/public/images/foodle.png" /><i className="fa fa-arrow-circle-o-right" aria-hidden="true"><p>see project</p></i></a>
+              <Col xs={12} md={6}>
+                <a className={this.state.hideImg ? 'hidden' : ''} href="http://www.foodle-it.com"><img src="/public/images/foodleimage.png" /></a>
               </Col>
             </Row>
           </Element>

@@ -15,7 +15,7 @@ import cookie from 'react-cookie';
 const WebFont = require('webfontloader');
  WebFont.load({
    google: {
-     families: ['Raleway', 'Roboto Condensed', 'Bungee Hairline', 'Poppins']
+     families: ['Raleway', 'Roboto Condensed', 'Bungee Hairline', 'Poppins', 'Inconsolata']
    }
  });
 
