@@ -18,7 +18,7 @@ class Homepage extends Component {
           <div className="home-content clearfix">
             <header className="site clearfix home-header">
               <div className="col one">
-                <img src="/public/images/text-logo.png"  />
+                <img src="/public/images/text-logo-2.png"  />
               </div>
               <div className="col two">
                 <p>---------------------------------------------------</p>
