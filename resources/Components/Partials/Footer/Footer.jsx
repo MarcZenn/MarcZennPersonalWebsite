@@ -20,16 +20,16 @@ class Footer extends Component {
                 <div className="home-footer-list">
                 <Row>
                   <ul>
-                    <Col  xs={ 3 }>
+                    <Col md={3} xs={ 12 }>
                       <li><Link to="/contact">Contact</Link></li>
                     </Col>
-                    <Col  xs={ 3 }>
+                    <Col md={3} xs={ 12 }>
                       <li><a href="https://github.com/MarcZenn">Github</a></li>
                     </Col>
-                    <Col  xs={ 3 }>
+                    <Col md={3} xs={ 12 }>
                       <li><a href="https://www.linkedin.com/in/marcosmartinez2">LinkedIn</a></li>
                     </Col>
-                    <Col  xs={ 3 }>
+                    <Col md={3} xs={ 12 }>
                       <li><a href="https://resume.com/share/marczenn">Resume</a></li>
                     </Col>
                   </ul>

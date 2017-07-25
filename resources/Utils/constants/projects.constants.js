@@ -32,7 +32,7 @@ export const PROFESSIONAL_PROJECTS = [
     label: "kickfurther",
     site: "http://www.kickfurther.com",
     desc: "Revolutionary Inventory Crowfunding",
-    path: "/public/images/kf_logo_large.png",
+    path: "/public/images/earlykf.png",
     key: "2"
   },
   {
@@ -40,16 +40,8 @@ export const PROFESSIONAL_PROJECTS = [
     label: "cpb",
     site: "http://www.cpbgroup.com/",
     desc: "Good Enough Sucks",
-    path: "/public/images/iphone6plus.png",
+    path: "/public/images/cpbboulder.jpg",
     key: "3"
-  },
-  {
-    name: "Weave IQ",
-    label: "weave",
-    site: "http://www.weaveiq.com",
-    desc: "The Cannabis Industry's Smartest POS Software",
-    path: "/public/images/weavescreen.png",
-    key: "4"
   },
   {
     name: "Lolitas Market and Deli",
@@ -57,6 +49,14 @@ export const PROFESSIONAL_PROJECTS = [
     site: "http://agile-mountain-12616.herokuapp.com/",
     desc: "Downtown Boulder's Only Full Service Market",
     path: "/public/images/lolitasfront.png",
+    key: "4"
+  },
+  {
+    name: "Weave IQ",
+    label: "weave",
+    site: "http://www.weaveiq.com",
+    desc: "The Cannabis Industry's Smartest POS Software",
+    path: "/public/images/weavescreen.png",
     key: "5"
   },
 ]

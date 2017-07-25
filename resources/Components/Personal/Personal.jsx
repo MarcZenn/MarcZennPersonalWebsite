@@ -14,6 +14,10 @@ class Personal extends Component {
     return(
       <section className="personal-projects" key="personal-projects">
           <div className="content-wrapper">
+              <div className="overview">
+                <h2>Feel free to peruse my personal passion projects.</h2>
+                <p>If you have any questions please reach out...I will respond to your query after an appropriate amount of quiet contemplation.</p>
+              </div>
               <div className="content">
                 <Row>
                   {PERSONAL_PROJECTS.map((child) => {

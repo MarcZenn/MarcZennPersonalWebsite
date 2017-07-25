@@ -14,6 +14,10 @@ class Professional extends Component {
     return(
       <section className="professional-projects" key="professional-projects">
         <div className="content-wrapper">
+            <div className="overview">
+              <h2>Professional projects &amp; contributions</h2>
+              <p>"Tell me and I forget. Teach me and I remember. Involve me and I learn" - B. Franklin</p>
+            </div>
             <div className="content">
               <Row>
                 {PROFESSIONAL_PROJECTS.map((child) => {

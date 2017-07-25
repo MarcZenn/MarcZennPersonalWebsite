@@ -26,7 +26,7 @@ class Contact extends Component {
         <div className="contact-content">
           <form className="home-contact-form text-center" onSubmit={this.onSubmit.bind(this)}>
             <h2>Shoot me an email</h2>
-            <p>Fill out the fields below and press the submit button. I will respond to your query after an appropriate amount of quiet contemplation. Thank you for getting in touch.</p>
+            <p>Fill out the fields below and press the submit button. Thank you for getting in touch.</p>
             <label>Name:</label>
             <input type="text" ref="name" name="name" value={this.state.name} onChange={this.handleChange.bind(this)}/><br />
             <label>Email:</label>

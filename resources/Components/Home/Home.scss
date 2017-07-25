@@ -93,6 +93,9 @@
         	max-width: 65%;
           border-radius: 5px;
         }
+        @media (max-width: 1160px) {
+          padding: 200px 0;
+        }
       }
 
     	ul.home-cta-list {

@@ -14,6 +14,17 @@
 	.container {
 		margin: 0 5px 0 10px;
 		width: 100%;
+
+		@media (max-width: 768px) {
+			margin: 0;
+			padding: 0;
+			
+			.navbar-collapse {
+				ul {
+					background-color: #FFFFFF;
+				}
+			}
+		}
 	}
 
   .navbar-header {
@@ -151,19 +162,15 @@
 			    	color: $primary-red;
 						text-decoration: none;
 			    }
-					@media (min-width: 300px) and (max-width: 992px) {
-						width: 100%;
-						padding: 20px 0;
-						border-bottom: 1px solid $primary-green;
-
-						&:last-child {
-							border: none;
-						}
-					}
 				}
 	  }
 		@media (min-width: 300px) and (max-width: 992px) {
 			padding: 5px 0;
+		}
+		@media (max-width: 1160px) {
+			ul.navbar-nav {
+				flex-direction: column;
+			}
 		}
 	}
 }

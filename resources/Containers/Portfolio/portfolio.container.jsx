@@ -10,7 +10,6 @@ import Header from '../.././Components/Partials/Header/Header.jsx';
 import Footer from '../.././Components/Partials/Footer/Footer.jsx';
 
 
-
 class Portfolio extends Component {
   render(){
     const { children, terminal_mode, turnOffTerminalMode, turnOnTerminalMode } = this.props;

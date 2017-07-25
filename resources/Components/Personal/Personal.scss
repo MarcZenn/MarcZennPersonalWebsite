@@ -1,6 +1,25 @@
 @import "../../.././public/stylesheets/abstract/_variables.scss";
 
 .personal-projects {
+  .overview {
+    text-align: left;
+    padding: 180px 45px;
+    word-wrap: break-word;
+
+    h2 {
+      font-family: Poppins;
+      font-size: 75px;
+      text-transform: capitalize;
+      position: relative;
+      font-weight: 800;
+      z-index: 1;
+      margin: 0 5px 15px 5px;
+    }
+    p {
+      font-size: 20px;
+      font-family: Lato;
+    }
+  }
   .content {
     padding: 75px 15px;
 
@@ -39,6 +58,7 @@
           font-size: 45px;
           color: $primary-white;
           line-height: 50px;
+          font-weight: 900;
         }
       }
       &:hover {
@@ -60,9 +80,8 @@
     z-index: 100;
 
     a {
-      width: 35%;
+      width: 80%;
       display: block;
-      padding: 20px 85px;
       border: 1px solid $primary-red;
       border-radius: 5px;
       background: transparent;
