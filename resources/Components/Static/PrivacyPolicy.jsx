@@ -4,15 +4,12 @@ import React, {Component} from 'react';
 
 // Components
 import {Col, Row, Grid} from 'react-bootstrap/lib';
-import Navigation from '.././Partials/Nav.jsx';
-import Footer from '.././Partials/Footer.jsx';
 
 
 class PrivacyPolicy extends Component {
   render() {
     return(
       <section>
-        <Navigation />
           <div className="text-center privacy-policy-content">
             <img src="/public/images/skulls.png"  />
             <h1>Privacy Policy</h1>
@@ -44,7 +41,6 @@ class PrivacyPolicy extends Component {
             <h1>LINKS</h1>
             <p>This web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.</p>
           </div>
-        <Footer />
       </section>
     )
   }

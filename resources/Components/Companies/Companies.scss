@@ -1,0 +1,9 @@
+@import "../../.././public/stylesheets/abstract/_variables.scss";
+
+.terminal-mode {
+  .companies-content{
+    h1, p {
+      color: $primary-green;
+    }
+  }
+}

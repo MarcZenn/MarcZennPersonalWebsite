@@ -7,7 +7,7 @@ var router = express.Router();
  *
  * Index Controller
  * ---------------------------------------------------------------------------*/
-router.route('*').get(indexController.getIndex);
+// router.route('*').get(indexController.getIndex);
 
 
 

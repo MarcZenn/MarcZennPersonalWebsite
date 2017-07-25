@@ -1,0 +1,45 @@
+// Libs
+import React, {Component} from 'react';
+import {Link} from 'react-router';
+import { Col, Row, Grid } from 'react-bootstrap/lib';
+
+
+// Dependencies
+import './Personal.scss';
+import { PERSONAL_PROJECTS } from '../.././Utils/constants/projects.constants.js';
+
+
+class Personal extends Component {
+  render(){
+    return(
+      <section className="personal-projects" key="personal-projects">
+          <div className="content-wrapper">
+              <div className="content">
+                <Row>
+                  {PERSONAL_PROJECTS.map((child) => {
+                    return <Col key={child.key} xs={12} md={4} style={{padding: '0'}}>
+                              <a href={child.site}>
+                                <div className="tile text-left" style={{backgroundImage: `url(${child.path})` }}>
+                                    <div className="overlay"></div>
+                                    <div className="copy">
+                                      <h2>{child.name}</h2>
+                                      <p><a href={child.site}>{child.desc}</a></p>
+                                    </div>
+                                 </div>
+                              </a>
+                            </Col>
+                  })}
+                  </Row>
+              </div>
+              <div className="professional-projects-btn">
+                <Link to='/professional-contributions'>See Professional Projects</Link>
+              </div>
+          </div>
+      </section>
+    )
+  }
+}
+
+
+
+export default Personal

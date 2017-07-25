@@ -1,0 +1,183 @@
+@import "../../.././public/stylesheets/abstract/_variables.scss";
+
+
+.work-content {
+  .content {
+    .overview {
+      text-align: left;
+      padding: 180px 45px;
+
+      h2 {
+        font-family: Poppins;
+        font-size: 75px;
+        text-transform: capitalize;
+        position: relative;
+        font-weight: 800;
+        z-index: 1;
+        margin: 0 5px 15px 5px;
+      }
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 0;
+
+        li {
+          display: inline-flex;
+          margin: 20px 15px;
+
+          p{
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 80px;
+          }
+
+          i {
+            font-size: 55px;
+          }
+        }
+      }
+      .arrow-down {
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        text-align: center;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+
+        p {
+          display: block;
+          font-size: 15px;
+          font-family: Poppins;
+          color: $primary-red;
+          margin-bottom: 10px;
+        }
+        .arrow {
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-top: 20px solid $primary-red;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .personal-landing {
+      position: relative;
+      border-right: 1px solid lightgrey;
+      margin: 0;
+
+      i.fa-toggle-on {
+        display: none;
+        position: relative;
+        z-index: 1;
+      }
+
+      i.fa-toggle-off {
+        display: block;
+        position: relative;
+        z-index: 1;
+        color: $primary-red;
+      }
+
+      h2 {
+        color: grey;
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 200;
+
+
+        &:hover{
+          i.fa-toggle-off {
+            display: none;
+          }
+
+          i.fa-toggle-on {
+            display: block;
+            cursor: pointer;
+            color: #27AE60;
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 1;
+      }
+      @media (max-width: 960px) {
+        border-right: none;
+        border-bottom: 1px solid lightgrey;
+      }
+    }
+    .professional-landing {
+      position: relative;
+      margin: 0;
+
+      i.fa-toggle-on {
+        display: none;
+        position: relative;
+        z-index: 1;
+      }
+
+      i.fa-toggle-off {
+        display: block;
+        position: relative;
+        z-index: 1;
+        color: $primary-red;
+      }
+
+      h2 {
+        color: grey;
+        transition: all 0.5s ease-in-out;
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 200;
+
+        &:hover{
+          i.fa-toggle-off {
+            display: none;
+          }
+
+          i.fa-toggle-on {
+            display: block;
+            cursor: pointer;
+            color: #27AE60;
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 1;
+      }
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.terminal-mode {
+  .work-content {
+    .professional-landing, .personal-landing {
+      h2 {
+        color: $primary-green;
+      }
+    }
+  }
+}

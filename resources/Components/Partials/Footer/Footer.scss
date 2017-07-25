@@ -1,0 +1,51 @@
+@import "../../../.././public/stylesheets/abstract/_variables.scss";
+
+.footer {
+	padding: 20px 50px;
+	position: relative;
+  border-top: 1px solid lightgrey;
+  background-color: transparent;
+
+	img {
+		width: 125px;
+		height: 100px;
+    opacity: 0.45;
+	}
+
+	ul {
+		list-style-type: none;
+		position: relative;
+		z-index: 10;
+		text-align: center;
+
+		li{
+			padding: 10px;
+			display: inline-block;
+
+			a {
+				color: grey;
+				font-size: 18px;
+
+				&:hover {
+					color: $primary-red;
+          text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.terminal-mode {
+  .footer {
+    border-top: 1px solid $primary-green;
+    border-style: dashed;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+
+    a {
+      font-family: Bungee Hairline;
+      font-weight: 800;
+    }
+  }
+}
