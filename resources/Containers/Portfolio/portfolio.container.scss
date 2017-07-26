@@ -3,7 +3,8 @@
 
 .terminal-mode {
 	position: relative;
-	
+	overflow-x: hidden;
+
 	.content-wrapper {
 		background: #383838;
 		color: $primary-green;

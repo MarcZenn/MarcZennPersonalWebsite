@@ -11,6 +11,21 @@ import Footer from '../.././Components/Partials/Footer/Footer.jsx';
 
 
 class Portfolio extends Component {
+  componentDidMount() {
+    !this.props.terminal_mode && window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  handleScroll() {
+    const elem = document.getElementById('main-nav');
+    let top = window.pageYOffset;
+    if(top >= 90) {
+      elem.classList.add('solid');
+    } else {
+      elem.classList.remove('solid');
+    }
+  }
   render(){
     const { children, terminal_mode, turnOffTerminalMode, turnOnTerminalMode } = this.props;
     let currentPath = this.props.location.pathname;
@@ -20,7 +35,7 @@ class Portfolio extends Component {
         {terminal_mode && <div className="terminal-overlay"></div>}
         {terminal_mode && <div className="terminal-scanline"></div>}
 
-        <Header currentPath={currentPath} terminal_mode={terminal_mode} turnOffTerminalMode={turnOffTerminalMode} turnOnTerminalMode={turnOnTerminalMode}/>
+        <Header terminal_mode={terminal_mode} turnOffTerminalMode={turnOffTerminalMode} turnOnTerminalMode={turnOnTerminalMode}/>
 
         {/* render children with global props - NOTE: OR consider switch case here child.key */}
         {[children].map((child) => {

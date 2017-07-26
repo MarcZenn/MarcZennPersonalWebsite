@@ -88,7 +88,7 @@
       h2 {
         color: grey;
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 45px;
         font-weight: 200;
 
 
@@ -117,6 +117,10 @@
       @media (max-width: 960px) {
         border-right: none;
         border-bottom: 1px solid lightgrey;
+        
+        h2 {
+          font-size: 65px;
+        }
       }
     }
     .professional-landing {
@@ -140,7 +144,7 @@
         color: grey;
         transition: all 0.5s ease-in-out;
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 45px;
         font-weight: 200;
 
         &:hover{

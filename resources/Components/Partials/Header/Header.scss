@@ -10,6 +10,8 @@
   border: none;
   margin: 0;
   padding: 5px 0;
+	-webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 
 	.container {
 		margin: 0 5px 0 10px;
@@ -18,7 +20,7 @@
 		@media (max-width: 768px) {
 			margin: 0;
 			padding: 0;
-			
+
 			.navbar-collapse {
 				ul {
 					background-color: #FFFFFF;

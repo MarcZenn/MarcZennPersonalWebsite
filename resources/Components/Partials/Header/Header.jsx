@@ -13,14 +13,29 @@ class Header extends Component {
   constructor(props){
     super(props)
   }
+  componentDidMount() {
+    !this.props.terminal_mode && window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  handleScroll() {
+    const elem = document.getElementById('main-nav');
+    let top = window.pageYOffset;
+    if(top >= 90) {
+      elem.classList.add('solid');
+    } else {
+      elem.classList.remove('solid');
+    }
+  }
   activateTerminalMode(e) {
     e.preventDefault();
   }
   render(){
-    const { terminal_mode, turnOffTerminalMode, turnOnTerminalMode, currentPath } = this.props;
+    const { terminal_mode, turnOffTerminalMode, turnOnTerminalMode } = this.props;
 
     return(
-      <Navbar className={`${(!terminal_mode && currentPath !== '/') && 'solid'}`} id="main-nav" collapseOnSelect>
+      <Navbar id="main-nav" collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/"><img src="/public/images/8bitme.jpg"  /></Link>
