@@ -1,0 +1,119 @@
+@import "../../.././public/stylesheets/abstract/_variables.scss";
+
+.project-details {
+  .intro {
+    text-align: left;
+    padding: 180px 45px;
+    word-wrap: break-word;
+
+    h2 {
+      font-family: Lato;
+      font-size: 75px;
+      text-transform: capitalize;
+      position: relative;
+      font-weight: 800;
+      z-index: 1;
+      margin: 0 5px 15px 5px;
+    }
+    p {
+      font-size: 20px;
+      font-family: Lato;
+      margin-left: 7px;
+      margin-bottom: 10px;
+    }
+  }
+  .content {
+    padding: 50px;
+    border-top: 1px solid lightgrey;
+
+    .overview {
+      display: block;
+      margin: 0 auto;
+      text-align: left;
+      max-width: 50%;
+      padding: 55px 0 75px 0;
+
+      a {
+        display: inline-block;
+        font-family: Lato;
+        font-size: 35px;
+        font-weight: 800;
+        z-index: 1;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $primary-red;
+
+        &:focus {
+          text-decoration: none;
+        }
+      }
+      p {
+        display: inline-block;
+        font-family: Lato;
+        font-size: 25px;
+        font-weight: 200;
+        color: grey;
+        line-height: 35px;
+      }
+    }
+
+    .contributions {
+      padding: 50px;
+      text-align: center;
+
+      h2 {
+        font-family: Lato;
+        font-size: 35px;
+        text-transform: capitalize;
+        position: relative;
+        font-weight: 800;
+        z-index: 1;
+        margin: 0 0 25px 0;
+        color: $primary-red;
+
+        span {
+          font-size: 15px;
+          font-weight: 200;
+          color: grey;
+        }
+      }
+      .tile {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        max-height: 300px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 15px 0 0 0;
+
+        h2 {
+          font-family: Lato;
+          font-size: 20px;
+          font-weight: 200;
+          color: grey;
+        }
+        p {
+          font-family: Lato;
+          line-height: 30px;
+        }
+        &.odd {
+          background-color: #f6f6f6;
+        }
+        span {
+          display: flex;
+          padding: 10px 0;
+          word-break: normal;
+        }
+        .tile-tag {
+          padding: 2px 5px;
+          border-radius: 5px;
+          background-color: lightblue;
+          color: $primary-indigo;
+          margin: 2px;
+          opacity: 0.8;
+          font-family: Lato;
+        }
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@ class Professional extends Component {
               <Row>
                 {PROFESSIONAL_PROJECTS.map((child) => {
                   return <Col key={child.key} xs={12} md={4} style={{padding: '0'}}>
-                            <a href={child.site}>
+                            <Link to={child.site}>
                               <div className="tile text-left" style={{backgroundImage: `url(${child.path})` }}>
                                   <div className="overlay"></div>
                                   <div className="copy">
@@ -30,7 +30,7 @@ class Professional extends Component {
                                     <p><a href={child.site}>{child.desc}</a></p>
                                   </div>
                                </div>
-                            </a>
+                            </Link>
                           </Col>
                 })}
                 </Row>

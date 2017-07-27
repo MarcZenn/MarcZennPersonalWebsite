@@ -22,7 +22,7 @@ class Header extends Component {
   handleScroll() {
     const elem = document.getElementById('main-nav');
     let top = window.pageYOffset;
-    if(top >= 90) {
+    if(top >= 70) {
       elem.classList.add('solid');
     } else {
       elem.classList.remove('solid');
@@ -45,7 +45,7 @@ class Header extends Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem eventKey={1}><Link className="nav-link" to="/companies">Companies</Link></NavItem>
-            <NavItem eventKey={2}><Link className="nav-link" to="/works">Work</Link></NavItem>
+            <NavItem eventKey={2}><Link className="nav-link" to="/work">Work</Link></NavItem>
             <NavItem eventKey={2}><Link className="hirecta" to="/contact">Hire</Link></NavItem>
             {terminal_mode ? <NavItem eventKey={2}><Link onClick={turnOffTerminalMode} className="hirecta" to="">2017</Link></NavItem> : <NavItem eventKey={2}><Link onClick={turnOnTerminalMode} className="terminalcta" to="">1989</Link></NavItem> }
 

@@ -35,8 +35,7 @@ class Home extends Component {
                 </div>
                 <div className="text-center">
                   <ul className="home-cta-list">
-                    <li><Link to='/personal-projects'>Personal</Link></li>
-                    <li><Link to='/professional-contributions'>Professional</Link></li>
+                    <li><Link to='/work'>werk</Link></li>
                   </ul>
                 </div>
               </header>

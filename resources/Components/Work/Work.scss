@@ -36,6 +36,12 @@
 
           i {
             font-size: 55px;
+            -webkit-transition: font-size 0.3s;
+            transition: font-size 0.3s;
+
+            &:hover {
+              font-size: 60px;
+            }
           }
         }
       }
@@ -87,12 +93,14 @@
 
       h2 {
         color: grey;
-        font-family: Poppins;
+        font-family: Lato;
+        text-transform: capitalize;
         font-size: 45px;
         font-weight: 200;
+        margin-bottom: 15px;
 
 
-        &:hover{
+        &:hover {
           i.fa-toggle-off {
             display: none;
           }
@@ -117,7 +125,7 @@
       @media (max-width: 960px) {
         border-right: none;
         border-bottom: 1px solid lightgrey;
-        
+
         h2 {
           font-size: 65px;
         }
@@ -143,9 +151,11 @@
       h2 {
         color: grey;
         transition: all 0.5s ease-in-out;
-        font-family: Poppins;
+        font-family: Lato;
+        text-transform: capitalize;
         font-size: 45px;
         font-weight: 200;
+        margin-bottom: 15px;
 
         &:hover{
           i.fa-toggle-off {
