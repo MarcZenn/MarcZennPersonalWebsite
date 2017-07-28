@@ -66,7 +66,7 @@
           }
         }
 
-        .hirecta, .terminalcta {
+        .terminalcta {
           color: #4FAA41;
           padding: 2px 3px;
           border-radius: 2px;
@@ -82,15 +82,6 @@
             background-color: #4FAA41;
           }
         }
-				.hirecta {
-					color: $primary-red;
-
-					&:hover {
-						color: $primary-white;
-						border: 1px solid $primary-red;
-						background-color: $primary-red;
-					}
-				}
 			}
   }
 	@media (min-width: 300px) and (max-width: 992px) {
@@ -145,7 +136,7 @@
 			    	text-decoration: none;
 						font-family: Bungee Hairline;
 			    }
-					.hirecta, .terminalcta {
+					.terminalcta {
 						&:hover {
 							background-color: transparent;
 							border:none;

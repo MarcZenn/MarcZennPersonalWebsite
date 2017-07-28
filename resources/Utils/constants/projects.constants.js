@@ -7,10 +7,12 @@ export const PERSONAL_PROJECTS = [
     site: "/project-details/personal/foodle",
     desc: "Eating Healthy isn't Rocket Science.",
     path: "/public/images/foodleno.png",
+    logo: "/public/images/foodlelogo.png",
     details: {
       website: 'http://www.foodle-it.com',
       overview: "A simple, yes or no response to the question. Is this 'insert food' good for me?",
       position: 'Creator',
+      img: '/public/images/foodlescreenshot.png',
       contributions: [
         {
           key: 0,
@@ -77,10 +79,12 @@ export const PROFESSIONAL_PROJECTS = [
     site: "/project-details/professional/baker",
     desc: "The Perfect Recipe for a Successful Dispensary",
     path: "/public/images/bakercheckin.jpg",
+    logo: "/public/images/bakerlogo.jpg",
     details: {
       website: 'http://app.trybaker.com',
       overview: "Baker is the platform North America’s top dispensaries use to drive sales, innovation & growth.",
       position: 'Front End Developer',
+      img: '/public/images/trybkr.png',
       contributions: [
         {
           key: 0,
@@ -105,9 +109,11 @@ export const PROFESSIONAL_PROJECTS = [
     site: "/project-details/professional/kickfurther",
     desc: "Revolutionary Inventory Crowfunding",
     path: "/public/images/earlykf.png",
+    logo: "/public/images/kflogo.png",
     details: {
       website: 'http://kickfurther.com',
       overview: 'A unique way for retail companies to access the funds they need to manufacture their goods, build their customer base and grow.',
+      img: '/public/images/kfscreenshot.png',
       position: 'Web Developer',
       contributions: [
         {
@@ -145,10 +151,12 @@ export const PROFESSIONAL_PROJECTS = [
     site: "/project-details/professional/cpb",
     desc: "Good Enough Sucks",
     path: "/public/images/cpbboulder.jpg",
+    logo: "/public/images/cpblogo.png",
     details: {
       website: 'http://www.cpbgroup.com/',
       overview: "One of the world's most inspiring, hard-working and uniquely creative advertising agencies.",
       position: 'Interactive Developer Intern',
+      img: '/public/images/iphone6plus.png',
       contributions: [
         {
           key: 0,
@@ -167,16 +175,18 @@ export const PROFESSIONAL_PROJECTS = [
   },
   {
     key: "4",
-    name: "Lolitas Market and Deli",
+    name: "Lolitas Market & Deli",
     label: "lolitas",
     slug: 'lolitas',
     site: "/project-details/professional/lolitas",
     desc: "Downtown Boulder's Only Full Service Market",
     path: "/public/images/lolitasfront.png",
+    logo: "/public/images/lolitaslogo.png",
     details: {
       website: 'http://agile-mountain-12616.herokuapp.com/',
       overview: "Downtown Boulder's Only Full Service Market & Deli. Open 24 hours a day, 7 days a week.",
       position: 'Contract Developer',
+      img: '/public/images/lolitasscreenshot.png',
       contributions: [
         {
           key: 0,

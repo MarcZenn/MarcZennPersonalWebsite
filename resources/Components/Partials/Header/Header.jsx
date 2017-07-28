@@ -46,7 +46,7 @@ class Header extends Component {
           <Nav pullRight>
             <NavItem eventKey={1}><Link className="nav-link" to="/companies">Companies</Link></NavItem>
             <NavItem eventKey={2}><Link className="nav-link" to="/work">Work</Link></NavItem>
-            <NavItem eventKey={2}><Link className="hirecta" to="/contact">Hire</Link></NavItem>
+            <NavItem eventKey={2}><Link className="nav-link" to="/contact">Contact</Link></NavItem>
             {terminal_mode ? <NavItem eventKey={2}><Link onClick={turnOffTerminalMode} className="hirecta" to="">2017</Link></NavItem> : <NavItem eventKey={2}><Link onClick={turnOnTerminalMode} className="terminalcta" to="">1989</Link></NavItem> }
 
           </Nav>
